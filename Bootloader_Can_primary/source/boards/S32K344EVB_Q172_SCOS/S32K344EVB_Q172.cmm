@@ -1,0 +1,53 @@
+RESet
+SYStem.RESet
+SYStem.CPU S32K344-M7-0
+SYStem.Option DUALPORT ON
+SYStem.MemAccess DAP
+SYStem.JtagClock 10MHz
+Trace.DISable
+SYStem.Up
+
+; --------------------------------------------------------------------------------
+; ECC init for the internal SRAM
+
+; Enable DMA
+Data.set ASD:0x402DC330 %Long 0yXXXXxxxxXXXXxxxxXXXXxxxxXXX11xxx  ; Pogram partition 1 COFB bit 3 and 4
+Data.set ASD:0x402DC304 %Long 0x1                                 ; Program Partition Update
+
+Data.Set ASD:0x402DC000 %Long 0x00005AF0                          ; MC_ME.MC_ME_CTL_KEY.R
+Data.Set ASD:0x402DC000 %Long 0x0000A50F                          ; MC_ME.MC_ME_CTL_KEY.R
+
+WAIT (Data.Long(ASD:0x402DC304)&0x00000001)==0x00000000
+
+;DMA SRAM Init
+Data.Set SD:0x40210020 %LE %LONG 0x402AC300               ; SADDR
+Data.Set SD:0x40210030 %LE %LONG 0x20400000               ; DADDR
+Data.Set SD:0x40210024 %LE %LONG 0x03030000               ; SSIZE 3, DSIZE 3, SOFF 0
+Data.Set SD:0x40210028 %LE %LONG 0x00028000               ; Nbytes
+Data.Set SD:0x4021002C %LE %LONG 0x00000000               ; SLAST
+Data.Set SD:0x40210034 %LE %LONG 0x00080008               ; CITER 8, DOFF 8
+Data.Set SD:0x40210038 %LE %LONG 0xFFFD8000               ; DLASTSGA = -NBYTES
+Data.Set SD:0x4021003C %LE %LONG 0x00000001               ; Start
+
+WAIT (Data.Long(ASD:0x40210000)&0x80000000)==0x00000000   ; Wait for EDMA.CSR[ACTIVE]=0
+
+Data.Set SD:0x40210000 %LE %LONG 0x40000000
+
+; --------------------------------------------------------------------------------
+; Flash programming
+
+; prepare flash programming (declarations)
+DO ~~/demo/arm/flash/s32k3.cmm PREPAREONLY
+
+; ReProgram Flash
+FLASH.ReProgram ALL
+Data.LOAD.Elf ../../../output/bin/*.elf
+FLASH.ReProgram OFF
+
+; --------------------------------------------------------------------------------
+; Activate highlighting
+SETUP.Var %SpotLight
+
+; --------------------------------------------------------------------------------
+
+ENDDO

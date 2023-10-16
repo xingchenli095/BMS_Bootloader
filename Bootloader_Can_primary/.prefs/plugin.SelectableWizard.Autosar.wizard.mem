@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<memento version="1.0" lastmodified="Sep 22, 2022 9:36:30 AM">
+    <plugin.SelectableWizard.Autosar.wizard>
+        <__metadata>
+            <unusedWidgetId/>
+            <description __desc="If this project is configured as variant-master-project in base module, this wizard will copy the config to all variant-plugins"/>
+        </__metadata>
+    </plugin.SelectableWizard.Autosar.wizard>
+</memento>

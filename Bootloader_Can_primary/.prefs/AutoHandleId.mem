@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<memento version="1.0" lastmodified="Feb 21, 2020 1:36:18 PM">
+    <HandleId CHECK_CanObjectId_Can_TS_T16D23M3I1R0="true"
+        CHECK_CanTpRxNSduId_CanTp_TS_TxDxM6I8R0="true"
+        CHECK_CanIfCtrlId_CanIf_TS_TxDxM6I9R0="true"
+        CHECK_PduRRoutingPathGroupId_PduR_TS_TxDxM5I3R0="true"
+        CHECK_CanControllerId_Can_TS_T16D23M3I1R0="true"
+        CHECK_CanIfTxPduId_CanIf_TS_TxDxM6I9R0="true"
+        CHECK_PduId_EcuC_TS_TxDxM5I0R0="true"
+        CHECK_CanIfCanRxPduId_CanIf_TS_TxDxM6I9R0="true"
+        CHECK_CanTpRxNPduId_CanTp_TS_TxDxM6I8R0="true"
+        CHECK_CanTpTxNSduId_CanTp_TS_TxDxM6I8R0="true"
+        CHECK_AdjacentLayer_PduR_TS_TxDxM5I3R0="true" CHECK_ConfirmationPduId_CanTp_TS_TxDxM6I8R0="true">
+            <description __desc="Recalculates all handle Ids to match the module expectation"/>
+        <__metadata/>
+    </HandleId>
+</memento>

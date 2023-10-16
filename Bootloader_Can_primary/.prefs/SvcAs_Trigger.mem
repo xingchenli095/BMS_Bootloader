@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<memento version="1.0" lastmodified="Nov 29, 2022 2:38:17 PM">
+    <SvcAs_Wizard>
+        <__metadata>
+            <ENABLE_SVC __sortcolumn="2" __width="100 60 250 110"
+                __visible="nyyy" __sortorder="1"/>
+            <description __desc="Creates, deletes, fills, edits autosar configuration items based on queries provided by other modules"/>
+        </__metadata>
+        <service_config>
+            <os.spinlocks:1 enabled="true" description="Os Spinlocks" asVersion="4.0"/>
+            <os.alarms:1 enabled="true" description="Os Alarms" asVersion="4.0"/>
+            <os.scheduleTables:1 enabled="true"
+                description="Os Schedule Tables" asVersion="4.0"/>
+            <os.iocChannels:1 enabled="true"
+                description="Os Ioc Channels" asVersion="4.0"/>
+            <os.resources:1 enabled="true" description="Os Resources" asVersion="4.0"/>
+            <os.events:1 enabled="true" description="Os Events" asVersion="4.0"/>
+            <os.isrs:1 enabled="true" description="Os ISRs" asVersion="4.0"/>
+            <os.tasks:1 enabled="true" description="Os Tasks" asVersion="4.0"/>
+        </service_config>
+        <_service_state_>
+            <os.events>
+                <_1/>
+            </os.events>
+            <os.spinlocks>
+                <_1/>
+            </os.spinlocks>
+            <os.scheduleTables>
+                <_1/>
+            </os.scheduleTables>
+            <os.iocChannels>
+                <_1/>
+            </os.iocChannels>
+            <os.alarms>
+                <_1/>
+            </os.alarms>
+            <os.isrs>
+                <_1/>
+            </os.isrs>
+            <os.tasks>
+                <_1/>
+            </os.tasks>
+            <os.resources>
+                <_1/>
+            </os.resources>
+        </_service_state_>
+    </SvcAs_Wizard>
+</memento>

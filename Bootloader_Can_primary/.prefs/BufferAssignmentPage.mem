@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<memento version="1.0" lastmodified="Dec 23, 2022 4:38:28 AM">
+    <BufferAssignmentPage FILTER_ACTION_COMBO="None"
+        AA_SUMMARY="&lt;b>96&lt;/b> HOHs on all Controllers; &lt;b>93&lt;/b> without PDU assignment"
+        AA_MIXED="true"
+        PDU_SUMMARY="&lt;b>4&lt;/b> PDUs on all Controllers; &lt;b>0&lt;/b> not assigned to any HOH"
+        CTRS_COMBO="&lt;all>" COMBO_MULTI_CONFIG="CanIfInitCfg"
+        CC_CONFIG_COMBO="FlexCAN_0" AA_TEXT="1">
+        <__metadata>
+            <WIDGET_GROUP_TOP_COMBOS __expanded="true"/>
+            <WIDGET_LABEL_CTRS/>
+            <WIDGET_COMBO_CTRS __radix="DEC" __separators="false"/>
+            <WIDGET_LABEL_CC_CONFIG/>
+            <WIDGET_COMBO_CC_CONFIG __radix="DEC" __separators="false"/>
+            <WIDGET_LABEL_FILTER_ACTION/>
+            <WIDGET_COMBO_FILTER_ACTION __radix="DEC" __separators="false"/>
+            <WIDGET_TABLE_PDUS
+                __width="100 150 125 177 75 100 75 50 125 75" __visible="nyyyyyyyyy"/>
+            <WIDGET_GROUP_MAPPING_BUTTONS __expanded="true"/>
+            <WIDGET_LABEL_PDU_SUMMARY/>
+            <WIDGET_BUTTON_ASSIGN_PDUS __toggled="false"/>
+            <WIDGET_BUTTON_CLEAR_PDUS __toggled="false"/>
+            <WIDGET_BUTTON_CLEAR_HOHS __toggled="false"/>
+            <WIDGET_TABLE_HOHS
+                __width="100 100 100 100 100 50 50 75 75 75 75 85 75" __visible="nyyyyyyyyyyyy"/>
+            <topGroup __expanded="true"/>
+            <WIDGET_LABEL_SUMMARY/>
+            <autoAssignAndWriteOptsGroup __expanded="true"/>
+            <WIDGET_GROUP_AUTO_ASSIGNMENT __expanded="true"/>
+            <WIDGET_BUTTON_AUTO_ASSIGNMENT __toggled="false"/>
+            <WIDGET_LABEL_AUTO_ASSIGNMENT/>
+            <WIDGET_TEXT_AUTO_ASSIGNMENT __radix="DEC" __separators="false"/>
+            <mixedHTHgroup __expanded="true"/>
+            <WIDGET_LABEL_CHECK_BOX_MIXED_HTHS/>
+            <WIDGET_CHECK_BOX_MIXED_HTHS/>
+            <sortHTHgroup __expanded="true"/>
+            <WIDGET_LABEL_CHECK_BOX_SORT_HTHS/>
+            <WIDGET_CHECK_BOX_SORT_HTHS/>
+        </__metadata>
+        <PDUSCanIfInitCfg>
+            <Pdu_Rx_Func_Group_0 HOH_SHARING="allowed" CTR="EcuTestNode"/>
+            <Pdu_Rx_Phys_Group_0 HOH_SHARING="allowed" CTR="EcuTestNode"/>
+            <Pdu_Tx_0_Group_0 HOH_SHARING="n/a" CTR="EcuTestNode"/>
+            <Pdu_Tx_1_Group_0 HOH_SHARING="n/a" CTR="EcuTestNode"/>
+        </PDUSCanIfInitCfg>
+    </BufferAssignmentPage>
+</memento>

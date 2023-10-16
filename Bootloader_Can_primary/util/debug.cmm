@@ -1,0 +1,2 @@
+do ..\source\boards\${BOARD}\${DERIVATE}.cmm ..\output\bin\${BINARY}
+
