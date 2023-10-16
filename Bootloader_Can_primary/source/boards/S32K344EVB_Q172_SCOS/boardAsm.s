@@ -166,7 +166,7 @@ OS_ASM_LABEL(boardEnableICaches)
 		
     /* Initialize SRAM */
 		ldr r1, =0x20400000
-        ldr r2, =0x20427FFF
+        ldr r2, =0x2040FFFF
         subs    r2, r1
         subs    r2, #1
         movs    r0, 0
@@ -212,3 +212,29 @@ OS_ASM_LABEL(boardEnableICaches)
 /* Editor settings; DO NOT DELETE
  * vi:set ts=4:
 */
+
+#define SBAF_BOOT_MARKER   (0x5AA55AA5)
+#define CM7_0_ENABLE_SHIFT (0)
+#define CM7_1_ENABLE_SHIFT (1)
+
+#define CM7_0_ENABLE            (1)
+#ifndef CM7_1_ENABLE
+	#define CM7_1_ENABLE            (0)
+#endif
+#define CM7_0_VTOR_ADDR         (0x500000)
+#define CM7_1_VTOR_ADDR         (0)
+#define XRDC_CONFIG_ADDR        (0)
+#define LF_CONFIG_ADDR          (0)
+
+.section ".boot_header","ax"
+  .long SBAF_BOOT_MARKER /* IVT marker */
+  .long (CM7_0_ENABLE << CM7_0_ENABLE_SHIFT) | (CM7_1_ENABLE << CM7_1_ENABLE_SHIFT) /* Boot configuration word */
+  .long 0 /* Reserved */
+  .long CM7_0_VTOR_ADDR /* CM7_0 Start address */
+  .long 0 /* Reserved */
+  .long CM7_1_VTOR_ADDR /* CM7_1 Start address */
+  .long 0 /* Reserved */
+  .long 0 /* Reserved */
+  .long XRDC_CONFIG_ADDR /* XRDC configuration pointer */
+  .long LF_CONFIG_ADDR /* Lifecycle configuration pointer */
+  .long 0 /* Reserved */

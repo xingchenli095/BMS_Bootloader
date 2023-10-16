@@ -48,14 +48,8 @@
                   <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                   <d:ctr name="PortContainer_0" type="IDENTIFIABLE">
                     <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
-                    <d:var name="PortNumberOfPortPins" type="INTEGER" value="5">
-                      <a:a name="IMPORTER_INFO">
-                        <a:v>@DEF</a:v>
-                        <a:v>@CALC</a:v>
-                      </a:a>
-                    </d:var>
+                    <d:var name="PortNumberOfPortPins" type="INTEGER" value="6"/>
                     <d:lst name="PortPin" type="MAP">
-                      <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                       <d:ctr name="CAN0_EN" type="IDENTIFIABLE">
                         <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                         <d:var name="PortPinPue" type="BOOLEAN" value="false">
@@ -118,9 +112,7 @@
                           <a:a name="IMPORTER_INFO" value="@DEF"/>
                         </d:var>
                         <d:var name="PortPinMode" type="ENUMERATION" 
-                               value="GPIO">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
-                        </d:var>
+                               value="GPIO"/>
                         <d:var name="PortPinLevelValue" type="ENUMERATION" 
                                value="PORT_PIN_LEVEL_HIGH">
                           <a:a name="CUSTOMDATA" type="CUSTOMDATA">
@@ -128,11 +120,10 @@
                           </a:a>
                           <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                         </d:var>
-                        <d:var name="PortPinPcr" type="INTEGER" value="85">
+                        <d:var name="PortPinPcr" type="INTEGER" value="103">
                           <a:a name="CUSTOMDATA" type="CUSTOMDATA">
                             <cd:v id="splittag">EB.CORTEXM.S32K34X</cd:v>
                           </a:a>
-                          <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                         </d:var>
                         <d:var name="PortPinSlewRate" type="ENUMERATION" 
                                value="FASTEST_SETTING">
@@ -323,11 +314,10 @@
                           </a:a>
                           <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                         </d:var>
-                        <d:var name="PortPinPcr" type="INTEGER" value="84">
+                        <d:var name="PortPinPcr" type="INTEGER" value="35">
                           <a:a name="CUSTOMDATA" type="CUSTOMDATA">
                             <cd:v id="splittag">EB.CORTEXM.S32K34X</cd:v>
                           </a:a>
-                          <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                         </d:var>
                         <d:var name="PortPinSlewRate" type="ENUMERATION" 
                                value="FASTEST_SETTING">
@@ -509,6 +499,88 @@
                           </a:a>
                           <a:a name="IMPORTER_INFO" value="SplittableImp_Can"/>
                         </d:var>
+                        <d:var name="PortPinInitialMode" type="ENUMERATION" 
+                               value="PORT_GPIO_MODE">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinMode" type="ENUMERATION" 
+                               value="GPIO">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinLevelValue" type="ENUMERATION" 
+                               value="PORT_PIN_LEVEL_LOW">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinSlewRate" type="ENUMERATION" 
+                               value="FASTEST_SETTING">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="OBEGroupSelect" type="ENUMERATION" 
+                               value="NO_OBE_GROUP">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="MscrPdacSlot" type="ENUMERATION" 
+                               value="VIRTUAL_WRAPPER_PDAC0">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="ImcrPdacSlot" type="ENUMERATION" 
+                               value="VIRTUAL_WRAPPER_PDAC0">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:lst name="PortPinEcucPartitionRef"/>
+                      </d:ctr>
+                      <d:ctr name="DIO_LED" type="IDENTIFIABLE">
+                        <d:var name="PortPinPue" type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinPus" type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinSafeMode" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinDse" type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinWithReadBack" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinPke" type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinIfe" type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinDirectionChangeable" type="BOOLEAN" 
+                               value="true">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinModeChangeable" type="BOOLEAN" 
+                               value="true">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinInvertControl" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="PortPinSiul2Instance" type="ENUMERATION" 
+                               value="SIUL2_0">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@DEF</a:v>
+                            <a:v>@CALC</a:v>
+                          </a:a>
+                        </d:var>
+                        <d:var name="PortPinId" type="INTEGER" value="6">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@DEF</a:v>
+                            <a:v>@CALC</a:v>
+                          </a:a>
+                        </d:var>
+                        <d:var name="PortPinPcr" type="INTEGER" value="8"/>
+                        <d:var name="PortPinDirection" type="ENUMERATION" 
+                               value="PORT_PIN_INOUT"/>
                         <d:var name="PortPinInitialMode" type="ENUMERATION" 
                                value="PORT_GPIO_MODE">
                           <a:a name="IMPORTER_INFO" value="@DEF"/>

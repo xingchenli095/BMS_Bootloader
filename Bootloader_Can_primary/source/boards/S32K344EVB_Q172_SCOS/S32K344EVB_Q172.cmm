@@ -1,6 +1,6 @@
 RESet
 SYStem.RESet
-SYStem.CPU S32K344-M7-0
+SYStem.CPU S32K342-M7-0
 SYStem.Option DUALPORT ON
 SYStem.MemAccess DAP
 SYStem.JtagClock 10MHz
@@ -41,7 +41,7 @@ DO ~~/demo/arm/flash/s32k3.cmm PREPAREONLY
 
 ; ReProgram Flash
 FLASH.ReProgram ALL
-Data.LOAD.Elf ../../../output/bin/*.elf
+Data.LOAD.Elf D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\output\bin\CORTEXM_S32K34X_Bootloader_Can.elf
 FLASH.ReProgram OFF
 
 ; --------------------------------------------------------------------------------

@@ -50,9 +50,7 @@
               </d:ctr>
               <d:ctr name="ResourceGeneral" type="IDENTIFIABLE">
                 <d:var name="ResourceSubderivative" type="ENUMERATION" 
-                       value="s32k344_mqfp172">
-                  <a:a name="IMPORTER_INFO" value="@DEF"/>
-                </d:var>
+                       value="s32k342_mqfp100"/>
               </d:ctr>
             </d:ctr>
           </d:chc>

@@ -15,17 +15,21 @@ MEMORY
     /******************************************************************/
     /********************** ROM ***************************************/
     /******************************************************************/
-	exctable_C0	(RX)  : ORIGIN = 0x00401000, LENGTH = 0x1000
-	rom			(RX)  : ORIGIN = 0x00402000, LENGTH = 0xFE000	    /* 1 MB PFLASH */
+	int_flash           : ORIGIN = 0x00400000, LENGTH = 0x00100000    /* 2048K - 176K (sBAF + HSE)*/
+
+	exctable_C0	(RX)  : ORIGIN = 0x00500000, LENGTH = 0x1000
+	rom			(RX)  : ORIGIN = 0x00501000, LENGTH = 0x2D4FFF	    /* 3 MB PFLASH */
 	
     /******************************************************************/
     /********************** RAM ***************************************/
     /******************************************************************/ 
-    ram         (RWX) : ORIGIN = 0x20400000, LENGTH = 0x28000       /* 160 KB SRAM */
+    ram         (RWX) : ORIGIN = 0x20400000, LENGTH = 0x10000       /* 64 KB SRAM */
 }
 
 SECTIONS
 {	
+	.boot_header                                 ALIGN(4)     : > int_flash
+
 	/* reserve dummy address for compilation dependency */
 	__FLASH_DRIVER_ROM_START_ADDRESS = .;
 	__FLASH_DRIVER_ROM_END_ADDRESS   = .;
@@ -34,9 +38,9 @@ SECTIONS
 
 	/* Symbols for Memory Protection: Global RAM region */
 	__GLBL_RAM_START	= 0x20400000;
-	__GLBL_RAM_END		= 0x20427FFF;
+	__GLBL_RAM_END		= 0x2040FFFF;
 
 	/* Symbols for Memory Protection: Global ROM region */
-	__GLBL_ROM_START	= 0x00401000;
-	__GLBL_ROM_END		= 0x004FFFFF;
+	__GLBL_ROM_START	= 0x00500000;
+	__GLBL_ROM_END		= 0x006D6FFF;
 }

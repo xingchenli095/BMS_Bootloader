@@ -1,0 +1,2170 @@
+                                                                      Page 1
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+Command Line: C:\ghs\comp_202114\asarm.exe -annotate_call_return -elf -b0 -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/include -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/stubs -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/template -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards/S32K344EVB_Q172_SCOS -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/config -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/templates -IC:/EB/tresos/plugins/Atomics_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/BM_TS_TxDxM1I15R0/include -IC:/EB/tresos/plugins/Base_TS_TxDxM5I2R0/include -IC:/EB/tresos/plugins/BlPduR_TS_TxDxM0I27R0/include -IC:/EB/tresos/plugins/CanIf_TS_TxDxM6I10R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/src -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/include -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/src -IC:/ghs/comp_202114/ansi -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include/CORTEXM/multi -IC:/EB/tresos/plugins/Det_TS_TxDxM6I5R0/include -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/src -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/include -IC:/EB/tresos/plugins/Flash_TS_T40D37M30I0R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Base_TS_T40D34M20I1R0/header -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Can_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Dio_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Fls_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Mcu_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Port_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/include -IC:/EB/tresos/plugins/Os_TS_T40D37M6I1R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/src -IC:/EB/tresos/plugins/Platforms_TS_T40DxM4I0R0/include -IC:/EB/tresos/plugins/Prog_TS_TxDxM2I51R0/include -IC:/EB/tresos/plugins/ProgOEMInd_TS_TxDxM1I12R0/include -IC:/EB/tresos/plugins/SA_TS_TxDxM1I20R0/include -IC:/EB/tresos/plugins/Uds_TS_TxDxM3I17R0/include -IC:\ghs\comp_202114\lib\thumb2 -cpu=cortexm7 -fpu=vfpv5_d16 -fpu=single -thumb_divide -source=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-interruptvectors_C0.s -o D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\output\obj\gh_0000e201.o -list=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-interruptvectors_C0.lst C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si 
+Original File: C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+Source File: D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-interruptvectors_C0.s
+Directory: D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\util
+Host OS: Windows
+EASE: Copyright (C) 1983-2021 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2021.1.4
+Build Directory: [Directory] COMP-VAL-WIN1:C:/autoval2/v2021.1-2021-04-25/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2021-1-comp/src@696881 (built by auto-compiler)
+Revision Date: Mon Apr 26 12:33:25 2021
+
+Release Date: Mon Apr 26 08:01:05 2021
+
+                       0 #line 1 "D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-interruptvectors_C0.s"
+                       1 .macro neg rDest rSrc
+                       2  rsb rDest,rSrc,#0
+                       3  .endm
+                       4 
+                       5 .macro OS_GET_KERNEL_PTR litBase destReg sReg
+                       6  ldr destReg, litBase
+                       7  ldr destReg, [destReg]
+                       8  .endm
+                       9 
+                      10 .macro OS_GENLIT_ACTIVATE_SVC
+                      11 
+                      12 OS_SHCSR_Addr:
+                      13  .word 0xE000ED24
+                      14  .endm
+                      15 
+                      16 .macro OS_ACTIVATE_SVC reg1 reg2
+                      17  ldr reg1, OS_SHCSR_Addr
+                      18  ldr reg2, [reg1]
+                      19  orr reg2, reg2, #0x00000080
+                      20  str reg2, [reg1]
+                      21  dsb
+                      22  isb
+                      23  .endm
+                      24 
+                      25 .macro OS_SETLEVEL level oldLevel
+                      26  lsl level, level, #4
+                      27  mrs oldLevel, basepri
+                      28  lsr oldLevel, oldLevel, #4
+                      29  msr basepri, level
+                      30  .endm
+                      31 
+                      32 .macro OS_ENABLE_FPU addrR tmpR storeR
+                      33  movw addrR, #(0xED88)
+                      34  movt addrR, #(0xE000)
+                      35  ldr storeR, [addrR]
+                      36  orr tmpR, storeR, #0x00f00000
+                      37  str tmpR, [addrR]
+                      38  .endm
+                      39 
+                      40 .macro OS_DISABLE_FPU addrR tmpR storeR
+                      41  movw addrR, #(0xED88)
+                      42  movt addrR, #(0xE000)
+                      43  ldr storeR, [addrR]
+                      44  movw tmpR, #(0xffff)
+                      45  movt tmpR, #(0xff0f)
+                      46  and tmpR, storeR, tmpR
+                      47  str tmpR, [addrR]
+                      48  .endm
+                      49 
+
+                                                                      Page 2
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                      50 .macro OS_GET_MPU_CTRL_ADDR destR
+                      51  movw destR, #(0xED94)
+                      52  movt destR, #(0xE000)
+                      53  .endm
+                      54 
+                      55 .macro OS_ENABLE_MPU reg1 reg2
+                      56  .endm
+                      57 
+                      58 .macro OS_DISABLE_MPU_GET_STATE reg1 reg2 result
+                      59  .endm
+                      60 
+                      61 .macro OS_MPU_SET_CTRL reg1 ctrl
+                      62  .endm
+                      63 
+                      64 .macro DispatchInterrupt isrid entry exit level corevar
+                      65  cpsid i
+                      66  OS_DISABLE_MPU_GET_STATE r0, r1, r2
+                      67  OS_DISABLE_FPU r0, r1, r3
+                      68  push {r4-r11, lr}
+                      69  push {r2, r3}
+                      70  OS_GET_KERNEL_PTR corevar, r1, r0
+                      71  ldrb r4, [r1, #(((((0 + 4) + 4) + 4) + 4) + 0)]
+                      72  mov r0, #1
+                      73  strb r0, [r1, #(((((0 + 4) + 4) + 4) + 4) + 0)]
+                      74  mov r2, #level
+                      75  OS_SETLEVEL r2, r0
+                      76  push {r0}
+                      77  cpsie i
+                      78  mov r0, #isrid
+                      79  bl entry
+                      80  mov r0,r4
+                      81  bl exit
+                      82  .endm
+                      83  .section InterruptTable_C0, "ax"
+                      84  .thumb2
+                      85  .global CORTEXMInterruptTable_C0
+                      86  .import OS_CORTEXM_IntCat1Exit
+                      87  .import OS_CORTEXM_IntCat2Exit
+                      88  .import DispatchUnknownInterrupt
+                      89  .import OS_CORTEXM_IntReturnFromInterrupt
+                      90  .import OS_kernel_ptr
+                      91  .align 4
+                      92 
+                      93 CORTEXMInterruptTable_C0:
+00000000 00000000*    94  .word OS_CORTEXM_IRQ_C0_00
+00000004 00000000*    95  .word OS_CORTEXM_IRQ_C0_01
+00000008 00000000*    96  .word OS_CORTEXM_IRQ_C0_02
+0000000c 00000000*    97  .word OS_CORTEXM_IRQ_C0_03
+00000010 00000000*    98  .word OS_CORTEXM_IRQ_C0_04
+00000014 00000000*    99  .word OS_CORTEXM_IRQ_C0_05
+00000018 00000000*   100  .word OS_CORTEXM_IRQ_C0_06
+0000001c 00000000*   101  .word OS_CORTEXM_IRQ_C0_07
+00000020 00000000*   102  .word OS_CORTEXM_IRQ_C0_08
+00000024 00000000*   103  .word OS_CORTEXM_IRQ_C0_09
+00000028 00000000*   104  .word OS_CORTEXM_IRQ_C0_0a
+0000002c 00000000*   105  .word OS_CORTEXM_IRQ_C0_0b
+00000030 00000000*   106  .word OS_CORTEXM_IRQ_C0_0c
+00000034 00000000*   107  .word OS_CORTEXM_IRQ_C0_0d
+00000038 00000000*   108  .word OS_CORTEXM_IRQ_C0_0e
+0000003c 00000000*   109  .word OS_CORTEXM_IRQ_C0_0f
+00000040 00000000*   110  .word OS_CORTEXM_IRQ_C0_10
+
+                                                                      Page 3
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+00000044 00000000*   111  .word OS_CORTEXM_IRQ_C0_11
+00000048 00000000*   112  .word OS_CORTEXM_IRQ_C0_12
+0000004c 00000000*   113  .word OS_CORTEXM_IRQ_C0_13
+00000050 00000000*   114  .word OS_CORTEXM_IRQ_C0_14
+00000054 00000000*   115  .word OS_CORTEXM_IRQ_C0_15
+00000058 00000000*   116  .word OS_CORTEXM_IRQ_C0_16
+0000005c 00000000*   117  .word OS_CORTEXM_IRQ_C0_17
+00000060 00000000*   118  .word OS_CORTEXM_IRQ_C0_18
+00000064 00000000*   119  .word OS_CORTEXM_IRQ_C0_19
+00000068 00000000*   120  .word OS_CORTEXM_IRQ_C0_1a
+0000006c 00000000*   121  .word OS_CORTEXM_IRQ_C0_1b
+00000070 00000000*   122  .word OS_CORTEXM_IRQ_C0_1c
+00000074 00000000*   123  .word OS_CORTEXM_IRQ_C0_1d
+00000078 00000000*   124  .word OS_CORTEXM_IRQ_C0_1e
+0000007c 00000000*   125  .word OS_CORTEXM_IRQ_C0_1f
+00000080 00000000*   126  .word OS_CORTEXM_IRQ_C0_20
+00000084 00000000*   127  .word OS_CORTEXM_IRQ_C0_21
+00000088 00000000*   128  .word OS_CORTEXM_IRQ_C0_22
+0000008c 00000000*   129  .word OS_CORTEXM_IRQ_C0_23
+00000090 00000000*   130  .word OS_CORTEXM_IRQ_C0_24
+00000094 00000000*   131  .word OS_CORTEXM_IRQ_C0_25
+00000098 00000000*   132  .word OS_CORTEXM_IRQ_C0_26
+0000009c 00000000*   133  .word OS_CORTEXM_IRQ_C0_27
+000000a0 00000000*   134  .word OS_CORTEXM_IRQ_C0_28
+000000a4 00000000*   135  .word OS_CORTEXM_IRQ_C0_29
+000000a8 00000000*   136  .word OS_CORTEXM_IRQ_C0_2a
+000000ac 00000000*   137  .word OS_CORTEXM_IRQ_C0_2b
+000000b0 00000000*   138  .word OS_CORTEXM_IRQ_C0_2c
+000000b4 00000000*   139  .word OS_CORTEXM_IRQ_C0_2d
+000000b8 00000000*   140  .word OS_CORTEXM_IRQ_C0_2e
+000000bc 00000000*   141  .word OS_CORTEXM_IRQ_C0_2f
+000000c0 00000000*   142  .word OS_CORTEXM_IRQ_C0_30
+000000c4 00000000*   143  .word OS_CORTEXM_IRQ_C0_31
+000000c8 00000000*   144  .word OS_CORTEXM_IRQ_C0_32
+000000cc 00000000*   145  .word OS_CORTEXM_IRQ_C0_33
+000000d0 00000000*   146  .word OS_CORTEXM_IRQ_C0_34
+000000d4 00000000*   147  .word OS_CORTEXM_IRQ_C0_35
+000000d8 00000000*   148  .word OS_CORTEXM_IRQ_C0_36
+000000dc 00000000*   149  .word OS_CORTEXM_IRQ_C0_37
+000000e0 00000000*   150  .word OS_CORTEXM_IRQ_C0_38
+000000e4 00000000*   151  .word OS_CORTEXM_IRQ_C0_39
+000000e8 00000000*   152  .word OS_CORTEXM_IRQ_C0_3a
+000000ec 00000000*   153  .word OS_CORTEXM_IRQ_C0_3b
+000000f0 00000000*   154  .word OS_CORTEXM_IRQ_C0_3c
+000000f4 00000000*   155  .word OS_CORTEXM_IRQ_C0_3d
+000000f8 00000000*   156  .word OS_CORTEXM_IRQ_C0_3e
+000000fc 00000000*   157  .word OS_CORTEXM_IRQ_C0_3f
+00000100 00000000*   158  .word OS_CORTEXM_IRQ_C0_40
+00000104 00000000*   159  .word OS_CORTEXM_IRQ_C0_41
+00000108 00000000*   160  .word OS_CORTEXM_IRQ_C0_42
+0000010c 00000000*   161  .word OS_CORTEXM_IRQ_C0_43
+00000110 00000000*   162  .word OS_CORTEXM_IRQ_C0_44
+00000114 00000000*   163  .word OS_CORTEXM_IRQ_C0_45
+00000118 00000000*   164  .word OS_CORTEXM_IRQ_C0_46
+0000011c 00000000*   165  .word OS_CORTEXM_IRQ_C0_47
+00000120 00000000*   166  .word OS_CORTEXM_IRQ_C0_48
+00000124 00000000*   167  .word OS_CORTEXM_IRQ_C0_49
+00000128 00000000*   168  .word OS_CORTEXM_IRQ_C0_4a
+0000012c 00000000*   169  .word OS_CORTEXM_IRQ_C0_4b
+00000130 00000000*   170  .word OS_CORTEXM_IRQ_C0_4c
+00000134 00000000*   171  .word OS_CORTEXM_IRQ_C0_4d
+
+                                                                      Page 4
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+00000138 00000000*   172  .word OS_CORTEXM_IRQ_C0_4e
+0000013c 00000000*   173  .word OS_CORTEXM_IRQ_C0_4f
+00000140 00000000*   174  .word OS_CORTEXM_IRQ_C0_50
+00000144 00000000*   175  .word OS_CORTEXM_IRQ_C0_51
+00000148 00000000*   176  .word OS_CORTEXM_IRQ_C0_52
+0000014c 00000000*   177  .word OS_CORTEXM_IRQ_C0_53
+00000150 00000000*   178  .word OS_CORTEXM_IRQ_C0_54
+00000154 00000000*   179  .word OS_CORTEXM_IRQ_C0_55
+00000158 00000000*   180  .word OS_CORTEXM_IRQ_C0_56
+0000015c 00000000*   181  .word OS_CORTEXM_IRQ_C0_57
+00000160 00000000*   182  .word OS_CORTEXM_IRQ_C0_58
+00000164 00000000*   183  .word OS_CORTEXM_IRQ_C0_59
+00000168 00000000*   184  .word OS_CORTEXM_IRQ_C0_5a
+0000016c 00000000*   185  .word OS_CORTEXM_IRQ_C0_5b
+00000170 00000000*   186  .word OS_CORTEXM_IRQ_C0_5c
+00000174 00000000*   187  .word OS_CORTEXM_IRQ_C0_5d
+00000178 00000000*   188  .word OS_CORTEXM_IRQ_C0_5e
+0000017c 00000000*   189  .word OS_CORTEXM_IRQ_C0_5f
+00000180 00000000*   190  .word OS_CORTEXM_IRQ_C0_60
+00000184 00000000*   191  .word OS_CORTEXM_IRQ_C0_61
+00000188 00000000*   192  .word OS_CORTEXM_IRQ_C0_62
+0000018c 00000000*   193  .word OS_CORTEXM_IRQ_C0_63
+00000190 00000000*   194  .word OS_CORTEXM_IRQ_C0_64
+00000194 00000000*   195  .word OS_CORTEXM_IRQ_C0_65
+00000198 00000000*   196  .word OS_CORTEXM_IRQ_C0_66
+0000019c 00000000*   197  .word OS_CORTEXM_IRQ_C0_67
+000001a0 00000000*   198  .word OS_CORTEXM_IRQ_C0_68
+000001a4 00000000*   199  .word OS_CORTEXM_IRQ_C0_69
+000001a8 00000000*   200  .word OS_CORTEXM_IRQ_C0_6a
+000001ac 00000000*   201  .word OS_CORTEXM_IRQ_C0_6b
+000001b0 00000000*   202  .word OS_CORTEXM_IRQ_C0_6c
+000001b4 00000000*   203  .word OS_CORTEXM_IRQ_C0_6d
+000001b8 00000000*   204  .word OS_CORTEXM_IRQ_C0_6e
+000001bc 00000000*   205  .word OS_CORTEXM_IRQ_C0_6f
+000001c0 00000000*   206  .word OS_CORTEXM_IRQ_C0_70
+000001c4 00000000*   207  .word OS_CORTEXM_IRQ_C0_71
+000001c8 00000000*   208  .word OS_CORTEXM_IRQ_C0_72
+000001cc 00000000*   209  .word OS_CORTEXM_IRQ_C0_73
+000001d0 00000000*   210  .word OS_CORTEXM_IRQ_C0_74
+000001d4 00000000*   211  .word OS_CORTEXM_IRQ_C0_75
+000001d8 00000000*   212  .word OS_CORTEXM_IRQ_C0_76
+000001dc 00000000*   213  .word OS_CORTEXM_IRQ_C0_77
+000001e0 00000000*   214  .word OS_CORTEXM_IRQ_C0_78
+000001e4 00000000*   215  .word OS_CORTEXM_IRQ_C0_79
+000001e8 00000000*   216  .word OS_CORTEXM_IRQ_C0_7a
+000001ec 00000000*   217  .word OS_CORTEXM_IRQ_C0_7b
+000001f0 00000000*   218  .word OS_CORTEXM_IRQ_C0_7c
+000001f4 00000000*   219  .word OS_CORTEXM_IRQ_C0_7d
+000001f8 00000000*   220  .word OS_CORTEXM_IRQ_C0_7e
+000001fc 00000000*   221  .word OS_CORTEXM_IRQ_C0_7f
+00000200 00000000*   222  .word OS_CORTEXM_IRQ_C0_80
+00000204 00000000*   223  .word OS_CORTEXM_IRQ_C0_81
+00000208 00000000*   224  .word OS_CORTEXM_IRQ_C0_82
+0000020c 00000000*   225  .word OS_CORTEXM_IRQ_C0_83
+00000210 00000000*   226  .word OS_CORTEXM_IRQ_C0_84
+00000214 00000000*   227  .word OS_CORTEXM_IRQ_C0_85
+00000218 00000000*   228  .word OS_CORTEXM_IRQ_C0_86
+0000021c 00000000*   229  .word OS_CORTEXM_IRQ_C0_87
+00000220 00000000*   230  .word OS_CORTEXM_IRQ_C0_88
+00000224 00000000*   231  .word OS_CORTEXM_IRQ_C0_89
+00000228 00000000*   232  .word OS_CORTEXM_IRQ_C0_8a
+
+                                                                      Page 5
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+0000022c 00000000*   233  .word OS_CORTEXM_IRQ_C0_8b
+00000230 00000000*   234  .word OS_CORTEXM_IRQ_C0_8c
+00000234 00000000*   235  .word OS_CORTEXM_IRQ_C0_8d
+00000238 00000000*   236  .word OS_CORTEXM_IRQ_C0_8e
+0000023c 00000000*   237  .word OS_CORTEXM_IRQ_C0_8f
+00000240 00000000*   238  .word OS_CORTEXM_IRQ_C0_90
+00000244 00000000*   239  .word OS_CORTEXM_IRQ_C0_91
+00000248 00000000*   240  .word OS_CORTEXM_IRQ_C0_92
+0000024c 00000000*   241  .word OS_CORTEXM_IRQ_C0_93
+00000250 00000000*   242  .word OS_CORTEXM_IRQ_C0_94
+00000254 00000000*   243  .word OS_CORTEXM_IRQ_C0_95
+00000258 00000000*   244  .word OS_CORTEXM_IRQ_C0_96
+0000025c 00000000*   245  .word OS_CORTEXM_IRQ_C0_97
+00000260 00000000*   246  .word OS_CORTEXM_IRQ_C0_98
+00000264 00000000*   247  .word OS_CORTEXM_IRQ_C0_99
+00000268 00000000*   248  .word OS_CORTEXM_IRQ_C0_9a
+0000026c 00000000*   249  .word OS_CORTEXM_IRQ_C0_9b
+00000270 00000000*   250  .word OS_CORTEXM_IRQ_C0_9c
+00000274 00000000*   251  .word OS_CORTEXM_IRQ_C0_9d
+00000278 00000000*   252  .word OS_CORTEXM_IRQ_C0_9e
+0000027c 00000000*   253  .word OS_CORTEXM_IRQ_C0_9f
+00000280 00000000*   254  .word OS_CORTEXM_IRQ_C0_a0
+00000284 00000000*   255  .word OS_CORTEXM_IRQ_C0_a1
+00000288 00000000*   256  .word OS_CORTEXM_IRQ_C0_a2
+0000028c 00000000*   257  .word OS_CORTEXM_IRQ_C0_a3
+00000290 00000000*   258  .word OS_CORTEXM_IRQ_C0_a4
+00000294 00000000*   259  .word OS_CORTEXM_IRQ_C0_a5
+00000298 00000000*   260  .word OS_CORTEXM_IRQ_C0_a6
+0000029c 00000000*   261  .word OS_CORTEXM_IRQ_C0_a7
+000002a0 00000000*   262  .word OS_CORTEXM_IRQ_C0_a8
+000002a4 00000000*   263  .word OS_CORTEXM_IRQ_C0_a9
+000002a8 00000000*   264  .word OS_CORTEXM_IRQ_C0_aa
+000002ac 00000000*   265  .word OS_CORTEXM_IRQ_C0_ab
+000002b0 00000000*   266  .word OS_CORTEXM_IRQ_C0_ac
+000002b4 00000000*   267  .word OS_CORTEXM_IRQ_C0_ad
+000002b8 00000000*   268  .word OS_CORTEXM_IRQ_C0_ae
+000002bc 00000000*   269  .word OS_CORTEXM_IRQ_C0_af
+000002c0 00000000*   270  .word OS_CORTEXM_IRQ_C0_b0
+000002c4 00000000*   271  .word OS_CORTEXM_IRQ_C0_b1
+000002c8 00000000*   272  .word OS_CORTEXM_IRQ_C0_b2
+000002cc 00000000*   273  .word OS_CORTEXM_IRQ_C0_b3
+000002d0 00000000*   274  .word OS_CORTEXM_IRQ_C0_b4
+000002d4 00000000*   275  .word OS_CORTEXM_IRQ_C0_b5
+000002d8 00000000*   276  .word OS_CORTEXM_IRQ_C0_b6
+000002dc 00000000*   277  .word OS_CORTEXM_IRQ_C0_b7
+000002e0 00000000*   278  .word OS_CORTEXM_IRQ_C0_b8
+000002e4 00000000*   279  .word OS_CORTEXM_IRQ_C0_b9
+000002e8 00000000*   280  .word OS_CORTEXM_IRQ_C0_ba
+000002ec 00000000*   281  .word OS_CORTEXM_IRQ_C0_bb
+000002f0 00000000*   282  .word OS_CORTEXM_IRQ_C0_bc
+000002f4 00000000*   283  .word OS_CORTEXM_IRQ_C0_bd
+000002f8 00000000*   284  .word OS_CORTEXM_IRQ_C0_be
+000002fc 00000000*   285  .word OS_CORTEXM_IRQ_C0_bf
+00000300 00000000*   286  .word OS_CORTEXM_IRQ_C0_c0
+00000304 00000000*   287  .word OS_CORTEXM_IRQ_C0_c1
+00000308 00000000*   288  .word OS_CORTEXM_IRQ_C0_c2
+0000030c 00000000*   289  .word OS_CORTEXM_IRQ_C0_c3
+00000310 00000000*   290  .word OS_CORTEXM_IRQ_C0_c4
+00000314 00000000*   291  .word OS_CORTEXM_IRQ_C0_c5
+00000318 00000000*   292  .word OS_CORTEXM_IRQ_C0_c6
+0000031c 00000000*   293  .word OS_CORTEXM_IRQ_C0_c7
+
+                                                                      Page 6
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+00000320 00000000*   294  .word OS_CORTEXM_IRQ_C0_c8
+00000324 00000000*   295  .word OS_CORTEXM_IRQ_C0_c9
+00000328 00000000*   296  .word OS_CORTEXM_IRQ_C0_ca
+0000032c 00000000*   297  .word OS_CORTEXM_IRQ_C0_cb
+00000330 00000000*   298  .word OS_CORTEXM_IRQ_C0_cc
+00000334 00000000*   299  .word OS_CORTEXM_IRQ_C0_cd
+00000338 00000000*   300  .word OS_CORTEXM_IRQ_C0_ce
+0000033c 00000000*   301  .word OS_CORTEXM_IRQ_C0_cf
+00000340 00000000*   302  .word OS_CORTEXM_IRQ_C0_d0
+00000344 00000000*   303  .word OS_CORTEXM_IRQ_C0_d1
+00000348 00000000*   304  .word OS_CORTEXM_IRQ_C0_d2
+0000034c 00000000*   305  .word OS_CORTEXM_IRQ_C0_d3
+00000350 00000000*   306  .word OS_CORTEXM_IRQ_C0_d4
+00000354 00000000*   307  .word OS_CORTEXM_IRQ_C0_d5
+00000358 00000000*   308  .word OS_CORTEXM_IRQ_C0_d6
+0000035c 00000000*   309  .word OS_CORTEXM_IRQ_C0_d7
+00000360 00000000*   310  .word OS_CORTEXM_IRQ_C0_d8
+00000364 00000000*   311  .word OS_CORTEXM_IRQ_C0_d9
+00000368 00000000*   312  .word OS_CORTEXM_IRQ_C0_da
+0000036c 00000000*   313  .word OS_CORTEXM_IRQ_C0_db
+00000370 00000000*   314  .word OS_CORTEXM_IRQ_C0_dc
+00000374 00000000*   315  .word OS_CORTEXM_IRQ_C0_dd
+00000378 00000000*   316  .word OS_CORTEXM_IRQ_C0_de
+0000037c 00000000*   317  .word OS_CORTEXM_IRQ_C0_df
+00000380 00000000*   318  .word OS_CORTEXM_IRQ_C0_e0
+00000384 00000000*   319  .word OS_CORTEXM_IRQ_C0_e1
+00000388 00000000*   320  .word OS_CORTEXM_IRQ_C0_e2
+0000038c 00000000*   321  .word OS_CORTEXM_IRQ_C0_e3
+00000390 00000000*   322  .word OS_CORTEXM_IRQ_C0_e4
+00000394 00000000*   323  .word OS_CORTEXM_IRQ_C0_e5
+00000398 00000000*   324  .word OS_CORTEXM_IRQ_C0_e6
+0000039c 00000000*   325  .word OS_CORTEXM_IRQ_C0_e7
+000003a0 00000000*   326  .word OS_CORTEXM_IRQ_C0_e8
+000003a4 00000000*   327  .word OS_CORTEXM_IRQ_C0_e9
+000003a8 00000000*   328  .word OS_CORTEXM_IRQ_C0_ea
+000003ac 00000000*   329  .word OS_CORTEXM_IRQ_C0_eb
+000003b0 00000000*   330  .word OS_CORTEXM_IRQ_C0_ec
+000003b4 00000000*   331  .word OS_CORTEXM_IRQ_C0_ed
+000003b8 00000000*   332  .word OS_CORTEXM_IRQ_C0_ee
+000003bc 00000000*   333  .word OS_CORTEXM_IRQ_C0_ef
+                     334  .section ".os_text", "ax"
+                     335  .align 4
+                     336 
+                     337 OS_kernelDataAddr0:
+00000000 00000000*   338  .word OS_kernel_ptr
+                     339  .global OS_CORTEXM_IRQ_C0_00
+                     340  .import OS_UnknownInterrupt
+                     341  .type OS_CORTEXM_IRQ_C0_00, $function
+                     342 OS_CORTEXM_IRQ_C0_00:
+00000004 f000b800*   343  b DispatchUnknownInterrupt
+                     344  .size OS_CORTEXM_IRQ_C0_00, . - OS_CORTEXM_IRQ_C0_00
+                     345  .global OS_CORTEXM_IRQ_C0_01
+                     346  .import OS_UnknownInterrupt
+                     347  .type OS_CORTEXM_IRQ_C0_01, $function
+                     348 OS_CORTEXM_IRQ_C0_01:
+00000008 f000b800*   349  b DispatchUnknownInterrupt
+                     350  .size OS_CORTEXM_IRQ_C0_01, . - OS_CORTEXM_IRQ_C0_01
+                     351  .global OS_CORTEXM_IRQ_C0_02
+                     352  .import OS_UnknownInterrupt
+                     353  .type OS_CORTEXM_IRQ_C0_02, $function
+                     354 OS_CORTEXM_IRQ_C0_02:
+
+                                                                      Page 7
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+0000000c f000b800*   355  b DispatchUnknownInterrupt
+                     356  .size OS_CORTEXM_IRQ_C0_02, . - OS_CORTEXM_IRQ_C0_02
+                     357  .global OS_CORTEXM_IRQ_C0_03
+                     358  .import OS_UnknownInterrupt
+                     359  .type OS_CORTEXM_IRQ_C0_03, $function
+                     360 OS_CORTEXM_IRQ_C0_03:
+00000010 f000b800*   361  b DispatchUnknownInterrupt
+                     362  .size OS_CORTEXM_IRQ_C0_03, . - OS_CORTEXM_IRQ_C0_03
+                     363  .global OS_CORTEXM_IRQ_C0_04
+                     364  .import OS_UnknownInterrupt
+                     365  .type OS_CORTEXM_IRQ_C0_04, $function
+                     366 OS_CORTEXM_IRQ_C0_04:
+00000014 f000b800*   367  b DispatchUnknownInterrupt
+                     368  .size OS_CORTEXM_IRQ_C0_04, . - OS_CORTEXM_IRQ_C0_04
+                     369  .global OS_CORTEXM_IRQ_C0_05
+                     370  .import OS_UnknownInterrupt
+                     371  .type OS_CORTEXM_IRQ_C0_05, $function
+                     372 OS_CORTEXM_IRQ_C0_05:
+00000018 f000b800*   373  b DispatchUnknownInterrupt
+                     374  .size OS_CORTEXM_IRQ_C0_05, . - OS_CORTEXM_IRQ_C0_05
+                     375  .global OS_CORTEXM_IRQ_C0_06
+                     376  .import OS_UnknownInterrupt
+                     377  .type OS_CORTEXM_IRQ_C0_06, $function
+                     378 OS_CORTEXM_IRQ_C0_06:
+0000001c f000b800*   379  b DispatchUnknownInterrupt
+                     380  .size OS_CORTEXM_IRQ_C0_06, . - OS_CORTEXM_IRQ_C0_06
+                     381  .global OS_CORTEXM_IRQ_C0_07
+                     382  .import OS_UnknownInterrupt
+                     383  .type OS_CORTEXM_IRQ_C0_07, $function
+                     384 OS_CORTEXM_IRQ_C0_07:
+00000020 f000b800*   385  b DispatchUnknownInterrupt
+                     386  .size OS_CORTEXM_IRQ_C0_07, . - OS_CORTEXM_IRQ_C0_07
+                     387  .global OS_CORTEXM_IRQ_C0_08
+                     388  .import OS_UnknownInterrupt
+                     389  .type OS_CORTEXM_IRQ_C0_08, $function
+                     390 OS_CORTEXM_IRQ_C0_08:
+00000024 f000b800*   391  b DispatchUnknownInterrupt
+                     392  .size OS_CORTEXM_IRQ_C0_08, . - OS_CORTEXM_IRQ_C0_08
+                     393  .global OS_CORTEXM_IRQ_C0_09
+                     394  .import OS_UnknownInterrupt
+                     395  .type OS_CORTEXM_IRQ_C0_09, $function
+                     396 OS_CORTEXM_IRQ_C0_09:
+00000028 f000b800*   397  b DispatchUnknownInterrupt
+                     398  .size OS_CORTEXM_IRQ_C0_09, . - OS_CORTEXM_IRQ_C0_09
+                     399  .global OS_CORTEXM_IRQ_C0_0a
+                     400  .import OS_UnknownInterrupt
+                     401  .type OS_CORTEXM_IRQ_C0_0a, $function
+                     402 OS_CORTEXM_IRQ_C0_0a:
+0000002c f000b800*   403  b DispatchUnknownInterrupt
+                     404  .size OS_CORTEXM_IRQ_C0_0a, . - OS_CORTEXM_IRQ_C0_0a
+                     405  .global OS_CORTEXM_IRQ_C0_0b
+                     406  .import OS_UnknownInterrupt
+                     407  .type OS_CORTEXM_IRQ_C0_0b, $function
+                     408 OS_CORTEXM_IRQ_C0_0b:
+00000030 f000b800*   409  b DispatchUnknownInterrupt
+                     410  .size OS_CORTEXM_IRQ_C0_0b, . - OS_CORTEXM_IRQ_C0_0b
+                     411  .global OS_CORTEXM_IRQ_C0_0c
+                     412  .import OS_UnknownInterrupt
+                     413  .type OS_CORTEXM_IRQ_C0_0c, $function
+                     414 OS_CORTEXM_IRQ_C0_0c:
+00000034 f000b800*   415  b DispatchUnknownInterrupt
+
+                                                                      Page 8
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     416  .size OS_CORTEXM_IRQ_C0_0c, . - OS_CORTEXM_IRQ_C0_0c
+                     417  .global OS_CORTEXM_IRQ_C0_0d
+                     418  .import OS_UnknownInterrupt
+                     419  .type OS_CORTEXM_IRQ_C0_0d, $function
+                     420 OS_CORTEXM_IRQ_C0_0d:
+00000038 f000b800*   421  b DispatchUnknownInterrupt
+                     422  .size OS_CORTEXM_IRQ_C0_0d, . - OS_CORTEXM_IRQ_C0_0d
+                     423  .global OS_CORTEXM_IRQ_C0_0e
+                     424  .import OS_UnknownInterrupt
+                     425  .type OS_CORTEXM_IRQ_C0_0e, $function
+                     426 OS_CORTEXM_IRQ_C0_0e:
+0000003c f000b800*   427  b DispatchUnknownInterrupt
+                     428  .size OS_CORTEXM_IRQ_C0_0e, . - OS_CORTEXM_IRQ_C0_0e
+                     429  .global OS_CORTEXM_IRQ_C0_0f
+                     430  .import OS_UnknownInterrupt
+                     431  .type OS_CORTEXM_IRQ_C0_0f, $function
+                     432 OS_CORTEXM_IRQ_C0_0f:
+00000040 f000b800*   433  b DispatchUnknownInterrupt
+                     434  .size OS_CORTEXM_IRQ_C0_0f, . - OS_CORTEXM_IRQ_C0_0f
+                     435  .global OS_CORTEXM_IRQ_C0_10
+                     436  .import OS_UnknownInterrupt
+                     437  .type OS_CORTEXM_IRQ_C0_10, $function
+                     438 OS_CORTEXM_IRQ_C0_10:
+00000044 f000b800*   439  b DispatchUnknownInterrupt
+                     440  .size OS_CORTEXM_IRQ_C0_10, . - OS_CORTEXM_IRQ_C0_10
+                     441  .global OS_CORTEXM_IRQ_C0_11
+                     442  .import OS_UnknownInterrupt
+                     443  .type OS_CORTEXM_IRQ_C0_11, $function
+                     444 OS_CORTEXM_IRQ_C0_11:
+00000048 f000b800*   445  b DispatchUnknownInterrupt
+                     446  .size OS_CORTEXM_IRQ_C0_11, . - OS_CORTEXM_IRQ_C0_11
+                     447  .global OS_CORTEXM_IRQ_C0_12
+                     448  .import OS_UnknownInterrupt
+                     449  .type OS_CORTEXM_IRQ_C0_12, $function
+                     450 OS_CORTEXM_IRQ_C0_12:
+0000004c f000b800*   451  b DispatchUnknownInterrupt
+                     452  .size OS_CORTEXM_IRQ_C0_12, . - OS_CORTEXM_IRQ_C0_12
+                     453  .global OS_CORTEXM_IRQ_C0_13
+                     454  .import OS_UnknownInterrupt
+                     455  .type OS_CORTEXM_IRQ_C0_13, $function
+                     456 OS_CORTEXM_IRQ_C0_13:
+00000050 f000b800*   457  b DispatchUnknownInterrupt
+                     458  .size OS_CORTEXM_IRQ_C0_13, . - OS_CORTEXM_IRQ_C0_13
+                     459  .global OS_CORTEXM_IRQ_C0_14
+                     460  .import OS_UnknownInterrupt
+                     461  .type OS_CORTEXM_IRQ_C0_14, $function
+                     462 OS_CORTEXM_IRQ_C0_14:
+00000054 f000b800*   463  b DispatchUnknownInterrupt
+                     464  .size OS_CORTEXM_IRQ_C0_14, . - OS_CORTEXM_IRQ_C0_14
+                     465  .global OS_CORTEXM_IRQ_C0_15
+                     466  .import OS_UnknownInterrupt
+                     467  .type OS_CORTEXM_IRQ_C0_15, $function
+                     468 OS_CORTEXM_IRQ_C0_15:
+00000058 f000b800*   469  b DispatchUnknownInterrupt
+                     470  .size OS_CORTEXM_IRQ_C0_15, . - OS_CORTEXM_IRQ_C0_15
+                     471  .global OS_CORTEXM_IRQ_C0_16
+                     472  .import OS_UnknownInterrupt
+                     473  .type OS_CORTEXM_IRQ_C0_16, $function
+                     474 OS_CORTEXM_IRQ_C0_16:
+0000005c f000b800*   475  b DispatchUnknownInterrupt
+                     476  .size OS_CORTEXM_IRQ_C0_16, . - OS_CORTEXM_IRQ_C0_16
+
+                                                                      Page 9
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     477  .global OS_CORTEXM_IRQ_C0_17
+                     478  .import OS_UnknownInterrupt
+                     479  .type OS_CORTEXM_IRQ_C0_17, $function
+                     480 OS_CORTEXM_IRQ_C0_17:
+00000060 f000b800*   481  b DispatchUnknownInterrupt
+                     482  .size OS_CORTEXM_IRQ_C0_17, . - OS_CORTEXM_IRQ_C0_17
+                     483  .global OS_CORTEXM_IRQ_C0_18
+                     484  .import OS_UnknownInterrupt
+                     485  .type OS_CORTEXM_IRQ_C0_18, $function
+                     486 OS_CORTEXM_IRQ_C0_18:
+00000064 f000b800*   487  b DispatchUnknownInterrupt
+                     488  .size OS_CORTEXM_IRQ_C0_18, . - OS_CORTEXM_IRQ_C0_18
+                     489  .global OS_CORTEXM_IRQ_C0_19
+                     490  .import OS_UnknownInterrupt
+                     491  .type OS_CORTEXM_IRQ_C0_19, $function
+                     492 OS_CORTEXM_IRQ_C0_19:
+00000068 f000b800*   493  b DispatchUnknownInterrupt
+                     494  .size OS_CORTEXM_IRQ_C0_19, . - OS_CORTEXM_IRQ_C0_19
+                     495  .global OS_CORTEXM_IRQ_C0_1a
+                     496  .import OS_UnknownInterrupt
+                     497  .type OS_CORTEXM_IRQ_C0_1a, $function
+                     498 OS_CORTEXM_IRQ_C0_1a:
+0000006c f000b800*   499  b DispatchUnknownInterrupt
+                     500  .size OS_CORTEXM_IRQ_C0_1a, . - OS_CORTEXM_IRQ_C0_1a
+                     501  .global OS_CORTEXM_IRQ_C0_1b
+                     502  .import OS_UnknownInterrupt
+                     503  .type OS_CORTEXM_IRQ_C0_1b, $function
+                     504 OS_CORTEXM_IRQ_C0_1b:
+00000070 f000b800*   505  b DispatchUnknownInterrupt
+                     506  .size OS_CORTEXM_IRQ_C0_1b, . - OS_CORTEXM_IRQ_C0_1b
+                     507  .global OS_CORTEXM_IRQ_C0_1c
+                     508  .import OS_UnknownInterrupt
+                     509  .type OS_CORTEXM_IRQ_C0_1c, $function
+                     510 OS_CORTEXM_IRQ_C0_1c:
+00000074 f000b800*   511  b DispatchUnknownInterrupt
+                     512  .size OS_CORTEXM_IRQ_C0_1c, . - OS_CORTEXM_IRQ_C0_1c
+                     513  .global OS_CORTEXM_IRQ_C0_1d
+                     514  .import OS_UnknownInterrupt
+                     515  .type OS_CORTEXM_IRQ_C0_1d, $function
+                     516 OS_CORTEXM_IRQ_C0_1d:
+00000078 f000b800*   517  b DispatchUnknownInterrupt
+                     518  .size OS_CORTEXM_IRQ_C0_1d, . - OS_CORTEXM_IRQ_C0_1d
+                     519  .global OS_CORTEXM_IRQ_C0_1e
+                     520  .import OS_UnknownInterrupt
+                     521  .type OS_CORTEXM_IRQ_C0_1e, $function
+                     522 OS_CORTEXM_IRQ_C0_1e:
+0000007c f000b800*   523  b DispatchUnknownInterrupt
+                     524  .size OS_CORTEXM_IRQ_C0_1e, . - OS_CORTEXM_IRQ_C0_1e
+                     525  .global OS_CORTEXM_IRQ_C0_1f
+                     526  .import OS_UnknownInterrupt
+                     527  .type OS_CORTEXM_IRQ_C0_1f, $function
+                     528 OS_CORTEXM_IRQ_C0_1f:
+00000080 f000b800*   529  b DispatchUnknownInterrupt
+                     530  .size OS_CORTEXM_IRQ_C0_1f, . - OS_CORTEXM_IRQ_C0_1f
+                     531  .align 4
+                     532 
+                     533 OS_kernelDataAddr1:
+00000084 00000000*   534  .word OS_kernel_ptr
+                     535  .global OS_CORTEXM_IRQ_C0_20
+                     536  .import OS_UnknownInterrupt
+                     537  .type OS_CORTEXM_IRQ_C0_20, $function
+
+                                                                      Page 10
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     538 OS_CORTEXM_IRQ_C0_20:
+00000088 f000b800*   539  b DispatchUnknownInterrupt
+                     540  .size OS_CORTEXM_IRQ_C0_20, . - OS_CORTEXM_IRQ_C0_20
+                     541  .global OS_CORTEXM_IRQ_C0_21
+                     542  .import OS_UnknownInterrupt
+                     543  .type OS_CORTEXM_IRQ_C0_21, $function
+                     544 OS_CORTEXM_IRQ_C0_21:
+0000008c f000b800*   545  b DispatchUnknownInterrupt
+                     546  .size OS_CORTEXM_IRQ_C0_21, . - OS_CORTEXM_IRQ_C0_21
+                     547  .global OS_CORTEXM_IRQ_C0_22
+                     548  .import OS_UnknownInterrupt
+                     549  .type OS_CORTEXM_IRQ_C0_22, $function
+                     550 OS_CORTEXM_IRQ_C0_22:
+00000090 f000b800*   551  b DispatchUnknownInterrupt
+                     552  .size OS_CORTEXM_IRQ_C0_22, . - OS_CORTEXM_IRQ_C0_22
+                     553  .global OS_CORTEXM_IRQ_C0_23
+                     554  .import OS_UnknownInterrupt
+                     555  .type OS_CORTEXM_IRQ_C0_23, $function
+                     556 OS_CORTEXM_IRQ_C0_23:
+00000094 f000b800*   557  b DispatchUnknownInterrupt
+                     558  .size OS_CORTEXM_IRQ_C0_23, . - OS_CORTEXM_IRQ_C0_23
+                     559  .global OS_CORTEXM_IRQ_C0_24
+                     560  .import OS_UnknownInterrupt
+                     561  .type OS_CORTEXM_IRQ_C0_24, $function
+                     562 OS_CORTEXM_IRQ_C0_24:
+00000098 f000b800*   563  b DispatchUnknownInterrupt
+                     564  .size OS_CORTEXM_IRQ_C0_24, . - OS_CORTEXM_IRQ_C0_24
+                     565  .global OS_CORTEXM_IRQ_C0_25
+                     566  .import OS_UnknownInterrupt
+                     567  .type OS_CORTEXM_IRQ_C0_25, $function
+                     568 OS_CORTEXM_IRQ_C0_25:
+0000009c f000b800*   569  b DispatchUnknownInterrupt
+                     570  .size OS_CORTEXM_IRQ_C0_25, . - OS_CORTEXM_IRQ_C0_25
+                     571  .global OS_CORTEXM_IRQ_C0_26
+                     572  .import OS_UnknownInterrupt
+                     573  .type OS_CORTEXM_IRQ_C0_26, $function
+                     574 OS_CORTEXM_IRQ_C0_26:
+000000a0 f000b800*   575  b DispatchUnknownInterrupt
+                     576  .size OS_CORTEXM_IRQ_C0_26, . - OS_CORTEXM_IRQ_C0_26
+                     577  .global OS_CORTEXM_IRQ_C0_27
+                     578  .import OS_Cat2Entry
+                     579  .type OS_CORTEXM_IRQ_C0_27, $function
+                     580 OS_CORTEXM_IRQ_C0_27:
+                     581  DispatchInterrupt 3, OS_Cat2Entry, OS_CORTEXM_IntCat2Exit, 2, OS_kernelDataAddr1
+                     581 <MACRO BEGIN>
+                     581 cpsid i 
+                     581 OS_DISABLE_MPU_GET_STATE r0 , r1 , r2 
+                     581 OS_DISABLE_FPU r0 , r1 , r3 
+                     581 push { r4 - r11 , lr } 
+                     581 push { r2 , r3 } 
+                     581 OS_GET_KERNEL_PTR OS_kernelDataAddr1 , r1 , r0 
+                     581 ldrb r4 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+                     581 mov r0 , 1 
+                     581 strb r0 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+                     581 mov r2 , 2 
+                     581 OS_SETLEVEL r2 , r0 
+                     581 push { r0 } 
+                     581 cpsie i 
+                     581 mov r0 , 3 
+                     581 bl OS_Cat2Entry 
+                     581 mov r0 , r4 
+
+                                                                      Page 11
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     581 bl OS_CORTEXM_IntCat2Exit 
+000000a4 b672        581 <MACRO END>
+                     581 <MACRO BEGIN>
+                     581 <MACRO END>
+                     581 <MACRO BEGIN>
+                     581 movw r0 , ( 0xED88 ) 
+                     581 movt r0 , ( 0xE000 ) 
+                     581 ldr r3 , [ r0 ] 
+                     581 movw r1 , ( 0xffff ) 
+                     581 movt r1 , ( 0xff0f ) 
+                     581 and r1 , r3 , r1 
+                     581 str r1 , [ r0 ] 
+000000a6 f64e5088    581 <MACRO END>
+000000aa f2ce0000 
+000000ae 6803 
+000000b0 f64f71ff 
+000000b4 f6cf710f 
+000000b8 ea030101 
+000000bc 6001 
+000000be e92d4ff0 
+000000c2 b40c 
+                     581 <MACRO BEGIN>
+                     581 ldr r1 , OS_kernelDataAddr1 
+                     581 ldr r1 , [ r1 ] 
+000000c4 f8df1fbc*   581 <MACRO END>
+000000c8 6809 
+000000ca 7c0c 
+000000cc f04f0001 
+000000d0 7408 
+000000d2 f04f0202 
+                     581 <MACRO BEGIN>
+                     581 lsl r2 , r2 , 4 
+                     581 mrs r0 , basepri 
+                     581 lsr r0 , r0 , 4 
+                     581 msr basepri , r2 
+000000d6 ea4f1202    581 <MACRO END>
+000000da f3ef8011 
+000000de ea4f1010 
+000000e2 f3828811 
+000000e6 b401 
+000000e8 b662 
+000000ea f04f0003 
+000000ee f000f800*
+000000f2 4620 
+000000f4 f000f800*
+                     582  .size OS_CORTEXM_IRQ_C0_27, . - OS_CORTEXM_IRQ_C0_27
+                     583  .global OS_CORTEXM_IRQ_C0_28
+                     584  .import OS_UnknownInterrupt
+                     585  .type OS_CORTEXM_IRQ_C0_28, $function
+                     586 OS_CORTEXM_IRQ_C0_28:
+000000f8 f000b800*   587  b DispatchUnknownInterrupt
+                     588  .size OS_CORTEXM_IRQ_C0_28, . - OS_CORTEXM_IRQ_C0_28
+                     589  .global OS_CORTEXM_IRQ_C0_29
+                     590  .import OS_UnknownInterrupt
+                     591  .type OS_CORTEXM_IRQ_C0_29, $function
+                     592 OS_CORTEXM_IRQ_C0_29:
+000000fc f000b800*   593  b DispatchUnknownInterrupt
+                     594  .size OS_CORTEXM_IRQ_C0_29, . - OS_CORTEXM_IRQ_C0_29
+                     595  .global OS_CORTEXM_IRQ_C0_2a
+                     596  .import OS_UnknownInterrupt
+                     597  .type OS_CORTEXM_IRQ_C0_2a, $function
+
+                                                                      Page 12
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     598 OS_CORTEXM_IRQ_C0_2a:
+00000100 f000b800*   599  b DispatchUnknownInterrupt
+                     600  .size OS_CORTEXM_IRQ_C0_2a, . - OS_CORTEXM_IRQ_C0_2a
+                     601  .global OS_CORTEXM_IRQ_C0_2b
+                     602  .import OS_UnknownInterrupt
+                     603  .type OS_CORTEXM_IRQ_C0_2b, $function
+                     604 OS_CORTEXM_IRQ_C0_2b:
+00000104 f000b800*   605  b DispatchUnknownInterrupt
+                     606  .size OS_CORTEXM_IRQ_C0_2b, . - OS_CORTEXM_IRQ_C0_2b
+                     607  .global OS_CORTEXM_IRQ_C0_2c
+                     608  .import OS_UnknownInterrupt
+                     609  .type OS_CORTEXM_IRQ_C0_2c, $function
+                     610 OS_CORTEXM_IRQ_C0_2c:
+00000108 f000b800*   611  b DispatchUnknownInterrupt
+                     612  .size OS_CORTEXM_IRQ_C0_2c, . - OS_CORTEXM_IRQ_C0_2c
+                     613  .global OS_CORTEXM_IRQ_C0_2d
+                     614  .import OS_UnknownInterrupt
+                     615  .type OS_CORTEXM_IRQ_C0_2d, $function
+                     616 OS_CORTEXM_IRQ_C0_2d:
+0000010c f000b800*   617  b DispatchUnknownInterrupt
+                     618  .size OS_CORTEXM_IRQ_C0_2d, . - OS_CORTEXM_IRQ_C0_2d
+                     619  .global OS_CORTEXM_IRQ_C0_2e
+                     620  .import OS_UnknownInterrupt
+                     621  .type OS_CORTEXM_IRQ_C0_2e, $function
+                     622 OS_CORTEXM_IRQ_C0_2e:
+00000110 f000b800*   623  b DispatchUnknownInterrupt
+                     624  .size OS_CORTEXM_IRQ_C0_2e, . - OS_CORTEXM_IRQ_C0_2e
+                     625  .global OS_CORTEXM_IRQ_C0_2f
+                     626  .import OS_UnknownInterrupt
+                     627  .type OS_CORTEXM_IRQ_C0_2f, $function
+                     628 OS_CORTEXM_IRQ_C0_2f:
+00000114 f000b800*   629  b DispatchUnknownInterrupt
+                     630  .size OS_CORTEXM_IRQ_C0_2f, . - OS_CORTEXM_IRQ_C0_2f
+                     631  .global OS_CORTEXM_IRQ_C0_30
+                     632  .import OS_UnknownInterrupt
+                     633  .type OS_CORTEXM_IRQ_C0_30, $function
+                     634 OS_CORTEXM_IRQ_C0_30:
+00000118 f000b800*   635  b DispatchUnknownInterrupt
+                     636  .size OS_CORTEXM_IRQ_C0_30, . - OS_CORTEXM_IRQ_C0_30
+                     637  .global OS_CORTEXM_IRQ_C0_31
+                     638  .import OS_UnknownInterrupt
+                     639  .type OS_CORTEXM_IRQ_C0_31, $function
+                     640 OS_CORTEXM_IRQ_C0_31:
+0000011c f000b800*   641  b DispatchUnknownInterrupt
+                     642  .size OS_CORTEXM_IRQ_C0_31, . - OS_CORTEXM_IRQ_C0_31
+                     643  .global OS_CORTEXM_IRQ_C0_32
+                     644  .import OS_UnknownInterrupt
+                     645  .type OS_CORTEXM_IRQ_C0_32, $function
+                     646 OS_CORTEXM_IRQ_C0_32:
+00000120 f000b800*   647  b DispatchUnknownInterrupt
+                     648  .size OS_CORTEXM_IRQ_C0_32, . - OS_CORTEXM_IRQ_C0_32
+                     649  .global OS_CORTEXM_IRQ_C0_33
+                     650  .import OS_UnknownInterrupt
+                     651  .type OS_CORTEXM_IRQ_C0_33, $function
+                     652 OS_CORTEXM_IRQ_C0_33:
+00000124 f000b800*   653  b DispatchUnknownInterrupt
+                     654  .size OS_CORTEXM_IRQ_C0_33, . - OS_CORTEXM_IRQ_C0_33
+                     655  .global OS_CORTEXM_IRQ_C0_34
+                     656  .import OS_UnknownInterrupt
+                     657  .type OS_CORTEXM_IRQ_C0_34, $function
+                     658 OS_CORTEXM_IRQ_C0_34:
+
+                                                                      Page 13
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+00000128 f000b800*   659  b DispatchUnknownInterrupt
+                     660  .size OS_CORTEXM_IRQ_C0_34, . - OS_CORTEXM_IRQ_C0_34
+                     661  .global OS_CORTEXM_IRQ_C0_35
+                     662  .import OS_UnknownInterrupt
+                     663  .type OS_CORTEXM_IRQ_C0_35, $function
+                     664 OS_CORTEXM_IRQ_C0_35:
+0000012c f000b800*   665  b DispatchUnknownInterrupt
+                     666  .size OS_CORTEXM_IRQ_C0_35, . - OS_CORTEXM_IRQ_C0_35
+                     667  .global OS_CORTEXM_IRQ_C0_36
+                     668  .import OS_UnknownInterrupt
+                     669  .type OS_CORTEXM_IRQ_C0_36, $function
+                     670 OS_CORTEXM_IRQ_C0_36:
+00000130 f000b800*   671  b DispatchUnknownInterrupt
+                     672  .size OS_CORTEXM_IRQ_C0_36, . - OS_CORTEXM_IRQ_C0_36
+                     673  .global OS_CORTEXM_IRQ_C0_37
+                     674  .import OS_UnknownInterrupt
+                     675  .type OS_CORTEXM_IRQ_C0_37, $function
+                     676 OS_CORTEXM_IRQ_C0_37:
+00000134 f000b800*   677  b DispatchUnknownInterrupt
+                     678  .size OS_CORTEXM_IRQ_C0_37, . - OS_CORTEXM_IRQ_C0_37
+                     679  .global OS_CORTEXM_IRQ_C0_38
+                     680  .import OS_UnknownInterrupt
+                     681  .type OS_CORTEXM_IRQ_C0_38, $function
+                     682 OS_CORTEXM_IRQ_C0_38:
+00000138 f000b800*   683  b DispatchUnknownInterrupt
+                     684  .size OS_CORTEXM_IRQ_C0_38, . - OS_CORTEXM_IRQ_C0_38
+                     685  .global OS_CORTEXM_IRQ_C0_39
+                     686  .import OS_UnknownInterrupt
+                     687  .type OS_CORTEXM_IRQ_C0_39, $function
+                     688 OS_CORTEXM_IRQ_C0_39:
+0000013c f000b800*   689  b DispatchUnknownInterrupt
+                     690  .size OS_CORTEXM_IRQ_C0_39, . - OS_CORTEXM_IRQ_C0_39
+                     691  .global OS_CORTEXM_IRQ_C0_3a
+                     692  .import OS_UnknownInterrupt
+                     693  .type OS_CORTEXM_IRQ_C0_3a, $function
+                     694 OS_CORTEXM_IRQ_C0_3a:
+00000140 f000b800*   695  b DispatchUnknownInterrupt
+                     696  .size OS_CORTEXM_IRQ_C0_3a, . - OS_CORTEXM_IRQ_C0_3a
+                     697  .global OS_CORTEXM_IRQ_C0_3b
+                     698  .import OS_UnknownInterrupt
+                     699  .type OS_CORTEXM_IRQ_C0_3b, $function
+                     700 OS_CORTEXM_IRQ_C0_3b:
+00000144 f000b800*   701  b DispatchUnknownInterrupt
+                     702  .size OS_CORTEXM_IRQ_C0_3b, . - OS_CORTEXM_IRQ_C0_3b
+                     703  .global OS_CORTEXM_IRQ_C0_3c
+                     704  .import OS_UnknownInterrupt
+                     705  .type OS_CORTEXM_IRQ_C0_3c, $function
+                     706 OS_CORTEXM_IRQ_C0_3c:
+00000148 f000b800*   707  b DispatchUnknownInterrupt
+                     708  .size OS_CORTEXM_IRQ_C0_3c, . - OS_CORTEXM_IRQ_C0_3c
+                     709  .global OS_CORTEXM_IRQ_C0_3d
+                     710  .import OS_UnknownInterrupt
+                     711  .type OS_CORTEXM_IRQ_C0_3d, $function
+                     712 OS_CORTEXM_IRQ_C0_3d:
+0000014c f000b800*   713  b DispatchUnknownInterrupt
+                     714  .size OS_CORTEXM_IRQ_C0_3d, . - OS_CORTEXM_IRQ_C0_3d
+                     715  .global OS_CORTEXM_IRQ_C0_3e
+                     716  .import OS_UnknownInterrupt
+                     717  .type OS_CORTEXM_IRQ_C0_3e, $function
+                     718 OS_CORTEXM_IRQ_C0_3e:
+00000150 f000b800*   719  b DispatchUnknownInterrupt
+
+                                                                      Page 14
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     720  .size OS_CORTEXM_IRQ_C0_3e, . - OS_CORTEXM_IRQ_C0_3e
+                     721  .global OS_CORTEXM_IRQ_C0_3f
+                     722  .import OS_UnknownInterrupt
+                     723  .type OS_CORTEXM_IRQ_C0_3f, $function
+                     724 OS_CORTEXM_IRQ_C0_3f:
+00000154 f000b800*   725  b DispatchUnknownInterrupt
+                     726  .size OS_CORTEXM_IRQ_C0_3f, . - OS_CORTEXM_IRQ_C0_3f
+                     727  .align 4
+                     728 
+                     729 OS_kernelDataAddr2:
+00000158 00000000*   730  .word OS_kernel_ptr
+                     731  .global OS_CORTEXM_IRQ_C0_40
+                     732  .import OS_UnknownInterrupt
+                     733  .type OS_CORTEXM_IRQ_C0_40, $function
+                     734 OS_CORTEXM_IRQ_C0_40:
+0000015c f000b800*   735  b DispatchUnknownInterrupt
+                     736  .size OS_CORTEXM_IRQ_C0_40, . - OS_CORTEXM_IRQ_C0_40
+                     737  .global OS_CORTEXM_IRQ_C0_41
+                     738  .import OS_UnknownInterrupt
+                     739  .type OS_CORTEXM_IRQ_C0_41, $function
+                     740 OS_CORTEXM_IRQ_C0_41:
+00000160 f000b800*   741  b DispatchUnknownInterrupt
+                     742  .size OS_CORTEXM_IRQ_C0_41, . - OS_CORTEXM_IRQ_C0_41
+                     743  .global OS_CORTEXM_IRQ_C0_42
+                     744  .import OS_UnknownInterrupt
+                     745  .type OS_CORTEXM_IRQ_C0_42, $function
+                     746 OS_CORTEXM_IRQ_C0_42:
+00000164 f000b800*   747  b DispatchUnknownInterrupt
+                     748  .size OS_CORTEXM_IRQ_C0_42, . - OS_CORTEXM_IRQ_C0_42
+                     749  .global OS_CORTEXM_IRQ_C0_43
+                     750  .import OS_UnknownInterrupt
+                     751  .type OS_CORTEXM_IRQ_C0_43, $function
+                     752 OS_CORTEXM_IRQ_C0_43:
+00000168 f000b800*   753  b DispatchUnknownInterrupt
+                     754  .size OS_CORTEXM_IRQ_C0_43, . - OS_CORTEXM_IRQ_C0_43
+                     755  .global OS_CORTEXM_IRQ_C0_44
+                     756  .import OS_UnknownInterrupt
+                     757  .type OS_CORTEXM_IRQ_C0_44, $function
+                     758 OS_CORTEXM_IRQ_C0_44:
+0000016c f000b800*   759  b DispatchUnknownInterrupt
+                     760  .size OS_CORTEXM_IRQ_C0_44, . - OS_CORTEXM_IRQ_C0_44
+                     761  .global OS_CORTEXM_IRQ_C0_45
+                     762  .import OS_UnknownInterrupt
+                     763  .type OS_CORTEXM_IRQ_C0_45, $function
+                     764 OS_CORTEXM_IRQ_C0_45:
+00000170 f000b800*   765  b DispatchUnknownInterrupt
+                     766  .size OS_CORTEXM_IRQ_C0_45, . - OS_CORTEXM_IRQ_C0_45
+                     767  .global OS_CORTEXM_IRQ_C0_46
+                     768  .import OS_UnknownInterrupt
+                     769  .type OS_CORTEXM_IRQ_C0_46, $function
+                     770 OS_CORTEXM_IRQ_C0_46:
+00000174 f000b800*   771  b DispatchUnknownInterrupt
+                     772  .size OS_CORTEXM_IRQ_C0_46, . - OS_CORTEXM_IRQ_C0_46
+                     773  .global OS_CORTEXM_IRQ_C0_47
+                     774  .import OS_UnknownInterrupt
+                     775  .type OS_CORTEXM_IRQ_C0_47, $function
+                     776 OS_CORTEXM_IRQ_C0_47:
+00000178 f000b800*   777  b DispatchUnknownInterrupt
+                     778  .size OS_CORTEXM_IRQ_C0_47, . - OS_CORTEXM_IRQ_C0_47
+                     779  .global OS_CORTEXM_IRQ_C0_48
+                     780  .import OS_UnknownInterrupt
+
+                                                                      Page 15
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     781  .type OS_CORTEXM_IRQ_C0_48, $function
+                     782 OS_CORTEXM_IRQ_C0_48:
+0000017c f000b800*   783  b DispatchUnknownInterrupt
+                     784  .size OS_CORTEXM_IRQ_C0_48, . - OS_CORTEXM_IRQ_C0_48
+                     785  .global OS_CORTEXM_IRQ_C0_49
+                     786  .import OS_UnknownInterrupt
+                     787  .type OS_CORTEXM_IRQ_C0_49, $function
+                     788 OS_CORTEXM_IRQ_C0_49:
+00000180 f000b800*   789  b DispatchUnknownInterrupt
+                     790  .size OS_CORTEXM_IRQ_C0_49, . - OS_CORTEXM_IRQ_C0_49
+                     791  .global OS_CORTEXM_IRQ_C0_4a
+                     792  .import OS_UnknownInterrupt
+                     793  .type OS_CORTEXM_IRQ_C0_4a, $function
+                     794 OS_CORTEXM_IRQ_C0_4a:
+00000184 f000b800*   795  b DispatchUnknownInterrupt
+                     796  .size OS_CORTEXM_IRQ_C0_4a, . - OS_CORTEXM_IRQ_C0_4a
+                     797  .global OS_CORTEXM_IRQ_C0_4b
+                     798  .import OS_UnknownInterrupt
+                     799  .type OS_CORTEXM_IRQ_C0_4b, $function
+                     800 OS_CORTEXM_IRQ_C0_4b:
+00000188 f000b800*   801  b DispatchUnknownInterrupt
+                     802  .size OS_CORTEXM_IRQ_C0_4b, . - OS_CORTEXM_IRQ_C0_4b
+                     803  .global OS_CORTEXM_IRQ_C0_4c
+                     804  .import OS_UnknownInterrupt
+                     805  .type OS_CORTEXM_IRQ_C0_4c, $function
+                     806 OS_CORTEXM_IRQ_C0_4c:
+0000018c f000b800*   807  b DispatchUnknownInterrupt
+                     808  .size OS_CORTEXM_IRQ_C0_4c, . - OS_CORTEXM_IRQ_C0_4c
+                     809  .global OS_CORTEXM_IRQ_C0_4d
+                     810  .import OS_UnknownInterrupt
+                     811  .type OS_CORTEXM_IRQ_C0_4d, $function
+                     812 OS_CORTEXM_IRQ_C0_4d:
+00000190 f000b800*   813  b DispatchUnknownInterrupt
+                     814  .size OS_CORTEXM_IRQ_C0_4d, . - OS_CORTEXM_IRQ_C0_4d
+                     815  .global OS_CORTEXM_IRQ_C0_4e
+                     816  .import OS_UnknownInterrupt
+                     817  .type OS_CORTEXM_IRQ_C0_4e, $function
+                     818 OS_CORTEXM_IRQ_C0_4e:
+00000194 f000b800*   819  b DispatchUnknownInterrupt
+                     820  .size OS_CORTEXM_IRQ_C0_4e, . - OS_CORTEXM_IRQ_C0_4e
+                     821  .global OS_CORTEXM_IRQ_C0_4f
+                     822  .import OS_UnknownInterrupt
+                     823  .type OS_CORTEXM_IRQ_C0_4f, $function
+                     824 OS_CORTEXM_IRQ_C0_4f:
+00000198 f000b800*   825  b DispatchUnknownInterrupt
+                     826  .size OS_CORTEXM_IRQ_C0_4f, . - OS_CORTEXM_IRQ_C0_4f
+                     827  .global OS_CORTEXM_IRQ_C0_50
+                     828  .import OS_UnknownInterrupt
+                     829  .type OS_CORTEXM_IRQ_C0_50, $function
+                     830 OS_CORTEXM_IRQ_C0_50:
+0000019c f000b800*   831  b DispatchUnknownInterrupt
+                     832  .size OS_CORTEXM_IRQ_C0_50, . - OS_CORTEXM_IRQ_C0_50
+                     833  .global OS_CORTEXM_IRQ_C0_51
+                     834  .import OS_UnknownInterrupt
+                     835  .type OS_CORTEXM_IRQ_C0_51, $function
+                     836 OS_CORTEXM_IRQ_C0_51:
+000001a0 f000b800*   837  b DispatchUnknownInterrupt
+                     838  .size OS_CORTEXM_IRQ_C0_51, . - OS_CORTEXM_IRQ_C0_51
+                     839  .global OS_CORTEXM_IRQ_C0_52
+                     840  .import OS_UnknownInterrupt
+                     841  .type OS_CORTEXM_IRQ_C0_52, $function
+
+                                                                      Page 16
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     842 OS_CORTEXM_IRQ_C0_52:
+000001a4 f000b800*   843  b DispatchUnknownInterrupt
+                     844  .size OS_CORTEXM_IRQ_C0_52, . - OS_CORTEXM_IRQ_C0_52
+                     845  .global OS_CORTEXM_IRQ_C0_53
+                     846  .import OS_UnknownInterrupt
+                     847  .type OS_CORTEXM_IRQ_C0_53, $function
+                     848 OS_CORTEXM_IRQ_C0_53:
+000001a8 f000b800*   849  b DispatchUnknownInterrupt
+                     850  .size OS_CORTEXM_IRQ_C0_53, . - OS_CORTEXM_IRQ_C0_53
+                     851  .global OS_CORTEXM_IRQ_C0_54
+                     852  .import OS_UnknownInterrupt
+                     853  .type OS_CORTEXM_IRQ_C0_54, $function
+                     854 OS_CORTEXM_IRQ_C0_54:
+000001ac f000b800*   855  b DispatchUnknownInterrupt
+                     856  .size OS_CORTEXM_IRQ_C0_54, . - OS_CORTEXM_IRQ_C0_54
+                     857  .global OS_CORTEXM_IRQ_C0_55
+                     858  .import OS_UnknownInterrupt
+                     859  .type OS_CORTEXM_IRQ_C0_55, $function
+                     860 OS_CORTEXM_IRQ_C0_55:
+000001b0 f000b800*   861  b DispatchUnknownInterrupt
+                     862  .size OS_CORTEXM_IRQ_C0_55, . - OS_CORTEXM_IRQ_C0_55
+                     863  .global OS_CORTEXM_IRQ_C0_56
+                     864  .import OS_UnknownInterrupt
+                     865  .type OS_CORTEXM_IRQ_C0_56, $function
+                     866 OS_CORTEXM_IRQ_C0_56:
+000001b4 f000b800*   867  b DispatchUnknownInterrupt
+                     868  .size OS_CORTEXM_IRQ_C0_56, . - OS_CORTEXM_IRQ_C0_56
+                     869  .global OS_CORTEXM_IRQ_C0_57
+                     870  .import OS_UnknownInterrupt
+                     871  .type OS_CORTEXM_IRQ_C0_57, $function
+                     872 OS_CORTEXM_IRQ_C0_57:
+000001b8 f000b800*   873  b DispatchUnknownInterrupt
+                     874  .size OS_CORTEXM_IRQ_C0_57, . - OS_CORTEXM_IRQ_C0_57
+                     875  .global OS_CORTEXM_IRQ_C0_58
+                     876  .import OS_UnknownInterrupt
+                     877  .type OS_CORTEXM_IRQ_C0_58, $function
+                     878 OS_CORTEXM_IRQ_C0_58:
+000001bc f000b800*   879  b DispatchUnknownInterrupt
+                     880  .size OS_CORTEXM_IRQ_C0_58, . - OS_CORTEXM_IRQ_C0_58
+                     881  .global OS_CORTEXM_IRQ_C0_59
+                     882  .import OS_UnknownInterrupt
+                     883  .type OS_CORTEXM_IRQ_C0_59, $function
+                     884 OS_CORTEXM_IRQ_C0_59:
+000001c0 f000b800*   885  b DispatchUnknownInterrupt
+                     886  .size OS_CORTEXM_IRQ_C0_59, . - OS_CORTEXM_IRQ_C0_59
+                     887  .global OS_CORTEXM_IRQ_C0_5a
+                     888  .import OS_UnknownInterrupt
+                     889  .type OS_CORTEXM_IRQ_C0_5a, $function
+                     890 OS_CORTEXM_IRQ_C0_5a:
+000001c4 f000b800*   891  b DispatchUnknownInterrupt
+                     892  .size OS_CORTEXM_IRQ_C0_5a, . - OS_CORTEXM_IRQ_C0_5a
+                     893  .global OS_CORTEXM_IRQ_C0_5b
+                     894  .import OS_UnknownInterrupt
+                     895  .type OS_CORTEXM_IRQ_C0_5b, $function
+                     896 OS_CORTEXM_IRQ_C0_5b:
+000001c8 f000b800*   897  b DispatchUnknownInterrupt
+                     898  .size OS_CORTEXM_IRQ_C0_5b, . - OS_CORTEXM_IRQ_C0_5b
+                     899  .global OS_CORTEXM_IRQ_C0_5c
+                     900  .import OS_UnknownInterrupt
+                     901  .type OS_CORTEXM_IRQ_C0_5c, $function
+                     902 OS_CORTEXM_IRQ_C0_5c:
+
+                                                                      Page 17
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+000001cc f000b800*   903  b DispatchUnknownInterrupt
+                     904  .size OS_CORTEXM_IRQ_C0_5c, . - OS_CORTEXM_IRQ_C0_5c
+                     905  .global OS_CORTEXM_IRQ_C0_5d
+                     906  .import OS_UnknownInterrupt
+                     907  .type OS_CORTEXM_IRQ_C0_5d, $function
+                     908 OS_CORTEXM_IRQ_C0_5d:
+000001d0 f000b800*   909  b DispatchUnknownInterrupt
+                     910  .size OS_CORTEXM_IRQ_C0_5d, . - OS_CORTEXM_IRQ_C0_5d
+                     911  .global OS_CORTEXM_IRQ_C0_5e
+                     912  .import OS_UnknownInterrupt
+                     913  .type OS_CORTEXM_IRQ_C0_5e, $function
+                     914 OS_CORTEXM_IRQ_C0_5e:
+000001d4 f000b800*   915  b DispatchUnknownInterrupt
+                     916  .size OS_CORTEXM_IRQ_C0_5e, . - OS_CORTEXM_IRQ_C0_5e
+                     917  .global OS_CORTEXM_IRQ_C0_5f
+                     918  .import OS_UnknownInterrupt
+                     919  .type OS_CORTEXM_IRQ_C0_5f, $function
+                     920 OS_CORTEXM_IRQ_C0_5f:
+000001d8 f000b800*   921  b DispatchUnknownInterrupt
+                     922  .size OS_CORTEXM_IRQ_C0_5f, . - OS_CORTEXM_IRQ_C0_5f
+                     923  .align 4
+                     924 
+                     925 OS_kernelDataAddr3:
+000001dc 00000000*   926  .word OS_kernel_ptr
+                     927  .global OS_CORTEXM_IRQ_C0_60
+                     928  .import OS_UnknownInterrupt
+                     929  .type OS_CORTEXM_IRQ_C0_60, $function
+                     930 OS_CORTEXM_IRQ_C0_60:
+000001e0 f000b800*   931  b DispatchUnknownInterrupt
+                     932  .size OS_CORTEXM_IRQ_C0_60, . - OS_CORTEXM_IRQ_C0_60
+                     933  .global OS_CORTEXM_IRQ_C0_61
+                     934  .import OS_UnknownInterrupt
+                     935  .type OS_CORTEXM_IRQ_C0_61, $function
+                     936 OS_CORTEXM_IRQ_C0_61:
+000001e4 f000b800*   937  b DispatchUnknownInterrupt
+                     938  .size OS_CORTEXM_IRQ_C0_61, . - OS_CORTEXM_IRQ_C0_61
+                     939  .global OS_CORTEXM_IRQ_C0_62
+                     940  .import OS_UnknownInterrupt
+                     941  .type OS_CORTEXM_IRQ_C0_62, $function
+                     942 OS_CORTEXM_IRQ_C0_62:
+000001e8 f000b800*   943  b DispatchUnknownInterrupt
+                     944  .size OS_CORTEXM_IRQ_C0_62, . - OS_CORTEXM_IRQ_C0_62
+                     945  .global OS_CORTEXM_IRQ_C0_63
+                     946  .import OS_UnknownInterrupt
+                     947  .type OS_CORTEXM_IRQ_C0_63, $function
+                     948 OS_CORTEXM_IRQ_C0_63:
+000001ec f000b800*   949  b DispatchUnknownInterrupt
+                     950  .size OS_CORTEXM_IRQ_C0_63, . - OS_CORTEXM_IRQ_C0_63
+                     951  .global OS_CORTEXM_IRQ_C0_64
+                     952  .import OS_UnknownInterrupt
+                     953  .type OS_CORTEXM_IRQ_C0_64, $function
+                     954 OS_CORTEXM_IRQ_C0_64:
+000001f0 f000b800*   955  b DispatchUnknownInterrupt
+                     956  .size OS_CORTEXM_IRQ_C0_64, . - OS_CORTEXM_IRQ_C0_64
+                     957  .global OS_CORTEXM_IRQ_C0_65
+                     958  .import OS_UnknownInterrupt
+                     959  .type OS_CORTEXM_IRQ_C0_65, $function
+                     960 OS_CORTEXM_IRQ_C0_65:
+000001f4 f000b800*   961  b DispatchUnknownInterrupt
+                     962  .size OS_CORTEXM_IRQ_C0_65, . - OS_CORTEXM_IRQ_C0_65
+                     963  .global OS_CORTEXM_IRQ_C0_66
+
+                                                                      Page 18
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                     964  .import OS_UnknownInterrupt
+                     965  .type OS_CORTEXM_IRQ_C0_66, $function
+                     966 OS_CORTEXM_IRQ_C0_66:
+000001f8 f000b800*   967  b DispatchUnknownInterrupt
+                     968  .size OS_CORTEXM_IRQ_C0_66, . - OS_CORTEXM_IRQ_C0_66
+                     969  .global OS_CORTEXM_IRQ_C0_67
+                     970  .import OS_UnknownInterrupt
+                     971  .type OS_CORTEXM_IRQ_C0_67, $function
+                     972 OS_CORTEXM_IRQ_C0_67:
+000001fc f000b800*   973  b DispatchUnknownInterrupt
+                     974  .size OS_CORTEXM_IRQ_C0_67, . - OS_CORTEXM_IRQ_C0_67
+                     975  .global OS_CORTEXM_IRQ_C0_68
+                     976  .import OS_UnknownInterrupt
+                     977  .type OS_CORTEXM_IRQ_C0_68, $function
+                     978 OS_CORTEXM_IRQ_C0_68:
+00000200 f000b800*   979  b DispatchUnknownInterrupt
+                     980  .size OS_CORTEXM_IRQ_C0_68, . - OS_CORTEXM_IRQ_C0_68
+                     981  .global OS_CORTEXM_IRQ_C0_69
+                     982  .import OS_UnknownInterrupt
+                     983  .type OS_CORTEXM_IRQ_C0_69, $function
+                     984 OS_CORTEXM_IRQ_C0_69:
+00000204 f000b800*   985  b DispatchUnknownInterrupt
+                     986  .size OS_CORTEXM_IRQ_C0_69, . - OS_CORTEXM_IRQ_C0_69
+                     987  .global OS_CORTEXM_IRQ_C0_6a
+                     988  .import OS_UnknownInterrupt
+                     989  .type OS_CORTEXM_IRQ_C0_6a, $function
+                     990 OS_CORTEXM_IRQ_C0_6a:
+00000208 f000b800*   991  b DispatchUnknownInterrupt
+                     992  .size OS_CORTEXM_IRQ_C0_6a, . - OS_CORTEXM_IRQ_C0_6a
+                     993  .global OS_CORTEXM_IRQ_C0_6b
+                     994  .import OS_UnknownInterrupt
+                     995  .type OS_CORTEXM_IRQ_C0_6b, $function
+                     996 OS_CORTEXM_IRQ_C0_6b:
+0000020c f000b800*   997  b DispatchUnknownInterrupt
+                     998  .size OS_CORTEXM_IRQ_C0_6b, . - OS_CORTEXM_IRQ_C0_6b
+                     999  .global OS_CORTEXM_IRQ_C0_6c
+                    1000  .import OS_UnknownInterrupt
+                    1001  .type OS_CORTEXM_IRQ_C0_6c, $function
+                    1002 OS_CORTEXM_IRQ_C0_6c:
+00000210 f000b800*  1003  b DispatchUnknownInterrupt
+                    1004  .size OS_CORTEXM_IRQ_C0_6c, . - OS_CORTEXM_IRQ_C0_6c
+                    1005  .global OS_CORTEXM_IRQ_C0_6d
+                    1006  .import OS_Cat2Entry
+                    1007  .type OS_CORTEXM_IRQ_C0_6d, $function
+                    1008 OS_CORTEXM_IRQ_C0_6d:
+                    1009  DispatchInterrupt 2, OS_Cat2Entry, OS_CORTEXM_IntCat2Exit, 2, OS_kernelDataAddr3
+                    1009 <MACRO BEGIN>
+                    1009 cpsid i 
+                    1009 OS_DISABLE_MPU_GET_STATE r0 , r1 , r2 
+                    1009 OS_DISABLE_FPU r0 , r1 , r3 
+                    1009 push { r4 - r11 , lr } 
+                    1009 push { r2 , r3 } 
+                    1009 OS_GET_KERNEL_PTR OS_kernelDataAddr3 , r1 , r0 
+                    1009 ldrb r4 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+                    1009 mov r0 , 1 
+                    1009 strb r0 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+                    1009 mov r2 , 2 
+                    1009 OS_SETLEVEL r2 , r0 
+                    1009 push { r0 } 
+                    1009 cpsie i 
+                    1009 mov r0 , 2 
+
+                                                                      Page 19
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1009 bl OS_Cat2Entry 
+                    1009 mov r0 , r4 
+                    1009 bl OS_CORTEXM_IntCat2Exit 
+00000214 b672       1009 <MACRO END>
+                    1009 <MACRO BEGIN>
+                    1009 <MACRO END>
+                    1009 <MACRO BEGIN>
+                    1009 movw r0 , ( 0xED88 ) 
+                    1009 movt r0 , ( 0xE000 ) 
+                    1009 ldr r3 , [ r0 ] 
+                    1009 movw r1 , ( 0xffff ) 
+                    1009 movt r1 , ( 0xff0f ) 
+                    1009 and r1 , r3 , r1 
+                    1009 str r1 , [ r0 ] 
+00000216 f64e5088   1009 <MACRO END>
+0000021a f2ce0000 
+0000021e 6803 
+00000220 f64f71ff 
+00000224 f6cf710f 
+00000228 ea030101 
+0000022c 6001 
+0000022e e92d4ff0 
+00000232 b40c 
+                    1009 <MACRO BEGIN>
+                    1009 ldr r1 , OS_kernelDataAddr3 
+                    1009 ldr r1 , [ r1 ] 
+00000234 f8df1fa4*  1009 <MACRO END>
+00000238 6809 
+0000023a 7c0c 
+0000023c f04f0001 
+00000240 7408 
+00000242 f04f0202 
+                    1009 <MACRO BEGIN>
+                    1009 lsl r2 , r2 , 4 
+                    1009 mrs r0 , basepri 
+                    1009 lsr r0 , r0 , 4 
+                    1009 msr basepri , r2 
+00000246 ea4f1202   1009 <MACRO END>
+0000024a f3ef8011 
+0000024e ea4f1010 
+00000252 f3828811 
+00000256 b401 
+00000258 b662 
+0000025a f04f0002 
+0000025e f000f800*
+00000262 4620 
+00000264 f000f800*
+                    1010  .size OS_CORTEXM_IRQ_C0_6d, . - OS_CORTEXM_IRQ_C0_6d
+                    1011  .global OS_CORTEXM_IRQ_C0_6e
+                    1012  .import OS_Cat2Entry
+                    1013  .type OS_CORTEXM_IRQ_C0_6e, $function
+                    1014 OS_CORTEXM_IRQ_C0_6e:
+                    1015  DispatchInterrupt 0, OS_Cat2Entry, OS_CORTEXM_IntCat2Exit, 2, OS_kernelDataAddr3
+                    1015 <MACRO BEGIN>
+                    1015 cpsid i 
+                    1015 OS_DISABLE_MPU_GET_STATE r0 , r1 , r2 
+                    1015 OS_DISABLE_FPU r0 , r1 , r3 
+                    1015 push { r4 - r11 , lr } 
+                    1015 push { r2 , r3 } 
+                    1015 OS_GET_KERNEL_PTR OS_kernelDataAddr3 , r1 , r0 
+                    1015 ldrb r4 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+
+                                                                      Page 20
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1015 mov r0 , 1 
+                    1015 strb r0 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+                    1015 mov r2 , 2 
+                    1015 OS_SETLEVEL r2 , r0 
+                    1015 push { r0 } 
+                    1015 cpsie i 
+                    1015 mov r0 , 0 
+                    1015 bl OS_Cat2Entry 
+                    1015 mov r0 , r4 
+                    1015 bl OS_CORTEXM_IntCat2Exit 
+00000268 b672       1015 <MACRO END>
+                    1015 <MACRO BEGIN>
+                    1015 <MACRO END>
+                    1015 <MACRO BEGIN>
+                    1015 movw r0 , ( 0xED88 ) 
+                    1015 movt r0 , ( 0xE000 ) 
+                    1015 ldr r3 , [ r0 ] 
+                    1015 movw r1 , ( 0xffff ) 
+                    1015 movt r1 , ( 0xff0f ) 
+                    1015 and r1 , r3 , r1 
+                    1015 str r1 , [ r0 ] 
+0000026a f64e5088   1015 <MACRO END>
+0000026e f2ce0000 
+00000272 6803 
+00000274 f64f71ff 
+00000278 f6cf710f 
+0000027c ea030101 
+00000280 6001 
+00000282 e92d4ff0 
+00000286 b40c 
+                    1015 <MACRO BEGIN>
+                    1015 ldr r1 , OS_kernelDataAddr3 
+                    1015 ldr r1 , [ r1 ] 
+00000288 f8df1f50*  1015 <MACRO END>
+0000028c 6809 
+0000028e 7c0c 
+00000290 f04f0001 
+00000294 7408 
+00000296 f04f0202 
+                    1015 <MACRO BEGIN>
+                    1015 lsl r2 , r2 , 4 
+                    1015 mrs r0 , basepri 
+                    1015 lsr r0 , r0 , 4 
+                    1015 msr basepri , r2 
+0000029a ea4f1202   1015 <MACRO END>
+0000029e f3ef8011 
+000002a2 ea4f1010 
+000002a6 f3828811 
+000002aa b401 
+000002ac b662 
+000002ae f04f0000 
+000002b2 f000f800*
+000002b6 4620 
+000002b8 f000f800*
+                    1016  .size OS_CORTEXM_IRQ_C0_6e, . - OS_CORTEXM_IRQ_C0_6e
+                    1017  .global OS_CORTEXM_IRQ_C0_6f
+                    1018  .import OS_Cat2Entry
+                    1019  .type OS_CORTEXM_IRQ_C0_6f, $function
+                    1020 OS_CORTEXM_IRQ_C0_6f:
+                    1021  DispatchInterrupt 1, OS_Cat2Entry, OS_CORTEXM_IntCat2Exit, 2, OS_kernelDataAddr3
+                    1021 <MACRO BEGIN>
+
+                                                                      Page 21
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1021 cpsid i 
+                    1021 OS_DISABLE_MPU_GET_STATE r0 , r1 , r2 
+                    1021 OS_DISABLE_FPU r0 , r1 , r3 
+                    1021 push { r4 - r11 , lr } 
+                    1021 push { r2 , r3 } 
+                    1021 OS_GET_KERNEL_PTR OS_kernelDataAddr3 , r1 , r0 
+                    1021 ldrb r4 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+                    1021 mov r0 , 1 
+                    1021 strb r0 , [ r1 , ( ( ( ( ( 0 + 4 ) + 4 ) + 4 ) + 4 ) + 0 ) ] 
+                    1021 mov r2 , 2 
+                    1021 OS_SETLEVEL r2 , r0 
+                    1021 push { r0 } 
+                    1021 cpsie i 
+                    1021 mov r0 , 1 
+                    1021 bl OS_Cat2Entry 
+                    1021 mov r0 , r4 
+                    1021 bl OS_CORTEXM_IntCat2Exit 
+000002bc b672       1021 <MACRO END>
+                    1021 <MACRO BEGIN>
+                    1021 <MACRO END>
+                    1021 <MACRO BEGIN>
+                    1021 movw r0 , ( 0xED88 ) 
+                    1021 movt r0 , ( 0xE000 ) 
+                    1021 ldr r3 , [ r0 ] 
+                    1021 movw r1 , ( 0xffff ) 
+                    1021 movt r1 , ( 0xff0f ) 
+                    1021 and r1 , r3 , r1 
+                    1021 str r1 , [ r0 ] 
+000002be f64e5088   1021 <MACRO END>
+000002c2 f2ce0000 
+000002c6 6803 
+000002c8 f64f71ff 
+000002cc f6cf710f 
+000002d0 ea030101 
+000002d4 6001 
+000002d6 e92d4ff0 
+000002da b40c 
+                    1021 <MACRO BEGIN>
+                    1021 ldr r1 , OS_kernelDataAddr3 
+                    1021 ldr r1 , [ r1 ] 
+000002dc f8df1efc*  1021 <MACRO END>
+000002e0 6809 
+000002e2 7c0c 
+000002e4 f04f0001 
+000002e8 7408 
+000002ea f04f0202 
+                    1021 <MACRO BEGIN>
+                    1021 lsl r2 , r2 , 4 
+                    1021 mrs r0 , basepri 
+                    1021 lsr r0 , r0 , 4 
+                    1021 msr basepri , r2 
+000002ee ea4f1202   1021 <MACRO END>
+000002f2 f3ef8011 
+000002f6 ea4f1010 
+000002fa f3828811 
+000002fe b401 
+00000300 b662 
+00000302 f04f0001 
+00000306 f000f800*
+0000030a 4620 
+0000030c f000f800*
+
+                                                                      Page 22
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1022  .size OS_CORTEXM_IRQ_C0_6f, . - OS_CORTEXM_IRQ_C0_6f
+                    1023  .global OS_CORTEXM_IRQ_C0_70
+                    1024  .import OS_UnknownInterrupt
+                    1025  .type OS_CORTEXM_IRQ_C0_70, $function
+                    1026 OS_CORTEXM_IRQ_C0_70:
+00000310 f000b800*  1027  b DispatchUnknownInterrupt
+                    1028  .size OS_CORTEXM_IRQ_C0_70, . - OS_CORTEXM_IRQ_C0_70
+                    1029  .global OS_CORTEXM_IRQ_C0_71
+                    1030  .import OS_UnknownInterrupt
+                    1031  .type OS_CORTEXM_IRQ_C0_71, $function
+                    1032 OS_CORTEXM_IRQ_C0_71:
+00000314 f000b800*  1033  b DispatchUnknownInterrupt
+                    1034  .size OS_CORTEXM_IRQ_C0_71, . - OS_CORTEXM_IRQ_C0_71
+                    1035  .global OS_CORTEXM_IRQ_C0_72
+                    1036  .import OS_UnknownInterrupt
+                    1037  .type OS_CORTEXM_IRQ_C0_72, $function
+                    1038 OS_CORTEXM_IRQ_C0_72:
+00000318 f000b800*  1039  b DispatchUnknownInterrupt
+                    1040  .size OS_CORTEXM_IRQ_C0_72, . - OS_CORTEXM_IRQ_C0_72
+                    1041  .global OS_CORTEXM_IRQ_C0_73
+                    1042  .import OS_UnknownInterrupt
+                    1043  .type OS_CORTEXM_IRQ_C0_73, $function
+                    1044 OS_CORTEXM_IRQ_C0_73:
+0000031c f000b800*  1045  b DispatchUnknownInterrupt
+                    1046  .size OS_CORTEXM_IRQ_C0_73, . - OS_CORTEXM_IRQ_C0_73
+                    1047  .global OS_CORTEXM_IRQ_C0_74
+                    1048  .import OS_UnknownInterrupt
+                    1049  .type OS_CORTEXM_IRQ_C0_74, $function
+                    1050 OS_CORTEXM_IRQ_C0_74:
+00000320 f000b800*  1051  b DispatchUnknownInterrupt
+                    1052  .size OS_CORTEXM_IRQ_C0_74, . - OS_CORTEXM_IRQ_C0_74
+                    1053  .global OS_CORTEXM_IRQ_C0_75
+                    1054  .import OS_UnknownInterrupt
+                    1055  .type OS_CORTEXM_IRQ_C0_75, $function
+                    1056 OS_CORTEXM_IRQ_C0_75:
+00000324 f000b800*  1057  b DispatchUnknownInterrupt
+                    1058  .size OS_CORTEXM_IRQ_C0_75, . - OS_CORTEXM_IRQ_C0_75
+                    1059  .global OS_CORTEXM_IRQ_C0_76
+                    1060  .import OS_UnknownInterrupt
+                    1061  .type OS_CORTEXM_IRQ_C0_76, $function
+                    1062 OS_CORTEXM_IRQ_C0_76:
+00000328 f000b800*  1063  b DispatchUnknownInterrupt
+                    1064  .size OS_CORTEXM_IRQ_C0_76, . - OS_CORTEXM_IRQ_C0_76
+                    1065  .global OS_CORTEXM_IRQ_C0_77
+                    1066  .import OS_UnknownInterrupt
+                    1067  .type OS_CORTEXM_IRQ_C0_77, $function
+                    1068 OS_CORTEXM_IRQ_C0_77:
+0000032c f000b800*  1069  b DispatchUnknownInterrupt
+                    1070  .size OS_CORTEXM_IRQ_C0_77, . - OS_CORTEXM_IRQ_C0_77
+                    1071  .global OS_CORTEXM_IRQ_C0_78
+                    1072  .import OS_UnknownInterrupt
+                    1073  .type OS_CORTEXM_IRQ_C0_78, $function
+                    1074 OS_CORTEXM_IRQ_C0_78:
+00000330 f000b800*  1075  b DispatchUnknownInterrupt
+                    1076  .size OS_CORTEXM_IRQ_C0_78, . - OS_CORTEXM_IRQ_C0_78
+                    1077  .global OS_CORTEXM_IRQ_C0_79
+                    1078  .import OS_UnknownInterrupt
+                    1079  .type OS_CORTEXM_IRQ_C0_79, $function
+                    1080 OS_CORTEXM_IRQ_C0_79:
+00000334 f000b800*  1081  b DispatchUnknownInterrupt
+                    1082  .size OS_CORTEXM_IRQ_C0_79, . - OS_CORTEXM_IRQ_C0_79
+
+                                                                      Page 23
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1083  .global OS_CORTEXM_IRQ_C0_7a
+                    1084  .import OS_UnknownInterrupt
+                    1085  .type OS_CORTEXM_IRQ_C0_7a, $function
+                    1086 OS_CORTEXM_IRQ_C0_7a:
+00000338 f000b800*  1087  b DispatchUnknownInterrupt
+                    1088  .size OS_CORTEXM_IRQ_C0_7a, . - OS_CORTEXM_IRQ_C0_7a
+                    1089  .global OS_CORTEXM_IRQ_C0_7b
+                    1090  .import OS_UnknownInterrupt
+                    1091  .type OS_CORTEXM_IRQ_C0_7b, $function
+                    1092 OS_CORTEXM_IRQ_C0_7b:
+0000033c f000b800*  1093  b DispatchUnknownInterrupt
+                    1094  .size OS_CORTEXM_IRQ_C0_7b, . - OS_CORTEXM_IRQ_C0_7b
+                    1095  .global OS_CORTEXM_IRQ_C0_7c
+                    1096  .import OS_UnknownInterrupt
+                    1097  .type OS_CORTEXM_IRQ_C0_7c, $function
+                    1098 OS_CORTEXM_IRQ_C0_7c:
+00000340 f000b800*  1099  b DispatchUnknownInterrupt
+                    1100  .size OS_CORTEXM_IRQ_C0_7c, . - OS_CORTEXM_IRQ_C0_7c
+                    1101  .global OS_CORTEXM_IRQ_C0_7d
+                    1102  .import OS_UnknownInterrupt
+                    1103  .type OS_CORTEXM_IRQ_C0_7d, $function
+                    1104 OS_CORTEXM_IRQ_C0_7d:
+00000344 f000b800*  1105  b DispatchUnknownInterrupt
+                    1106  .size OS_CORTEXM_IRQ_C0_7d, . - OS_CORTEXM_IRQ_C0_7d
+                    1107  .global OS_CORTEXM_IRQ_C0_7e
+                    1108  .import OS_UnknownInterrupt
+                    1109  .type OS_CORTEXM_IRQ_C0_7e, $function
+                    1110 OS_CORTEXM_IRQ_C0_7e:
+00000348 f000b800*  1111  b DispatchUnknownInterrupt
+                    1112  .size OS_CORTEXM_IRQ_C0_7e, . - OS_CORTEXM_IRQ_C0_7e
+                    1113  .global OS_CORTEXM_IRQ_C0_7f
+                    1114  .import OS_UnknownInterrupt
+                    1115  .type OS_CORTEXM_IRQ_C0_7f, $function
+                    1116 OS_CORTEXM_IRQ_C0_7f:
+0000034c f000b800*  1117  b DispatchUnknownInterrupt
+                    1118  .size OS_CORTEXM_IRQ_C0_7f, . - OS_CORTEXM_IRQ_C0_7f
+                    1119  .align 4
+                    1120 
+                    1121 OS_kernelDataAddr4:
+00000350 00000000*  1122  .word OS_kernel_ptr
+                    1123  .global OS_CORTEXM_IRQ_C0_80
+                    1124  .import OS_UnknownInterrupt
+                    1125  .type OS_CORTEXM_IRQ_C0_80, $function
+                    1126 OS_CORTEXM_IRQ_C0_80:
+00000354 f000b800*  1127  b DispatchUnknownInterrupt
+                    1128  .size OS_CORTEXM_IRQ_C0_80, . - OS_CORTEXM_IRQ_C0_80
+                    1129  .global OS_CORTEXM_IRQ_C0_81
+                    1130  .import OS_UnknownInterrupt
+                    1131  .type OS_CORTEXM_IRQ_C0_81, $function
+                    1132 OS_CORTEXM_IRQ_C0_81:
+00000358 f000b800*  1133  b DispatchUnknownInterrupt
+                    1134  .size OS_CORTEXM_IRQ_C0_81, . - OS_CORTEXM_IRQ_C0_81
+                    1135  .global OS_CORTEXM_IRQ_C0_82
+                    1136  .import OS_UnknownInterrupt
+                    1137  .type OS_CORTEXM_IRQ_C0_82, $function
+                    1138 OS_CORTEXM_IRQ_C0_82:
+0000035c f000b800*  1139  b DispatchUnknownInterrupt
+                    1140  .size OS_CORTEXM_IRQ_C0_82, . - OS_CORTEXM_IRQ_C0_82
+                    1141  .global OS_CORTEXM_IRQ_C0_83
+                    1142  .import OS_UnknownInterrupt
+                    1143  .type OS_CORTEXM_IRQ_C0_83, $function
+
+                                                                      Page 24
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1144 OS_CORTEXM_IRQ_C0_83:
+00000360 f000b800*  1145  b DispatchUnknownInterrupt
+                    1146  .size OS_CORTEXM_IRQ_C0_83, . - OS_CORTEXM_IRQ_C0_83
+                    1147  .global OS_CORTEXM_IRQ_C0_84
+                    1148  .import OS_UnknownInterrupt
+                    1149  .type OS_CORTEXM_IRQ_C0_84, $function
+                    1150 OS_CORTEXM_IRQ_C0_84:
+00000364 f000b800*  1151  b DispatchUnknownInterrupt
+                    1152  .size OS_CORTEXM_IRQ_C0_84, . - OS_CORTEXM_IRQ_C0_84
+                    1153  .global OS_CORTEXM_IRQ_C0_85
+                    1154  .import OS_UnknownInterrupt
+                    1155  .type OS_CORTEXM_IRQ_C0_85, $function
+                    1156 OS_CORTEXM_IRQ_C0_85:
+00000368 f000b800*  1157  b DispatchUnknownInterrupt
+                    1158  .size OS_CORTEXM_IRQ_C0_85, . - OS_CORTEXM_IRQ_C0_85
+                    1159  .global OS_CORTEXM_IRQ_C0_86
+                    1160  .import OS_UnknownInterrupt
+                    1161  .type OS_CORTEXM_IRQ_C0_86, $function
+                    1162 OS_CORTEXM_IRQ_C0_86:
+0000036c f000b800*  1163  b DispatchUnknownInterrupt
+                    1164  .size OS_CORTEXM_IRQ_C0_86, . - OS_CORTEXM_IRQ_C0_86
+                    1165  .global OS_CORTEXM_IRQ_C0_87
+                    1166  .import OS_UnknownInterrupt
+                    1167  .type OS_CORTEXM_IRQ_C0_87, $function
+                    1168 OS_CORTEXM_IRQ_C0_87:
+00000370 f000b800*  1169  b DispatchUnknownInterrupt
+                    1170  .size OS_CORTEXM_IRQ_C0_87, . - OS_CORTEXM_IRQ_C0_87
+                    1171  .global OS_CORTEXM_IRQ_C0_88
+                    1172  .import OS_UnknownInterrupt
+                    1173  .type OS_CORTEXM_IRQ_C0_88, $function
+                    1174 OS_CORTEXM_IRQ_C0_88:
+00000374 f000b800*  1175  b DispatchUnknownInterrupt
+                    1176  .size OS_CORTEXM_IRQ_C0_88, . - OS_CORTEXM_IRQ_C0_88
+                    1177  .global OS_CORTEXM_IRQ_C0_89
+                    1178  .import OS_UnknownInterrupt
+                    1179  .type OS_CORTEXM_IRQ_C0_89, $function
+                    1180 OS_CORTEXM_IRQ_C0_89:
+00000378 f000b800*  1181  b DispatchUnknownInterrupt
+                    1182  .size OS_CORTEXM_IRQ_C0_89, . - OS_CORTEXM_IRQ_C0_89
+                    1183  .global OS_CORTEXM_IRQ_C0_8a
+                    1184  .import OS_UnknownInterrupt
+                    1185  .type OS_CORTEXM_IRQ_C0_8a, $function
+                    1186 OS_CORTEXM_IRQ_C0_8a:
+0000037c f000b800*  1187  b DispatchUnknownInterrupt
+                    1188  .size OS_CORTEXM_IRQ_C0_8a, . - OS_CORTEXM_IRQ_C0_8a
+                    1189  .global OS_CORTEXM_IRQ_C0_8b
+                    1190  .import OS_UnknownInterrupt
+                    1191  .type OS_CORTEXM_IRQ_C0_8b, $function
+                    1192 OS_CORTEXM_IRQ_C0_8b:
+00000380 f000b800*  1193  b DispatchUnknownInterrupt
+                    1194  .size OS_CORTEXM_IRQ_C0_8b, . - OS_CORTEXM_IRQ_C0_8b
+                    1195  .global OS_CORTEXM_IRQ_C0_8c
+                    1196  .import OS_UnknownInterrupt
+                    1197  .type OS_CORTEXM_IRQ_C0_8c, $function
+                    1198 OS_CORTEXM_IRQ_C0_8c:
+00000384 f000b800*  1199  b DispatchUnknownInterrupt
+                    1200  .size OS_CORTEXM_IRQ_C0_8c, . - OS_CORTEXM_IRQ_C0_8c
+                    1201  .global OS_CORTEXM_IRQ_C0_8d
+                    1202  .import OS_UnknownInterrupt
+                    1203  .type OS_CORTEXM_IRQ_C0_8d, $function
+                    1204 OS_CORTEXM_IRQ_C0_8d:
+
+                                                                      Page 25
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+00000388 f000b800*  1205  b DispatchUnknownInterrupt
+                    1206  .size OS_CORTEXM_IRQ_C0_8d, . - OS_CORTEXM_IRQ_C0_8d
+                    1207  .global OS_CORTEXM_IRQ_C0_8e
+                    1208  .import OS_UnknownInterrupt
+                    1209  .type OS_CORTEXM_IRQ_C0_8e, $function
+                    1210 OS_CORTEXM_IRQ_C0_8e:
+0000038c f000b800*  1211  b DispatchUnknownInterrupt
+                    1212  .size OS_CORTEXM_IRQ_C0_8e, . - OS_CORTEXM_IRQ_C0_8e
+                    1213  .global OS_CORTEXM_IRQ_C0_8f
+                    1214  .import OS_UnknownInterrupt
+                    1215  .type OS_CORTEXM_IRQ_C0_8f, $function
+                    1216 OS_CORTEXM_IRQ_C0_8f:
+00000390 f000b800*  1217  b DispatchUnknownInterrupt
+                    1218  .size OS_CORTEXM_IRQ_C0_8f, . - OS_CORTEXM_IRQ_C0_8f
+                    1219  .global OS_CORTEXM_IRQ_C0_90
+                    1220  .import OS_UnknownInterrupt
+                    1221  .type OS_CORTEXM_IRQ_C0_90, $function
+                    1222 OS_CORTEXM_IRQ_C0_90:
+00000394 f000b800*  1223  b DispatchUnknownInterrupt
+                    1224  .size OS_CORTEXM_IRQ_C0_90, . - OS_CORTEXM_IRQ_C0_90
+                    1225  .global OS_CORTEXM_IRQ_C0_91
+                    1226  .import OS_UnknownInterrupt
+                    1227  .type OS_CORTEXM_IRQ_C0_91, $function
+                    1228 OS_CORTEXM_IRQ_C0_91:
+00000398 f000b800*  1229  b DispatchUnknownInterrupt
+                    1230  .size OS_CORTEXM_IRQ_C0_91, . - OS_CORTEXM_IRQ_C0_91
+                    1231  .global OS_CORTEXM_IRQ_C0_92
+                    1232  .import OS_UnknownInterrupt
+                    1233  .type OS_CORTEXM_IRQ_C0_92, $function
+                    1234 OS_CORTEXM_IRQ_C0_92:
+0000039c f000b800*  1235  b DispatchUnknownInterrupt
+                    1236  .size OS_CORTEXM_IRQ_C0_92, . - OS_CORTEXM_IRQ_C0_92
+                    1237  .global OS_CORTEXM_IRQ_C0_93
+                    1238  .import OS_UnknownInterrupt
+                    1239  .type OS_CORTEXM_IRQ_C0_93, $function
+                    1240 OS_CORTEXM_IRQ_C0_93:
+000003a0 f000b800*  1241  b DispatchUnknownInterrupt
+                    1242  .size OS_CORTEXM_IRQ_C0_93, . - OS_CORTEXM_IRQ_C0_93
+                    1243  .global OS_CORTEXM_IRQ_C0_94
+                    1244  .import OS_UnknownInterrupt
+                    1245  .type OS_CORTEXM_IRQ_C0_94, $function
+                    1246 OS_CORTEXM_IRQ_C0_94:
+000003a4 f000b800*  1247  b DispatchUnknownInterrupt
+                    1248  .size OS_CORTEXM_IRQ_C0_94, . - OS_CORTEXM_IRQ_C0_94
+                    1249  .global OS_CORTEXM_IRQ_C0_95
+                    1250  .import OS_UnknownInterrupt
+                    1251  .type OS_CORTEXM_IRQ_C0_95, $function
+                    1252 OS_CORTEXM_IRQ_C0_95:
+000003a8 f000b800*  1253  b DispatchUnknownInterrupt
+                    1254  .size OS_CORTEXM_IRQ_C0_95, . - OS_CORTEXM_IRQ_C0_95
+                    1255  .global OS_CORTEXM_IRQ_C0_96
+                    1256  .import OS_UnknownInterrupt
+                    1257  .type OS_CORTEXM_IRQ_C0_96, $function
+                    1258 OS_CORTEXM_IRQ_C0_96:
+000003ac f000b800*  1259  b DispatchUnknownInterrupt
+                    1260  .size OS_CORTEXM_IRQ_C0_96, . - OS_CORTEXM_IRQ_C0_96
+                    1261  .global OS_CORTEXM_IRQ_C0_97
+                    1262  .import OS_UnknownInterrupt
+                    1263  .type OS_CORTEXM_IRQ_C0_97, $function
+                    1264 OS_CORTEXM_IRQ_C0_97:
+000003b0 f000b800*  1265  b DispatchUnknownInterrupt
+
+                                                                      Page 26
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1266  .size OS_CORTEXM_IRQ_C0_97, . - OS_CORTEXM_IRQ_C0_97
+                    1267  .global OS_CORTEXM_IRQ_C0_98
+                    1268  .import OS_UnknownInterrupt
+                    1269  .type OS_CORTEXM_IRQ_C0_98, $function
+                    1270 OS_CORTEXM_IRQ_C0_98:
+000003b4 f000b800*  1271  b DispatchUnknownInterrupt
+                    1272  .size OS_CORTEXM_IRQ_C0_98, . - OS_CORTEXM_IRQ_C0_98
+                    1273  .global OS_CORTEXM_IRQ_C0_99
+                    1274  .import OS_UnknownInterrupt
+                    1275  .type OS_CORTEXM_IRQ_C0_99, $function
+                    1276 OS_CORTEXM_IRQ_C0_99:
+000003b8 f000b800*  1277  b DispatchUnknownInterrupt
+                    1278  .size OS_CORTEXM_IRQ_C0_99, . - OS_CORTEXM_IRQ_C0_99
+                    1279  .global OS_CORTEXM_IRQ_C0_9a
+                    1280  .import OS_UnknownInterrupt
+                    1281  .type OS_CORTEXM_IRQ_C0_9a, $function
+                    1282 OS_CORTEXM_IRQ_C0_9a:
+000003bc f000b800*  1283  b DispatchUnknownInterrupt
+                    1284  .size OS_CORTEXM_IRQ_C0_9a, . - OS_CORTEXM_IRQ_C0_9a
+                    1285  .global OS_CORTEXM_IRQ_C0_9b
+                    1286  .import OS_UnknownInterrupt
+                    1287  .type OS_CORTEXM_IRQ_C0_9b, $function
+                    1288 OS_CORTEXM_IRQ_C0_9b:
+000003c0 f000b800*  1289  b DispatchUnknownInterrupt
+                    1290  .size OS_CORTEXM_IRQ_C0_9b, . - OS_CORTEXM_IRQ_C0_9b
+                    1291  .global OS_CORTEXM_IRQ_C0_9c
+                    1292  .import OS_UnknownInterrupt
+                    1293  .type OS_CORTEXM_IRQ_C0_9c, $function
+                    1294 OS_CORTEXM_IRQ_C0_9c:
+000003c4 f000b800*  1295  b DispatchUnknownInterrupt
+                    1296  .size OS_CORTEXM_IRQ_C0_9c, . - OS_CORTEXM_IRQ_C0_9c
+                    1297  .global OS_CORTEXM_IRQ_C0_9d
+                    1298  .import OS_UnknownInterrupt
+                    1299  .type OS_CORTEXM_IRQ_C0_9d, $function
+                    1300 OS_CORTEXM_IRQ_C0_9d:
+000003c8 f000b800*  1301  b DispatchUnknownInterrupt
+                    1302  .size OS_CORTEXM_IRQ_C0_9d, . - OS_CORTEXM_IRQ_C0_9d
+                    1303  .global OS_CORTEXM_IRQ_C0_9e
+                    1304  .import OS_UnknownInterrupt
+                    1305  .type OS_CORTEXM_IRQ_C0_9e, $function
+                    1306 OS_CORTEXM_IRQ_C0_9e:
+000003cc f000b800*  1307  b DispatchUnknownInterrupt
+                    1308  .size OS_CORTEXM_IRQ_C0_9e, . - OS_CORTEXM_IRQ_C0_9e
+                    1309  .global OS_CORTEXM_IRQ_C0_9f
+                    1310  .import OS_UnknownInterrupt
+                    1311  .type OS_CORTEXM_IRQ_C0_9f, $function
+                    1312 OS_CORTEXM_IRQ_C0_9f:
+000003d0 f000b800*  1313  b DispatchUnknownInterrupt
+                    1314  .size OS_CORTEXM_IRQ_C0_9f, . - OS_CORTEXM_IRQ_C0_9f
+                    1315  .align 4
+                    1316 
+                    1317 OS_kernelDataAddr5:
+000003d4 00000000*  1318  .word OS_kernel_ptr
+                    1319  .global OS_CORTEXM_IRQ_C0_a0
+                    1320  .import OS_UnknownInterrupt
+                    1321  .type OS_CORTEXM_IRQ_C0_a0, $function
+                    1322 OS_CORTEXM_IRQ_C0_a0:
+000003d8 f000b800*  1323  b DispatchUnknownInterrupt
+                    1324  .size OS_CORTEXM_IRQ_C0_a0, . - OS_CORTEXM_IRQ_C0_a0
+                    1325  .global OS_CORTEXM_IRQ_C0_a1
+                    1326  .import OS_UnknownInterrupt
+
+                                                                      Page 27
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1327  .type OS_CORTEXM_IRQ_C0_a1, $function
+                    1328 OS_CORTEXM_IRQ_C0_a1:
+000003dc f000b800*  1329  b DispatchUnknownInterrupt
+                    1330  .size OS_CORTEXM_IRQ_C0_a1, . - OS_CORTEXM_IRQ_C0_a1
+                    1331  .global OS_CORTEXM_IRQ_C0_a2
+                    1332  .import OS_UnknownInterrupt
+                    1333  .type OS_CORTEXM_IRQ_C0_a2, $function
+                    1334 OS_CORTEXM_IRQ_C0_a2:
+000003e0 f000b800*  1335  b DispatchUnknownInterrupt
+                    1336  .size OS_CORTEXM_IRQ_C0_a2, . - OS_CORTEXM_IRQ_C0_a2
+                    1337  .global OS_CORTEXM_IRQ_C0_a3
+                    1338  .import OS_UnknownInterrupt
+                    1339  .type OS_CORTEXM_IRQ_C0_a3, $function
+                    1340 OS_CORTEXM_IRQ_C0_a3:
+000003e4 f000b800*  1341  b DispatchUnknownInterrupt
+                    1342  .size OS_CORTEXM_IRQ_C0_a3, . - OS_CORTEXM_IRQ_C0_a3
+                    1343  .global OS_CORTEXM_IRQ_C0_a4
+                    1344  .import OS_UnknownInterrupt
+                    1345  .type OS_CORTEXM_IRQ_C0_a4, $function
+                    1346 OS_CORTEXM_IRQ_C0_a4:
+000003e8 f000b800*  1347  b DispatchUnknownInterrupt
+                    1348  .size OS_CORTEXM_IRQ_C0_a4, . - OS_CORTEXM_IRQ_C0_a4
+                    1349  .global OS_CORTEXM_IRQ_C0_a5
+                    1350  .import OS_UnknownInterrupt
+                    1351  .type OS_CORTEXM_IRQ_C0_a5, $function
+                    1352 OS_CORTEXM_IRQ_C0_a5:
+000003ec f000b800*  1353  b DispatchUnknownInterrupt
+                    1354  .size OS_CORTEXM_IRQ_C0_a5, . - OS_CORTEXM_IRQ_C0_a5
+                    1355  .global OS_CORTEXM_IRQ_C0_a6
+                    1356  .import OS_UnknownInterrupt
+                    1357  .type OS_CORTEXM_IRQ_C0_a6, $function
+                    1358 OS_CORTEXM_IRQ_C0_a6:
+000003f0 f000b800*  1359  b DispatchUnknownInterrupt
+                    1360  .size OS_CORTEXM_IRQ_C0_a6, . - OS_CORTEXM_IRQ_C0_a6
+                    1361  .global OS_CORTEXM_IRQ_C0_a7
+                    1362  .import OS_UnknownInterrupt
+                    1363  .type OS_CORTEXM_IRQ_C0_a7, $function
+                    1364 OS_CORTEXM_IRQ_C0_a7:
+000003f4 f000b800*  1365  b DispatchUnknownInterrupt
+                    1366  .size OS_CORTEXM_IRQ_C0_a7, . - OS_CORTEXM_IRQ_C0_a7
+                    1367  .global OS_CORTEXM_IRQ_C0_a8
+                    1368  .import OS_UnknownInterrupt
+                    1369  .type OS_CORTEXM_IRQ_C0_a8, $function
+                    1370 OS_CORTEXM_IRQ_C0_a8:
+000003f8 f000b800*  1371  b DispatchUnknownInterrupt
+                    1372  .size OS_CORTEXM_IRQ_C0_a8, . - OS_CORTEXM_IRQ_C0_a8
+                    1373  .global OS_CORTEXM_IRQ_C0_a9
+                    1374  .import OS_UnknownInterrupt
+                    1375  .type OS_CORTEXM_IRQ_C0_a9, $function
+                    1376 OS_CORTEXM_IRQ_C0_a9:
+000003fc f000b800*  1377  b DispatchUnknownInterrupt
+                    1378  .size OS_CORTEXM_IRQ_C0_a9, . - OS_CORTEXM_IRQ_C0_a9
+                    1379  .global OS_CORTEXM_IRQ_C0_aa
+                    1380  .import OS_UnknownInterrupt
+                    1381  .type OS_CORTEXM_IRQ_C0_aa, $function
+                    1382 OS_CORTEXM_IRQ_C0_aa:
+00000400 f000b800*  1383  b DispatchUnknownInterrupt
+                    1384  .size OS_CORTEXM_IRQ_C0_aa, . - OS_CORTEXM_IRQ_C0_aa
+                    1385  .global OS_CORTEXM_IRQ_C0_ab
+                    1386  .import OS_UnknownInterrupt
+                    1387  .type OS_CORTEXM_IRQ_C0_ab, $function
+
+                                                                      Page 28
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1388 OS_CORTEXM_IRQ_C0_ab:
+00000404 f000b800*  1389  b DispatchUnknownInterrupt
+                    1390  .size OS_CORTEXM_IRQ_C0_ab, . - OS_CORTEXM_IRQ_C0_ab
+                    1391  .global OS_CORTEXM_IRQ_C0_ac
+                    1392  .import OS_UnknownInterrupt
+                    1393  .type OS_CORTEXM_IRQ_C0_ac, $function
+                    1394 OS_CORTEXM_IRQ_C0_ac:
+00000408 f000b800*  1395  b DispatchUnknownInterrupt
+                    1396  .size OS_CORTEXM_IRQ_C0_ac, . - OS_CORTEXM_IRQ_C0_ac
+                    1397  .global OS_CORTEXM_IRQ_C0_ad
+                    1398  .import OS_UnknownInterrupt
+                    1399  .type OS_CORTEXM_IRQ_C0_ad, $function
+                    1400 OS_CORTEXM_IRQ_C0_ad:
+0000040c f000b800*  1401  b DispatchUnknownInterrupt
+                    1402  .size OS_CORTEXM_IRQ_C0_ad, . - OS_CORTEXM_IRQ_C0_ad
+                    1403  .global OS_CORTEXM_IRQ_C0_ae
+                    1404  .import OS_UnknownInterrupt
+                    1405  .type OS_CORTEXM_IRQ_C0_ae, $function
+                    1406 OS_CORTEXM_IRQ_C0_ae:
+00000410 f000b800*  1407  b DispatchUnknownInterrupt
+                    1408  .size OS_CORTEXM_IRQ_C0_ae, . - OS_CORTEXM_IRQ_C0_ae
+                    1409  .global OS_CORTEXM_IRQ_C0_af
+                    1410  .import OS_UnknownInterrupt
+                    1411  .type OS_CORTEXM_IRQ_C0_af, $function
+                    1412 OS_CORTEXM_IRQ_C0_af:
+00000414 f000b800*  1413  b DispatchUnknownInterrupt
+                    1414  .size OS_CORTEXM_IRQ_C0_af, . - OS_CORTEXM_IRQ_C0_af
+                    1415  .global OS_CORTEXM_IRQ_C0_b0
+                    1416  .import OS_UnknownInterrupt
+                    1417  .type OS_CORTEXM_IRQ_C0_b0, $function
+                    1418 OS_CORTEXM_IRQ_C0_b0:
+00000418 f000b800*  1419  b DispatchUnknownInterrupt
+                    1420  .size OS_CORTEXM_IRQ_C0_b0, . - OS_CORTEXM_IRQ_C0_b0
+                    1421  .global OS_CORTEXM_IRQ_C0_b1
+                    1422  .import OS_UnknownInterrupt
+                    1423  .type OS_CORTEXM_IRQ_C0_b1, $function
+                    1424 OS_CORTEXM_IRQ_C0_b1:
+0000041c f000b800*  1425  b DispatchUnknownInterrupt
+                    1426  .size OS_CORTEXM_IRQ_C0_b1, . - OS_CORTEXM_IRQ_C0_b1
+                    1427  .global OS_CORTEXM_IRQ_C0_b2
+                    1428  .import OS_UnknownInterrupt
+                    1429  .type OS_CORTEXM_IRQ_C0_b2, $function
+                    1430 OS_CORTEXM_IRQ_C0_b2:
+00000420 f000b800*  1431  b DispatchUnknownInterrupt
+                    1432  .size OS_CORTEXM_IRQ_C0_b2, . - OS_CORTEXM_IRQ_C0_b2
+                    1433  .global OS_CORTEXM_IRQ_C0_b3
+                    1434  .import OS_UnknownInterrupt
+                    1435  .type OS_CORTEXM_IRQ_C0_b3, $function
+                    1436 OS_CORTEXM_IRQ_C0_b3:
+00000424 f000b800*  1437  b DispatchUnknownInterrupt
+                    1438  .size OS_CORTEXM_IRQ_C0_b3, . - OS_CORTEXM_IRQ_C0_b3
+                    1439  .global OS_CORTEXM_IRQ_C0_b4
+                    1440  .import OS_UnknownInterrupt
+                    1441  .type OS_CORTEXM_IRQ_C0_b4, $function
+                    1442 OS_CORTEXM_IRQ_C0_b4:
+00000428 f000b800*  1443  b DispatchUnknownInterrupt
+                    1444  .size OS_CORTEXM_IRQ_C0_b4, . - OS_CORTEXM_IRQ_C0_b4
+                    1445  .global OS_CORTEXM_IRQ_C0_b5
+                    1446  .import OS_UnknownInterrupt
+                    1447  .type OS_CORTEXM_IRQ_C0_b5, $function
+                    1448 OS_CORTEXM_IRQ_C0_b5:
+
+                                                                      Page 29
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+0000042c f000b800*  1449  b DispatchUnknownInterrupt
+                    1450  .size OS_CORTEXM_IRQ_C0_b5, . - OS_CORTEXM_IRQ_C0_b5
+                    1451  .global OS_CORTEXM_IRQ_C0_b6
+                    1452  .import OS_UnknownInterrupt
+                    1453  .type OS_CORTEXM_IRQ_C0_b6, $function
+                    1454 OS_CORTEXM_IRQ_C0_b6:
+00000430 f000b800*  1455  b DispatchUnknownInterrupt
+                    1456  .size OS_CORTEXM_IRQ_C0_b6, . - OS_CORTEXM_IRQ_C0_b6
+                    1457  .global OS_CORTEXM_IRQ_C0_b7
+                    1458  .import OS_UnknownInterrupt
+                    1459  .type OS_CORTEXM_IRQ_C0_b7, $function
+                    1460 OS_CORTEXM_IRQ_C0_b7:
+00000434 f000b800*  1461  b DispatchUnknownInterrupt
+                    1462  .size OS_CORTEXM_IRQ_C0_b7, . - OS_CORTEXM_IRQ_C0_b7
+                    1463  .global OS_CORTEXM_IRQ_C0_b8
+                    1464  .import OS_UnknownInterrupt
+                    1465  .type OS_CORTEXM_IRQ_C0_b8, $function
+                    1466 OS_CORTEXM_IRQ_C0_b8:
+00000438 f000b800*  1467  b DispatchUnknownInterrupt
+                    1468  .size OS_CORTEXM_IRQ_C0_b8, . - OS_CORTEXM_IRQ_C0_b8
+                    1469  .global OS_CORTEXM_IRQ_C0_b9
+                    1470  .import OS_UnknownInterrupt
+                    1471  .type OS_CORTEXM_IRQ_C0_b9, $function
+                    1472 OS_CORTEXM_IRQ_C0_b9:
+0000043c f000b800*  1473  b DispatchUnknownInterrupt
+                    1474  .size OS_CORTEXM_IRQ_C0_b9, . - OS_CORTEXM_IRQ_C0_b9
+                    1475  .global OS_CORTEXM_IRQ_C0_ba
+                    1476  .import OS_UnknownInterrupt
+                    1477  .type OS_CORTEXM_IRQ_C0_ba, $function
+                    1478 OS_CORTEXM_IRQ_C0_ba:
+00000440 f000b800*  1479  b DispatchUnknownInterrupt
+                    1480  .size OS_CORTEXM_IRQ_C0_ba, . - OS_CORTEXM_IRQ_C0_ba
+                    1481  .global OS_CORTEXM_IRQ_C0_bb
+                    1482  .import OS_UnknownInterrupt
+                    1483  .type OS_CORTEXM_IRQ_C0_bb, $function
+                    1484 OS_CORTEXM_IRQ_C0_bb:
+00000444 f000b800*  1485  b DispatchUnknownInterrupt
+                    1486  .size OS_CORTEXM_IRQ_C0_bb, . - OS_CORTEXM_IRQ_C0_bb
+                    1487  .global OS_CORTEXM_IRQ_C0_bc
+                    1488  .import OS_UnknownInterrupt
+                    1489  .type OS_CORTEXM_IRQ_C0_bc, $function
+                    1490 OS_CORTEXM_IRQ_C0_bc:
+00000448 f000b800*  1491  b DispatchUnknownInterrupt
+                    1492  .size OS_CORTEXM_IRQ_C0_bc, . - OS_CORTEXM_IRQ_C0_bc
+                    1493  .global OS_CORTEXM_IRQ_C0_bd
+                    1494  .import OS_UnknownInterrupt
+                    1495  .type OS_CORTEXM_IRQ_C0_bd, $function
+                    1496 OS_CORTEXM_IRQ_C0_bd:
+0000044c f000b800*  1497  b DispatchUnknownInterrupt
+                    1498  .size OS_CORTEXM_IRQ_C0_bd, . - OS_CORTEXM_IRQ_C0_bd
+                    1499  .global OS_CORTEXM_IRQ_C0_be
+                    1500  .import OS_UnknownInterrupt
+                    1501  .type OS_CORTEXM_IRQ_C0_be, $function
+                    1502 OS_CORTEXM_IRQ_C0_be:
+00000450 f000b800*  1503  b DispatchUnknownInterrupt
+                    1504  .size OS_CORTEXM_IRQ_C0_be, . - OS_CORTEXM_IRQ_C0_be
+                    1505  .global OS_CORTEXM_IRQ_C0_bf
+                    1506  .import OS_UnknownInterrupt
+                    1507  .type OS_CORTEXM_IRQ_C0_bf, $function
+                    1508 OS_CORTEXM_IRQ_C0_bf:
+00000454 f000b800*  1509  b DispatchUnknownInterrupt
+
+                                                                      Page 30
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1510  .size OS_CORTEXM_IRQ_C0_bf, . - OS_CORTEXM_IRQ_C0_bf
+                    1511  .align 4
+                    1512 
+                    1513 OS_kernelDataAddr6:
+00000458 00000000*  1514  .word OS_kernel_ptr
+                    1515  .global OS_CORTEXM_IRQ_C0_c0
+                    1516  .import OS_UnknownInterrupt
+                    1517  .type OS_CORTEXM_IRQ_C0_c0, $function
+                    1518 OS_CORTEXM_IRQ_C0_c0:
+0000045c f000b800*  1519  b DispatchUnknownInterrupt
+                    1520  .size OS_CORTEXM_IRQ_C0_c0, . - OS_CORTEXM_IRQ_C0_c0
+                    1521  .global OS_CORTEXM_IRQ_C0_c1
+                    1522  .import OS_UnknownInterrupt
+                    1523  .type OS_CORTEXM_IRQ_C0_c1, $function
+                    1524 OS_CORTEXM_IRQ_C0_c1:
+00000460 f000b800*  1525  b DispatchUnknownInterrupt
+                    1526  .size OS_CORTEXM_IRQ_C0_c1, . - OS_CORTEXM_IRQ_C0_c1
+                    1527  .global OS_CORTEXM_IRQ_C0_c2
+                    1528  .import OS_UnknownInterrupt
+                    1529  .type OS_CORTEXM_IRQ_C0_c2, $function
+                    1530 OS_CORTEXM_IRQ_C0_c2:
+00000464 f000b800*  1531  b DispatchUnknownInterrupt
+                    1532  .size OS_CORTEXM_IRQ_C0_c2, . - OS_CORTEXM_IRQ_C0_c2
+                    1533  .global OS_CORTEXM_IRQ_C0_c3
+                    1534  .import OS_UnknownInterrupt
+                    1535  .type OS_CORTEXM_IRQ_C0_c3, $function
+                    1536 OS_CORTEXM_IRQ_C0_c3:
+00000468 f000b800*  1537  b DispatchUnknownInterrupt
+                    1538  .size OS_CORTEXM_IRQ_C0_c3, . - OS_CORTEXM_IRQ_C0_c3
+                    1539  .global OS_CORTEXM_IRQ_C0_c4
+                    1540  .import OS_UnknownInterrupt
+                    1541  .type OS_CORTEXM_IRQ_C0_c4, $function
+                    1542 OS_CORTEXM_IRQ_C0_c4:
+0000046c f000b800*  1543  b DispatchUnknownInterrupt
+                    1544  .size OS_CORTEXM_IRQ_C0_c4, . - OS_CORTEXM_IRQ_C0_c4
+                    1545  .global OS_CORTEXM_IRQ_C0_c5
+                    1546  .import OS_UnknownInterrupt
+                    1547  .type OS_CORTEXM_IRQ_C0_c5, $function
+                    1548 OS_CORTEXM_IRQ_C0_c5:
+00000470 f000b800*  1549  b DispatchUnknownInterrupt
+                    1550  .size OS_CORTEXM_IRQ_C0_c5, . - OS_CORTEXM_IRQ_C0_c5
+                    1551  .global OS_CORTEXM_IRQ_C0_c6
+                    1552  .import OS_UnknownInterrupt
+                    1553  .type OS_CORTEXM_IRQ_C0_c6, $function
+                    1554 OS_CORTEXM_IRQ_C0_c6:
+00000474 f000b800*  1555  b DispatchUnknownInterrupt
+                    1556  .size OS_CORTEXM_IRQ_C0_c6, . - OS_CORTEXM_IRQ_C0_c6
+                    1557  .global OS_CORTEXM_IRQ_C0_c7
+                    1558  .import OS_UnknownInterrupt
+                    1559  .type OS_CORTEXM_IRQ_C0_c7, $function
+                    1560 OS_CORTEXM_IRQ_C0_c7:
+00000478 f000b800*  1561  b DispatchUnknownInterrupt
+                    1562  .size OS_CORTEXM_IRQ_C0_c7, . - OS_CORTEXM_IRQ_C0_c7
+                    1563  .global OS_CORTEXM_IRQ_C0_c8
+                    1564  .import OS_UnknownInterrupt
+                    1565  .type OS_CORTEXM_IRQ_C0_c8, $function
+                    1566 OS_CORTEXM_IRQ_C0_c8:
+0000047c f000b800*  1567  b DispatchUnknownInterrupt
+                    1568  .size OS_CORTEXM_IRQ_C0_c8, . - OS_CORTEXM_IRQ_C0_c8
+                    1569  .global OS_CORTEXM_IRQ_C0_c9
+                    1570  .import OS_UnknownInterrupt
+
+                                                                      Page 31
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1571  .type OS_CORTEXM_IRQ_C0_c9, $function
+                    1572 OS_CORTEXM_IRQ_C0_c9:
+00000480 f000b800*  1573  b DispatchUnknownInterrupt
+                    1574  .size OS_CORTEXM_IRQ_C0_c9, . - OS_CORTEXM_IRQ_C0_c9
+                    1575  .global OS_CORTEXM_IRQ_C0_ca
+                    1576  .import OS_UnknownInterrupt
+                    1577  .type OS_CORTEXM_IRQ_C0_ca, $function
+                    1578 OS_CORTEXM_IRQ_C0_ca:
+00000484 f000b800*  1579  b DispatchUnknownInterrupt
+                    1580  .size OS_CORTEXM_IRQ_C0_ca, . - OS_CORTEXM_IRQ_C0_ca
+                    1581  .global OS_CORTEXM_IRQ_C0_cb
+                    1582  .import OS_UnknownInterrupt
+                    1583  .type OS_CORTEXM_IRQ_C0_cb, $function
+                    1584 OS_CORTEXM_IRQ_C0_cb:
+00000488 f000b800*  1585  b DispatchUnknownInterrupt
+                    1586  .size OS_CORTEXM_IRQ_C0_cb, . - OS_CORTEXM_IRQ_C0_cb
+                    1587  .global OS_CORTEXM_IRQ_C0_cc
+                    1588  .import OS_UnknownInterrupt
+                    1589  .type OS_CORTEXM_IRQ_C0_cc, $function
+                    1590 OS_CORTEXM_IRQ_C0_cc:
+0000048c f000b800*  1591  b DispatchUnknownInterrupt
+                    1592  .size OS_CORTEXM_IRQ_C0_cc, . - OS_CORTEXM_IRQ_C0_cc
+                    1593  .global OS_CORTEXM_IRQ_C0_cd
+                    1594  .import OS_UnknownInterrupt
+                    1595  .type OS_CORTEXM_IRQ_C0_cd, $function
+                    1596 OS_CORTEXM_IRQ_C0_cd:
+00000490 f000b800*  1597  b DispatchUnknownInterrupt
+                    1598  .size OS_CORTEXM_IRQ_C0_cd, . - OS_CORTEXM_IRQ_C0_cd
+                    1599  .global OS_CORTEXM_IRQ_C0_ce
+                    1600  .import OS_UnknownInterrupt
+                    1601  .type OS_CORTEXM_IRQ_C0_ce, $function
+                    1602 OS_CORTEXM_IRQ_C0_ce:
+00000494 f000b800*  1603  b DispatchUnknownInterrupt
+                    1604  .size OS_CORTEXM_IRQ_C0_ce, . - OS_CORTEXM_IRQ_C0_ce
+                    1605  .global OS_CORTEXM_IRQ_C0_cf
+                    1606  .import OS_UnknownInterrupt
+                    1607  .type OS_CORTEXM_IRQ_C0_cf, $function
+                    1608 OS_CORTEXM_IRQ_C0_cf:
+00000498 f000b800*  1609  b DispatchUnknownInterrupt
+                    1610  .size OS_CORTEXM_IRQ_C0_cf, . - OS_CORTEXM_IRQ_C0_cf
+                    1611  .global OS_CORTEXM_IRQ_C0_d0
+                    1612  .import OS_UnknownInterrupt
+                    1613  .type OS_CORTEXM_IRQ_C0_d0, $function
+                    1614 OS_CORTEXM_IRQ_C0_d0:
+0000049c f000b800*  1615  b DispatchUnknownInterrupt
+                    1616  .size OS_CORTEXM_IRQ_C0_d0, . - OS_CORTEXM_IRQ_C0_d0
+                    1617  .global OS_CORTEXM_IRQ_C0_d1
+                    1618  .import OS_UnknownInterrupt
+                    1619  .type OS_CORTEXM_IRQ_C0_d1, $function
+                    1620 OS_CORTEXM_IRQ_C0_d1:
+000004a0 f000b800*  1621  b DispatchUnknownInterrupt
+                    1622  .size OS_CORTEXM_IRQ_C0_d1, . - OS_CORTEXM_IRQ_C0_d1
+                    1623  .global OS_CORTEXM_IRQ_C0_d2
+                    1624  .import OS_UnknownInterrupt
+                    1625  .type OS_CORTEXM_IRQ_C0_d2, $function
+                    1626 OS_CORTEXM_IRQ_C0_d2:
+000004a4 f000b800*  1627  b DispatchUnknownInterrupt
+                    1628  .size OS_CORTEXM_IRQ_C0_d2, . - OS_CORTEXM_IRQ_C0_d2
+                    1629  .global OS_CORTEXM_IRQ_C0_d3
+                    1630  .import OS_UnknownInterrupt
+                    1631  .type OS_CORTEXM_IRQ_C0_d3, $function
+
+                                                                      Page 32
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1632 OS_CORTEXM_IRQ_C0_d3:
+000004a8 f000b800*  1633  b DispatchUnknownInterrupt
+                    1634  .size OS_CORTEXM_IRQ_C0_d3, . - OS_CORTEXM_IRQ_C0_d3
+                    1635  .global OS_CORTEXM_IRQ_C0_d4
+                    1636  .import OS_UnknownInterrupt
+                    1637  .type OS_CORTEXM_IRQ_C0_d4, $function
+                    1638 OS_CORTEXM_IRQ_C0_d4:
+000004ac f000b800*  1639  b DispatchUnknownInterrupt
+                    1640  .size OS_CORTEXM_IRQ_C0_d4, . - OS_CORTEXM_IRQ_C0_d4
+                    1641  .global OS_CORTEXM_IRQ_C0_d5
+                    1642  .import OS_UnknownInterrupt
+                    1643  .type OS_CORTEXM_IRQ_C0_d5, $function
+                    1644 OS_CORTEXM_IRQ_C0_d5:
+000004b0 f000b800*  1645  b DispatchUnknownInterrupt
+                    1646  .size OS_CORTEXM_IRQ_C0_d5, . - OS_CORTEXM_IRQ_C0_d5
+                    1647  .global OS_CORTEXM_IRQ_C0_d6
+                    1648  .import OS_UnknownInterrupt
+                    1649  .type OS_CORTEXM_IRQ_C0_d6, $function
+                    1650 OS_CORTEXM_IRQ_C0_d6:
+000004b4 f000b800*  1651  b DispatchUnknownInterrupt
+                    1652  .size OS_CORTEXM_IRQ_C0_d6, . - OS_CORTEXM_IRQ_C0_d6
+                    1653  .global OS_CORTEXM_IRQ_C0_d7
+                    1654  .import OS_UnknownInterrupt
+                    1655  .type OS_CORTEXM_IRQ_C0_d7, $function
+                    1656 OS_CORTEXM_IRQ_C0_d7:
+000004b8 f000b800*  1657  b DispatchUnknownInterrupt
+                    1658  .size OS_CORTEXM_IRQ_C0_d7, . - OS_CORTEXM_IRQ_C0_d7
+                    1659  .global OS_CORTEXM_IRQ_C0_d8
+                    1660  .import OS_UnknownInterrupt
+                    1661  .type OS_CORTEXM_IRQ_C0_d8, $function
+                    1662 OS_CORTEXM_IRQ_C0_d8:
+000004bc f000b800*  1663  b DispatchUnknownInterrupt
+                    1664  .size OS_CORTEXM_IRQ_C0_d8, . - OS_CORTEXM_IRQ_C0_d8
+                    1665  .global OS_CORTEXM_IRQ_C0_d9
+                    1666  .import OS_UnknownInterrupt
+                    1667  .type OS_CORTEXM_IRQ_C0_d9, $function
+                    1668 OS_CORTEXM_IRQ_C0_d9:
+000004c0 f000b800*  1669  b DispatchUnknownInterrupt
+                    1670  .size OS_CORTEXM_IRQ_C0_d9, . - OS_CORTEXM_IRQ_C0_d9
+                    1671  .global OS_CORTEXM_IRQ_C0_da
+                    1672  .import OS_UnknownInterrupt
+                    1673  .type OS_CORTEXM_IRQ_C0_da, $function
+                    1674 OS_CORTEXM_IRQ_C0_da:
+000004c4 f000b800*  1675  b DispatchUnknownInterrupt
+                    1676  .size OS_CORTEXM_IRQ_C0_da, . - OS_CORTEXM_IRQ_C0_da
+                    1677  .global OS_CORTEXM_IRQ_C0_db
+                    1678  .import OS_UnknownInterrupt
+                    1679  .type OS_CORTEXM_IRQ_C0_db, $function
+                    1680 OS_CORTEXM_IRQ_C0_db:
+000004c8 f000b800*  1681  b DispatchUnknownInterrupt
+                    1682  .size OS_CORTEXM_IRQ_C0_db, . - OS_CORTEXM_IRQ_C0_db
+                    1683  .global OS_CORTEXM_IRQ_C0_dc
+                    1684  .import OS_UnknownInterrupt
+                    1685  .type OS_CORTEXM_IRQ_C0_dc, $function
+                    1686 OS_CORTEXM_IRQ_C0_dc:
+000004cc f000b800*  1687  b DispatchUnknownInterrupt
+                    1688  .size OS_CORTEXM_IRQ_C0_dc, . - OS_CORTEXM_IRQ_C0_dc
+                    1689  .global OS_CORTEXM_IRQ_C0_dd
+                    1690  .import OS_UnknownInterrupt
+                    1691  .type OS_CORTEXM_IRQ_C0_dd, $function
+                    1692 OS_CORTEXM_IRQ_C0_dd:
+
+                                                                      Page 33
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+000004d0 f000b800*  1693  b DispatchUnknownInterrupt
+                    1694  .size OS_CORTEXM_IRQ_C0_dd, . - OS_CORTEXM_IRQ_C0_dd
+                    1695  .global OS_CORTEXM_IRQ_C0_de
+                    1696  .import OS_UnknownInterrupt
+                    1697  .type OS_CORTEXM_IRQ_C0_de, $function
+                    1698 OS_CORTEXM_IRQ_C0_de:
+000004d4 f000b800*  1699  b DispatchUnknownInterrupt
+                    1700  .size OS_CORTEXM_IRQ_C0_de, . - OS_CORTEXM_IRQ_C0_de
+                    1701  .global OS_CORTEXM_IRQ_C0_df
+                    1702  .import OS_UnknownInterrupt
+                    1703  .type OS_CORTEXM_IRQ_C0_df, $function
+                    1704 OS_CORTEXM_IRQ_C0_df:
+000004d8 f000b800*  1705  b DispatchUnknownInterrupt
+                    1706  .size OS_CORTEXM_IRQ_C0_df, . - OS_CORTEXM_IRQ_C0_df
+                    1707  .align 4
+                    1708 
+                    1709 OS_kernelDataAddr7:
+000004dc 00000000*  1710  .word OS_kernel_ptr
+                    1711  .global OS_CORTEXM_IRQ_C0_e0
+                    1712  .import OS_UnknownInterrupt
+                    1713  .type OS_CORTEXM_IRQ_C0_e0, $function
+                    1714 OS_CORTEXM_IRQ_C0_e0:
+000004e0 f000b800*  1715  b DispatchUnknownInterrupt
+                    1716  .size OS_CORTEXM_IRQ_C0_e0, . - OS_CORTEXM_IRQ_C0_e0
+                    1717  .global OS_CORTEXM_IRQ_C0_e1
+                    1718  .import OS_UnknownInterrupt
+                    1719  .type OS_CORTEXM_IRQ_C0_e1, $function
+                    1720 OS_CORTEXM_IRQ_C0_e1:
+000004e4 f000b800*  1721  b DispatchUnknownInterrupt
+                    1722  .size OS_CORTEXM_IRQ_C0_e1, . - OS_CORTEXM_IRQ_C0_e1
+                    1723  .global OS_CORTEXM_IRQ_C0_e2
+                    1724  .import OS_UnknownInterrupt
+                    1725  .type OS_CORTEXM_IRQ_C0_e2, $function
+                    1726 OS_CORTEXM_IRQ_C0_e2:
+000004e8 f000b800*  1727  b DispatchUnknownInterrupt
+                    1728  .size OS_CORTEXM_IRQ_C0_e2, . - OS_CORTEXM_IRQ_C0_e2
+                    1729  .global OS_CORTEXM_IRQ_C0_e3
+                    1730  .import OS_UnknownInterrupt
+                    1731  .type OS_CORTEXM_IRQ_C0_e3, $function
+                    1732 OS_CORTEXM_IRQ_C0_e3:
+000004ec f000b800*  1733  b DispatchUnknownInterrupt
+                    1734  .size OS_CORTEXM_IRQ_C0_e3, . - OS_CORTEXM_IRQ_C0_e3
+                    1735  .global OS_CORTEXM_IRQ_C0_e4
+                    1736  .import OS_UnknownInterrupt
+                    1737  .type OS_CORTEXM_IRQ_C0_e4, $function
+                    1738 OS_CORTEXM_IRQ_C0_e4:
+000004f0 f000b800*  1739  b DispatchUnknownInterrupt
+                    1740  .size OS_CORTEXM_IRQ_C0_e4, . - OS_CORTEXM_IRQ_C0_e4
+                    1741  .global OS_CORTEXM_IRQ_C0_e5
+                    1742  .import OS_UnknownInterrupt
+                    1743  .type OS_CORTEXM_IRQ_C0_e5, $function
+                    1744 OS_CORTEXM_IRQ_C0_e5:
+000004f4 f000b800*  1745  b DispatchUnknownInterrupt
+                    1746  .size OS_CORTEXM_IRQ_C0_e5, . - OS_CORTEXM_IRQ_C0_e5
+                    1747  .global OS_CORTEXM_IRQ_C0_e6
+                    1748  .import OS_UnknownInterrupt
+                    1749  .type OS_CORTEXM_IRQ_C0_e6, $function
+                    1750 OS_CORTEXM_IRQ_C0_e6:
+000004f8 f000b800*  1751  b DispatchUnknownInterrupt
+                    1752  .size OS_CORTEXM_IRQ_C0_e6, . - OS_CORTEXM_IRQ_C0_e6
+                    1753  .global OS_CORTEXM_IRQ_C0_e7
+
+                                                                      Page 34
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000e201.si
+                    1754  .import OS_UnknownInterrupt
+                    1755  .type OS_CORTEXM_IRQ_C0_e7, $function
+                    1756 OS_CORTEXM_IRQ_C0_e7:
+000004fc f000b800*  1757  b DispatchUnknownInterrupt
+                    1758  .size OS_CORTEXM_IRQ_C0_e7, . - OS_CORTEXM_IRQ_C0_e7
+                    1759  .global OS_CORTEXM_IRQ_C0_e8
+                    1760  .import OS_UnknownInterrupt
+                    1761  .type OS_CORTEXM_IRQ_C0_e8, $function
+                    1762 OS_CORTEXM_IRQ_C0_e8:
+00000500 f000b800*  1763  b DispatchUnknownInterrupt
+                    1764  .size OS_CORTEXM_IRQ_C0_e8, . - OS_CORTEXM_IRQ_C0_e8
+                    1765  .global OS_CORTEXM_IRQ_C0_e9
+                    1766  .import OS_UnknownInterrupt
+                    1767  .type OS_CORTEXM_IRQ_C0_e9, $function
+                    1768 OS_CORTEXM_IRQ_C0_e9:
+00000504 f000b800*  1769  b DispatchUnknownInterrupt
+                    1770  .size OS_CORTEXM_IRQ_C0_e9, . - OS_CORTEXM_IRQ_C0_e9
+                    1771  .global OS_CORTEXM_IRQ_C0_ea
+                    1772  .import OS_UnknownInterrupt
+                    1773  .type OS_CORTEXM_IRQ_C0_ea, $function
+                    1774 OS_CORTEXM_IRQ_C0_ea:
+00000508 f000b800*  1775  b DispatchUnknownInterrupt
+                    1776  .size OS_CORTEXM_IRQ_C0_ea, . - OS_CORTEXM_IRQ_C0_ea
+                    1777  .global OS_CORTEXM_IRQ_C0_eb
+                    1778  .import OS_UnknownInterrupt
+                    1779  .type OS_CORTEXM_IRQ_C0_eb, $function
+                    1780 OS_CORTEXM_IRQ_C0_eb:
+0000050c f000b800*  1781  b DispatchUnknownInterrupt
+                    1782  .size OS_CORTEXM_IRQ_C0_eb, . - OS_CORTEXM_IRQ_C0_eb
+                    1783  .global OS_CORTEXM_IRQ_C0_ec
+                    1784  .import OS_UnknownInterrupt
+                    1785  .type OS_CORTEXM_IRQ_C0_ec, $function
+                    1786 OS_CORTEXM_IRQ_C0_ec:
+00000510 f000b800*  1787  b DispatchUnknownInterrupt
+                    1788  .size OS_CORTEXM_IRQ_C0_ec, . - OS_CORTEXM_IRQ_C0_ec
+                    1789  .global OS_CORTEXM_IRQ_C0_ed
+                    1790  .import OS_UnknownInterrupt
+                    1791  .type OS_CORTEXM_IRQ_C0_ed, $function
+                    1792 OS_CORTEXM_IRQ_C0_ed:
+00000514 f000b800*  1793  b DispatchUnknownInterrupt
+                    1794  .size OS_CORTEXM_IRQ_C0_ed, . - OS_CORTEXM_IRQ_C0_ed
+                    1795  .global OS_CORTEXM_IRQ_C0_ee
+                    1796  .import OS_UnknownInterrupt
+                    1797  .type OS_CORTEXM_IRQ_C0_ee, $function
+                    1798 OS_CORTEXM_IRQ_C0_ee:
+00000518 f000b800*  1799  b DispatchUnknownInterrupt
+                    1800  .size OS_CORTEXM_IRQ_C0_ee, . - OS_CORTEXM_IRQ_C0_ee
+                    1801  .global OS_CORTEXM_IRQ_C0_ef
+                    1802  .import OS_UnknownInterrupt
+                    1803  .type OS_CORTEXM_IRQ_C0_ef, $function
+                    1804 OS_CORTEXM_IRQ_C0_ef:
+0000051c f000b800*  1805  b DispatchUnknownInterrupt
+                    1806  .size OS_CORTEXM_IRQ_C0_ef, . - OS_CORTEXM_IRQ_C0_ef
+                    1807 

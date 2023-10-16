@@ -998,11 +998,6 @@
                   </d:ctr>
                 </d:ctr>
               </d:lst>
-              <d:ctr name="OsIoc" type="IDENTIFIABLE">
-                <a:a name="ENABLE" value="false"/>
-                <d:lst name="OsIocCommunication" type="MAP"/>
-                <d:lst name="OsIocDataTypeIncludeHeader" type="MAP"/>
-              </d:ctr>
               <d:ctr name="PublishedInformation" type="IDENTIFIABLE">
                 <d:var name="PbcfgMSupport" type="BOOLEAN" value="false">
                   <a:a name="IMPORTER_INFO" value="@DEF"/>

@@ -1,0 +1,516 @@
+                                                                      Page 1
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+Command Line: C:\ghs\comp_202114\asarm.exe -annotate_call_return -elf -b0 -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/include -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/stubs -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/template -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards/S32K344EVB_Q172_SCOS -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/config -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/templates -IC:/EB/tresos/plugins/Atomics_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/BM_TS_TxDxM1I15R0/include -IC:/EB/tresos/plugins/Base_TS_TxDxM5I2R0/include -IC:/EB/tresos/plugins/BlPduR_TS_TxDxM0I27R0/include -IC:/EB/tresos/plugins/CanIf_TS_TxDxM6I10R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/src -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/include -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/src -IC:/ghs/comp_202114/ansi -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include/CORTEXM/multi -IC:/EB/tresos/plugins/Det_TS_TxDxM6I5R0/include -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/src -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/include -IC:/EB/tresos/plugins/Flash_TS_T40D37M30I0R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Base_TS_T40D34M20I1R0/header -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Can_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Dio_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Fls_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Mcu_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Port_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/include -IC:/EB/tresos/plugins/Os_TS_T40D37M6I1R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/src -IC:/EB/tresos/plugins/Platforms_TS_T40DxM4I0R0/include -IC:/EB/tresos/plugins/Prog_TS_TxDxM2I51R0/include -IC:/EB/tresos/plugins/ProgOEMInd_TS_TxDxM1I12R0/include -IC:/EB/tresos/plugins/SA_TS_TxDxM1I20R0/include -IC:/EB/tresos/plugins/Uds_TS_TxDxM3I17R0/include -IC:\ghs\comp_202114\lib\thumb2 -cpu=cortexm7 -fpu=vfpv5_d16 -fpu=single -thumb_divide -source=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-exceptionhandler.s -o D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\output\obj\gh_000137g1.o -list=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-exceptionhandler.lst C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si 
+Original File: C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+Source File: D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-exceptionhandler.s
+Directory: D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\util
+Host OS: Windows
+EASE: Copyright (C) 1983-2021 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2021.1.4
+Build Directory: [Directory] COMP-VAL-WIN1:C:/autoval2/v2021.1-2021-04-25/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2021-1-comp/src@696881 (built by auto-compiler)
+Revision Date: Mon Apr 26 12:33:25 2021
+
+Release Date: Mon Apr 26 08:01:05 2021
+
+                       0 #line 1 "D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-exceptionhandler.s"
+                       1 .macro neg rDest rSrc
+                       2  rsb rDest,rSrc,#0
+                       3  .endm
+                       4 
+                       5 .macro OS_GET_KERNEL_PTR litBase destReg sReg
+                       6  ldr destReg, litBase
+                       7  ldr destReg, [destReg]
+                       8  .endm
+                       9 
+                      10 .macro OS_GENLIT_ACTIVATE_SVC
+                      11 
+                      12 OS_SHCSR_Addr:
+                      13  .word 0xE000ED24
+                      14  .endm
+                      15 
+                      16 .macro OS_ACTIVATE_SVC reg1 reg2
+                      17  ldr reg1, OS_SHCSR_Addr
+                      18  ldr reg2, [reg1]
+                      19  orr reg2, reg2, #0x00000080
+                      20  str reg2, [reg1]
+                      21  dsb
+                      22  isb
+                      23  .endm
+                      24 
+                      25 .macro OS_SETLEVEL level oldLevel
+                      26  lsl level, level, #4
+                      27  mrs oldLevel, basepri
+                      28  lsr oldLevel, oldLevel, #4
+                      29  msr basepri, level
+                      30  .endm
+                      31 
+                      32 .macro OS_ENABLE_FPU addrR tmpR storeR
+                      33  movw addrR, #(0xED88)
+                      34  movt addrR, #(0xE000)
+                      35  ldr storeR, [addrR]
+                      36  orr tmpR, storeR, #0x00f00000
+                      37  str tmpR, [addrR]
+                      38  .endm
+                      39 
+                      40 .macro OS_DISABLE_FPU addrR tmpR storeR
+                      41  movw addrR, #(0xED88)
+                      42  movt addrR, #(0xE000)
+                      43  ldr storeR, [addrR]
+                      44  movw tmpR, #(0xffff)
+                      45  movt tmpR, #(0xff0f)
+                      46  and tmpR, storeR, tmpR
+                      47  str tmpR, [addrR]
+                      48  .endm
+                      49 
+
+                                                                      Page 2
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+                      50 .macro OS_GET_MPU_CTRL_ADDR destR
+                      51  movw destR, #(0xED94)
+                      52  movt destR, #(0xE000)
+                      53  .endm
+                      54 
+                      55 .macro OS_ENABLE_MPU reg1 reg2
+                      56  .endm
+                      57 
+                      58 .macro OS_DISABLE_MPU_GET_STATE reg1 reg2 result
+                      59  .endm
+                      60 
+                      61 .macro OS_MPU_SET_CTRL reg1 ctrl
+                      62  .endm
+                      63 
+                      64 .macro DispatchInterrupt isrid entry exit level corevar
+                      65  cpsid i
+                      66  OS_DISABLE_MPU_GET_STATE r0, r1, r2
+                      67  OS_DISABLE_FPU r0, r1, r3
+                      68  push {r4-r11, lr}
+                      69  push {r2, r3}
+                      70  OS_GET_KERNEL_PTR corevar, r1, r0
+                      71  ldrb r4, [r1, #(((((0 + 4) + 4) + 4) + 4) + 0)]
+                      72  mov r0, #1
+                      73  strb r0, [r1, #(((((0 + 4) + 4) + 4) + 4) + 0)]
+                      74  mov r2, #level
+                      75  OS_SETLEVEL r2, r0
+                      76  push {r0}
+                      77  cpsie i
+                      78  mov r0, #isrid
+                      79  bl entry
+                      80  mov r0,r4
+                      81  bl exit
+                      82  .endm
+                      83  .section ".os_text", "ax"
+                      84  .thumb2
+                      85  .global OS_ExceptionNMIHandler
+                      86  .global OS_ExceptionHardFaultHandler
+                      87  .global OS_ExceptionMemManageHandler
+                      88  .global OS_ExceptionBusFaultHandler
+                      89  .global OS_ExceptionUsageFaultHandler
+                      90  .global OS_ExceptionReservedHandler_1
+                      91  .global OS_ExceptionReservedHandler_2
+                      92  .global OS_ExceptionReservedHandler_3
+                      93  .global OS_ExceptionReservedHandler_4
+                      94  .global OS_ExceptionDebugHandler
+                      95  .global OS_ExceptionReservedHandler_5
+                      96  .global OS_ExceptionPendSVHandler
+                      97  .global OS_ExceptionSysTickHandler
+                      98  .global OS_ExceptionHandler
+                      99  .global OS_CORTEXM_K_Exception
+                     100  .import OS_Exception
+                     101  .import OS_CheckForDispatch
+                     102  .import OS_CORTEXM_Dispatch
+                     103  .import OS_Dispatch
+                     104  .import OS_kernel_ptr
+                     105  .import boardNmiCallBack
+                     106  .align 4
+                     107  OS_GENLIT_ACTIVATE_SVC
+                     107 <MACRO BEGIN>
+                     107 OS_SHCSR_Addr : 
+                     107 .word 0xE000ED24 
+
+                                                                      Page 3
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+00000000 e000ed24    107 <MACRO END>
+                     108 
+                     109 OS_CORTEXM_EXC_RETURN_Value:
+00000004 fffffff1    110  .word 0xfffffff1
+                     111 OS_kernelDataAddr:
+00000008 00000000*   112  .word OS_kernel_ptr
+                     113 HFSR_Addr:
+0000000c e000ed2c    114  .word 0xE000ED2C
+                     115 CFSR_Addr:
+00000010 e000ed28    116  .word 0xE000ED28
+                     117 MMFAR_Addr:
+00000014 e000ed34    118  .word 0xE000ED34
+                     119 BFAR_Addr:
+00000018 e000ed38    120  .word 0xE000ED38
+                     121 OS_ExceptionHandlerSvcAddr:
+0000001c 00000000*   122  .word OS_ExceptionHandlerSvc
+                     123 OS_CFSR_DerivedFault:
+00000020 00001010    124  .word (((1 << 4) << 0) | ((1 << 4) << 8))
+                     125  .type OS_CORTEXM_PanicStop, $function
+                     126 OS_CORTEXM_PanicStop:
+00000024 e7fe*       127  b OS_CORTEXM_PanicStop
+                     128  .size OS_CORTEXM_PanicStop, . - OS_CORTEXM_PanicStop
+                     129  .type OS_ExceptionNMIHandler, $function
+                     130 OS_ExceptionNMIHandler:
+00000026 b671        131  cpsid f
+                     132  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     132 <MACRO BEGIN>
+                     132 <MACRO END>
+00000028 b502        133  push {r1,lr}
+0000002a f000f800*   134  bl boardNmiCallBack
+0000002e e8bd4002    135  pop {r1,lr}
+00000032 f04f0008    136  mov r0, #0x08
+00000036 f8dfcfc8*   137  ldr r12, OS_SHCSR_Addr
+0000003a f8dc2000    138  ldr r2, [r12]
+0000003e f04f0300    139  mov r3, #0
+00000042 f000b8b6*   140  b OS_ExceptionHandler
+                     141  .size OS_ExceptionNMIHandler, . - OS_ExceptionNMIHandler
+                     142  .type OS_ExceptionHardFaultHandler, $function
+                     143 OS_ExceptionHardFaultHandler:
+00000046 b671        144  cpsid f
+                     145  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     145 <MACRO BEGIN>
+                     145 <MACRO END>
+00000048 f04f000c    146  mov r0, #0x0c
+0000004c f8dfcfbc*   147  ldr r12, HFSR_Addr
+00000050 f8dc2000    148  ldr r2, [r12]
+00000054 f8cc2000    149  str r2, [r12]
+00000058 f04f0300    150  mov r3, #0
+0000005c f000b8a9*   151  b OS_ExceptionHandler
+                     152  .size OS_ExceptionHardFaultHandler, . - OS_ExceptionHardFaultHandler
+                     153  .type OS_ExceptionMemManageHandler, $function
+                     154 OS_ExceptionMemManageHandler:
+00000060 b671        155  cpsid f
+                     156  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     156 <MACRO BEGIN>
+                     156 <MACRO END>
+00000062 f8dfcfac*   157  ldr r12, CFSR_Addr
+00000066 f8dc2000    158  ldr r2, [r12]
+0000006a f8df3fa8*   159  ldr r3, MMFAR_Addr
+0000006e 681b        160  ldr r3, [r3]
+00000070 f00200ff    161  and r0, r2, #0xFF
+
+                                                                      Page 4
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+00000074 f8cc0000    162  str r0, [r12]
+00000078 f04f0010    163  mov r0, #0x10
+0000007c f8dfcfa0*   164  ldr r12, OS_CFSR_DerivedFault
+00000080 ea120f0c    165  tst r2, r12
+00000084 f0408054*   166  bne OS_NoContext
+00000088 f000b893*   167  b OS_ExceptionHandler
+                     168  .size OS_ExceptionMemManageHandler, . - OS_ExceptionMemManageHandler
+                     169  .type OS_ExceptionBusFaultHandler, $function
+                     170 OS_ExceptionBusFaultHandler:
+0000008c b671        171  cpsid f
+                     172  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     172 <MACRO BEGIN>
+                     172 <MACRO END>
+0000008e f8dfcf80*   173  ldr r12, CFSR_Addr
+00000092 f8dc2000    174  ldr r2, [r12]
+00000096 f8df3f80*   175  ldr r3, BFAR_Addr
+0000009a 681b        176  ldr r3, [r3]
+0000009c f402407f    177  and r0, r2, #0xFF00
+000000a0 f8cc0000    178  str r0, [r12]
+000000a4 f04f0014    179  mov r0, #0x14
+000000a8 f8dfcf74*   180  ldr r12, OS_CFSR_DerivedFault
+000000ac ea120f0c    181  tst r2, r12
+000000b0 f040803e*   182  bne OS_NoContext
+000000b4 f000b87d*   183  b OS_ExceptionHandler
+                     184  .size OS_ExceptionBusFaultHandler, . - OS_ExceptionBusFaultHandler
+                     185  .type OS_ExceptionUsageFaultHandler, $function
+                     186 OS_ExceptionUsageFaultHandler:
+000000b8 b671        187  cpsid f
+                     188  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     188 <MACRO BEGIN>
+                     188 <MACRO END>
+000000ba f04f0018    189  mov r0, #0x18
+000000be f8dfcf50*   190  ldr r12, CFSR_Addr
+000000c2 f8dc2000    191  ldr r2, [r12]
+000000c6 ea4f4312    192  lsr r3, r2, #16
+000000ca ea4f4303    193  lsl r3, r3, #16
+000000ce f8cc3000    194  str r3, [r12]
+000000d2 f04f0300    195  mov r3, #0
+000000d6 f000b86c*   196  b OS_ExceptionHandler
+                     197  .size OS_ExceptionUsageFaultHandler, . - OS_ExceptionUsageFaultHandler
+                     198  .type OS_ExceptionReservedHandler_1, $function
+                     199 OS_ExceptionReservedHandler_1:
+000000da f7ffbfa3*   200  b OS_CORTEXM_PanicStop
+                     201  .size OS_ExceptionReservedHandler_1, . - OS_ExceptionReservedHandler_1
+                     202  .type OS_ExceptionReservedHandler_2, $function
+                     203 OS_ExceptionReservedHandler_2:
+000000de f7ffbfa1*   204  b OS_CORTEXM_PanicStop
+                     205  .size OS_ExceptionReservedHandler_2, . - OS_ExceptionReservedHandler_2
+                     206  .type OS_ExceptionReservedHandler_3, $function
+                     207 OS_ExceptionReservedHandler_3:
+000000e2 f7ffbf9f*   208  b OS_CORTEXM_PanicStop
+                     209  .size OS_ExceptionReservedHandler_3, . - OS_ExceptionReservedHandler_3
+                     210  .type OS_ExceptionReservedHandler_4, $function
+                     211 OS_ExceptionReservedHandler_4:
+000000e6 f7ffbf9d*   212  b OS_CORTEXM_PanicStop
+                     213  .size OS_ExceptionReservedHandler_4, . - OS_ExceptionReservedHandler_4
+                     214  .type OS_ExceptionDebugHandler, $function
+                     215 OS_ExceptionDebugHandler:
+000000ea b671        216  cpsid f
+                     217  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     217 <MACRO BEGIN>
+
+                                                                      Page 5
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+                     217 <MACRO END>
+000000ec f04f0030    218  mov r0, #0x30
+000000f0 f8dfcf0c*   219  ldr r12, OS_SHCSR_Addr
+000000f4 f8dc2000    220  ldr r2, [r12]
+000000f8 f04f0300    221  mov r3, #0
+000000fc f000b859*   222  b OS_ExceptionHandler
+                     223  .size OS_ExceptionDebugHandler, . - OS_ExceptionDebugHandler
+                     224  .type OS_ExceptionReservedHandler_5, $function
+                     225 OS_ExceptionReservedHandler_5:
+00000100 f7ffbf90*   226  b OS_CORTEXM_PanicStop
+                     227  .size OS_ExceptionReservedHandler_5, . - OS_ExceptionReservedHandler_5
+                     228  .type OS_ExceptionPendSVHandler, $function
+                     229 OS_ExceptionPendSVHandler:
+00000104 b671        230  cpsid f
+                     231  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     231 <MACRO BEGIN>
+                     231 <MACRO END>
+00000106 f04f0038    232  mov r0, #0x38
+0000010a f8dfcef4*   233  ldr r12, OS_SHCSR_Addr
+0000010e f8dc2000    234  ldr r2, [r12]
+00000112 f04f0300    235  mov r3, #0
+00000116 f000b84c*   236  b OS_ExceptionHandler
+                     237  .size OS_ExceptionPendSVHandler, . - OS_ExceptionPendSVHandler
+                     238  .type OS_ExceptionSysTickHandler, $function
+                     239 OS_ExceptionSysTickHandler:
+0000011a b671        240  cpsid f
+                     241  OS_DISABLE_MPU_GET_STATE r0, r2, r1
+                     241 <MACRO BEGIN>
+                     241 <MACRO END>
+0000011c f04f003c    242  mov r0, #0x3c
+00000120 f8dfcedc*   243  ldr r12, OS_SHCSR_Addr
+00000124 f8dc2000    244  ldr r2, [r12]
+00000128 f04f0300    245  mov r3, #0
+0000012c f000b841*   246  b OS_ExceptionHandler
+                     247  .size OS_ExceptionSysTickHandler, . - OS_ExceptionSysTickHandler
+                     248  .type OS_NoContext, $function
+                     249 OS_NoContext:
+00000130 e92d4ff0    250  push { r4-r11, lr }
+                     251  OS_DISABLE_FPU r5, r6, r7
+                     251 <MACRO BEGIN>
+                     251 movw r5 , ( 0xED88 ) 
+                     251 movt r5 , ( 0xE000 ) 
+                     251 ldr r7 , [ r5 ] 
+                     251 movw r6 , ( 0xffff ) 
+                     251 movt r6 , ( 0xff0f ) 
+                     251 and r6 , r7 , r6 
+                     251 str r6 , [ r5 ] 
+00000134 f64e5588    251 <MACRO END>
+00000138 f2ce0500 
+0000013c 682f 
+0000013e f64f76ff 
+00000142 f6cf760f 
+00000146 ea070606 
+0000014a 602e 
+0000014c b482        252  push { r1, r7 }
+0000014e f04f0a01    253  mov r10, #1
+                     254  OS_SETLEVEL r10, r11
+                     254 <MACRO BEGIN>
+                     254 lsl r10 , r10 , 4 
+                     254 mrs r11 , basepri 
+                     254 lsr r11 , r11 , 4 
+
+                                                                      Page 6
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+                     254 msr basepri , r10 
+00000152 ea4f1a0a    254 <MACRO END>
+00000156 f3ef8b11 
+0000015a ea4f1b1b 
+0000015e f38a8811 
+00000162 f84dbd04    255  push { r11 }
+00000166 b661        256  cpsie f
+00000168 f3ef8414    257  mrs r4, CONTROL
+0000016c b53d        258  push {r0, r2, r3, r4, r5, lr}
+0000016e f0240401    259  bic r4, r4, #0x00000001
+00000172 f3848814    260  msr CONTROL, r4
+00000176 f01e0f08    261  tst lr, #0x00000008
+0000017a bf18        262  it NE
+0000017c f01e0f04    263  tstne lr, #0x00000004
+00000180 bf12        264  itee NE
+00000182 f3ef8009    265  mrsne r0, psp
+00000186 f3ef8008    266  mrseq r0, msp
+0000018a 3048        267  addeq r0, r0, #(18 * 4)
+0000018c 4669        268  mov r1, sp
+0000018e f8df2e8c*   269  ldr r2, OS_ExceptionHandlerSvcAddr
+00000192 f04f7380    270  mov r3, #0x01000000
+00000196 f8df6e6c*   271  ldr r6, OS_CORTEXM_EXC_RETURN_Value
+0000019a 45b6        272  cmp lr, r6
+0000019c bf08        273  it EQ
+0000019e f0430304    274  orreq r3, r3, #4
+000001a2 b40c        275  push {r2, r3}
+000001a4 e92d500f    276  push {r0, r1, r2, r3, r12, lr}
+000001a8 f02e0e04    277  bic lr, lr, #(1 << 2)
+000001ac 4770        278  bx lr
+000001ae f7ffbf39*   279  b OS_CORTEXM_PanicStop
+                     280  .size OS_NoContext, . - OS_NoContext
+                     281  .type OS_ExceptionHandler, $function
+                     282 OS_ExceptionHandler:
+000001b2 e92d4ff0    283  push {r4-r11, lr}
+                     284  OS_DISABLE_FPU r5, r6, r7
+                     284 <MACRO BEGIN>
+                     284 movw r5 , ( 0xED88 ) 
+                     284 movt r5 , ( 0xE000 ) 
+                     284 ldr r7 , [ r5 ] 
+                     284 movw r6 , ( 0xffff ) 
+                     284 movt r6 , ( 0xff0f ) 
+                     284 and r6 , r7 , r6 
+                     284 str r6 , [ r5 ] 
+000001b6 f64e5588    284 <MACRO END>
+000001ba f2ce0500 
+000001be 682f 
+000001c0 f64f76ff 
+000001c4 f6cf760f 
+000001c8 ea070606 
+000001cc 602e 
+000001ce b482        285  push { r1, r7 }
+000001d0 f04f0a01    286  mov r10, #1
+                     287  OS_SETLEVEL r10, r11
+                     287 <MACRO BEGIN>
+                     287 lsl r10 , r10 , 4 
+                     287 mrs r11 , basepri 
+                     287 lsr r11 , r11 , 4 
+                     287 msr basepri , r10 
+000001d4 ea4f1a0a    287 <MACRO END>
+000001d8 f3ef8b11 
+000001dc ea4f1b1b 
+
+                                                                      Page 7
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+000001e0 f38a8811 
+000001e4 f84dbd04    288  push { r11 }
+000001e8 b661        289  cpsie f
+000001ea b662        290  cpsie i
+000001ec f3ef8414    291  mrs r4, CONTROL
+000001f0 b53d        292  push {r0, r2, r3, r4, r5, lr}
+000001f2 f0240401    293  bic r4, r4, #0x00000001
+000001f6 f3848814    294  msr CONTROL, r4
+000001fa f01e0f08    295  tst lr, #0x00000008
+000001fe bf18        296  it NE
+00000200 f01e0f04    297  tstne lr, #0x00000004
+00000204 bf12        298  itee NE
+00000206 f3ef8009    299  mrsne r0, psp
+0000020a f3ef8008    300  mrseq r0, msp
+0000020e 3048        301  addeq r0, r0, #(18 * 4)
+00000210 4669        302  mov r1, sp
+00000212 f8df2e08*   303  ldr r2, OS_ExceptionHandlerSvcAddr
+00000216 69c3        304  ldr r3, [r0, #(7 * 4)]
+00000218 b40c        305  push {r2, r3}
+0000021a e92d500f    306  push {r0, r1, r2, r3, r12, lr}
+0000021e f02e0e04    307  bic lr, lr, #(1 << 2)
+00000222 4770        308  bx lr
+00000224 f7ffbefe*   309  b OS_CORTEXM_PanicStop
+                     310  .size OS_ExceptionHandler, . - OS_ExceptionHandler
+                     311  .type OS_ExceptionHandlerSvc, $function
+                     312 OS_ExceptionHandlerSvc:
+00000228 f04f0c3d    313  mov r12, #(61)
+0000022c df00        314  svc #0
+0000022e f7ffbef9*   315  b OS_CORTEXM_PanicStop
+                     316  .size OS_ExceptionHandlerSvc, . - OS_ExceptionHandlerSvc
+                     317  .type OS_CORTEXM_K_Exception, $function
+                     318 OS_CORTEXM_K_Exception:
+00000232 4604        319  mov r4, r0
+00000234 460d        320  mov r5, r1
+00000236 6828        321  ldr r0, [r5, #0]
+00000238 686a        322  ldr r2, [r5, #4]
+0000023a 68ab        323  ldr r3, [r5, #8]
+0000023c 68ef        324  ldr r7, [r5, #12]
+0000023e 696e        325  ldr r6, [r5, #20]
+00000240 f3878814    326  msr CONTROL, r7
+00000244 69a1        327  ldr r1, [r4, #(0x18)]
+00000246 f000f800*   328  bl OS_Exception
+0000024a f0160f08    329  tst r6, #0x00000008
+0000024e bf18        330  it NE
+00000250 f0160f04    331  tstne r6, #0x00000004
+00000254 bf14        332  ite NE
+00000256 2700        333  movne r7, #0
+00000258 2701        334  moveq r7, #1
+0000025a 4638        335  mov r0, r7
+0000025c f000f800*   336  bl OS_CheckForDispatch
+00000260 2800        337  cmp r0, #0
+00000262 d00f*       338  beq OS_Exc_JustReturn
+00000264 2801        339  cmp r0, #1
+00000266 d007*       340  beq OS_Exc_WithoutSave
+00000268 a806        341  add r0, sp, #(6 * 4)
+0000026a 4621        342  mov r1, r4
+0000026c f000f800*   343  bl OS_CORTEXM_Dispatch
+00000270 f000f800*   344  bl OS_Dispatch
+00000274 f7ffbed6*   345  b OS_CORTEXM_PanicStop
+                     346 OS_Exc_WithoutSave:
+00000278 f04f0003    347  mov r0, #3
+
+                                                                      Page 8
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si
+0000027c f000f800*   348  bl OS_Dispatch
+00000280 f7ffbed0*   349  b OS_CORTEXM_PanicStop
+                     350 OS_Exc_JustReturn:
+                     351  OS_ACTIVATE_SVC r1, r2
+                     351 <MACRO BEGIN>
+                     351 ldr r1 , OS_SHCSR_Addr 
+                     351 ldr r2 , [ r1 ] 
+                     351 orr r2 , r2 , 0x00000080 
+                     351 str r2 , [ r1 ] 
+                     351 dsb 
+                     351 isb 
+00000284 f8df1d78*   351 <MACRO END>
+00000288 680a 
+0000028a f0420280 
+0000028e 600a 
+00000290 f3bf8f4f 
+00000294 f3bf8f6f 
+                     352  OS_GET_KERNEL_PTR OS_kernelDataAddr, r8, r0
+                     352 <MACRO BEGIN>
+                     352 ldr r8 , OS_kernelDataAddr 
+                     352 ldr r8 , [ r8 ] 
+00000298 f8df8d6c*   352 <MACRO END>
+0000029c f8d88000 
+000002a0 f8c87010    353  str r7, [r8, #(((((0 + 4) + 4) + 4) + 4) + 0)]
+000002a4 46ad        354  mov sp, r5
+000002a6 e8bd403d    355  pop {r0, r2, r3, r4, r5, lr}
+000002aa bc07        356  pop {r0, r1, r2}
+000002ac f4120f70    357  tst r2, #0x00f00000
+000002b0 d007*       358  beq OS_ExceptionHandler_SkipEnableFpu
+                     359  OS_ENABLE_FPU r5, r2, r2
+                     359 <MACRO BEGIN>
+                     359 movw r5 , ( 0xED88 ) 
+                     359 movt r5 , ( 0xE000 ) 
+                     359 ldr r2 , [ r5 ] 
+                     359 orr r2 , r2 , 0x00f00000 
+                     359 str r2 , [ r5 ] 
+000002b2 f64e5588    359 <MACRO END>
+000002b6 f2ce0500 
+000002ba 682a 
+000002bc f4420270 
+000002c0 602a 
+                     360 OS_ExceptionHandler_SkipEnableFpu:
+                     361  OS_SETLEVEL r0, r2
+                     361 <MACRO BEGIN>
+                     361 lsl r0 , r0 , 4 
+                     361 mrs r2 , basepri 
+                     361 lsr r2 , r2 , 4 
+                     361 msr basepri , r0 
+000002c2 ea4f1000    361 <MACRO END>
+000002c6 f3ef8211 
+000002ca ea4f1212 
+000002ce f3808811 
+000002d2 b671        362  cpsid f
+                     363  OS_MPU_SET_CTRL r2, r1
+                     363 <MACRO BEGIN>
+                     363 <MACRO END>
+000002d4 e8bd0ff0    364  pop {r4-r11}
+000002d8 b081        365  sub sp, sp, #4
+000002da 4770        366  bx lr
+                     367  .size OS_CORTEXM_K_Exception, . - OS_CORTEXM_K_Exception
+                     368 
+
+                                                                      Page 9
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_000137g1.si

@@ -1,0 +1,52 @@
+.macro neg rDest rSrc
+ rsb rDest,rSrc,#0
+ .endm
+
+.macro OS_GET_KERNEL_PTR litBase destReg sReg
+ ldr destReg, litBase
+ ldr destReg, [destReg]
+ .endm
+
+.macro OS_GENLIT_ACTIVATE_SVC
+
+OS_SHCSR_Addr:
+ .word 0xE000ED24
+ .endm
+
+.macro OS_ACTIVATE_SVC reg1 reg2
+ ldr reg1, OS_SHCSR_Addr
+ ldr reg2, [reg1]
+ orr reg2, reg2, #0x00000080
+ str reg2, [reg1]
+ dsb
+ isb
+ .endm
+
+.macro OS_SETLEVEL level oldLevel
+ lsl level, level, #4
+ mrs oldLevel, basepri
+ lsr oldLevel, oldLevel, #4
+ msr basepri, level
+ .endm
+ .section ".os_text", "ax"
+ .thumb2
+ .global OS_CORTEXM_SetControl
+ .global OS_CORTEXM_GetControl
+ .align 4
+ .global OS_CORTEXM_GetSP
+ .type OS_CORTEXM_GetSP, $function
+OS_CORTEXM_GetSP:
+ mov r0, sp
+ bx lr
+ .size OS_CORTEXM_GetSP, . - OS_CORTEXM_GetSP
+ .type OS_CORTEXM_SetControl, $function
+OS_CORTEXM_SetControl:
+ msr control, r0
+ bx lr
+ .size OS_CORTEXM_SetControl, . - OS_CORTEXM_SetControl
+ .type OS_CORTEXM_GetControl, $function
+OS_CORTEXM_GetControl:
+ mrs r0,control
+ bx lr
+ .size OS_CORTEXM_GetControl, . - OS_CORTEXM_GetControl
+

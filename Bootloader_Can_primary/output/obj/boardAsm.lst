@@ -1,0 +1,163 @@
+                                                                      Page 1
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_00009bk1.si
+Command Line: C:\ghs\comp_202114\asarm.exe -annotate_call_return -elf -b0 -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/include -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/stubs -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/template -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards/S32K344EVB_Q172_SCOS -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/config -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/templates -IC:/EB/tresos/plugins/Atomics_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/BM_TS_TxDxM1I15R0/include -IC:/EB/tresos/plugins/Base_TS_TxDxM5I2R0/include -IC:/EB/tresos/plugins/BlPduR_TS_TxDxM0I27R0/include -IC:/EB/tresos/plugins/CanIf_TS_TxDxM6I10R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/src -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/include -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/src -IC:/ghs/comp_202114/ansi -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include/CORTEXM/multi -IC:/EB/tresos/plugins/Det_TS_TxDxM6I5R0/include -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/src -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/include -IC:/EB/tresos/plugins/Flash_TS_T40D37M30I0R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Base_TS_T40D34M20I1R0/header -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Can_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Dio_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Fls_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Mcu_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Port_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/include -IC:/EB/tresos/plugins/Os_TS_T40D37M6I1R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/src -IC:/EB/tresos/plugins/Platforms_TS_T40DxM4I0R0/include -IC:/EB/tresos/plugins/Prog_TS_TxDxM2I51R0/include -IC:/EB/tresos/plugins/ProgOEMInd_TS_TxDxM1I12R0/include -IC:/EB/tresos/plugins/SA_TS_TxDxM1I20R0/include -IC:/EB/tresos/plugins/Uds_TS_TxDxM3I17R0/include -IC:\ghs\comp_202114\lib\thumb2 -cpu=cortexm7 -fpu=vfpv5_d16 -fpu=single -thumb_divide -source=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/boardAsm.s -o D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\output\obj\gh_00009bk1.o -list=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/boardAsm.lst C:\Users\dltest.230\AppData\Local\Temp\gh_00009bk1.si 
+Original File: C:\Users\dltest.230\AppData\Local\Temp\gh_00009bk1.si
+Source File: D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/boardAsm.s
+Directory: D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\util
+Host OS: Windows
+EASE: Copyright (C) 1983-2021 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2021.1.4
+Build Directory: [Directory] COMP-VAL-WIN1:C:/autoval2/v2021.1-2021-04-25/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2021-1-comp/src@696881 (built by auto-compiler)
+Revision Date: Mon Apr 26 12:33:25 2021
+
+Release Date: Mon Apr 26 08:01:05 2021
+
+                       0 #line 1 "D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/boardAsm.s"
+                       1 .macro neg rDest rSrc
+                       2  rsb rDest,rSrc,#0
+                       3  .endm
+                       4 
+                       5 .macro OS_GET_KERNEL_PTR litBase destReg sReg
+                       6  ldr destReg, litBase
+                       7  ldr destReg, [destReg]
+                       8  .endm
+                       9 
+                      10 .macro OS_GENLIT_ACTIVATE_SVC
+                      11 
+                      12 OS_SHCSR_Addr:
+                      13  .word 0xE000ED24
+                      14  .endm
+                      15 
+                      16 .macro OS_ACTIVATE_SVC reg1 reg2
+                      17  ldr reg1, OS_SHCSR_Addr
+                      18  ldr reg2, [reg1]
+                      19  orr reg2, reg2, #0x00000080
+                      20  str reg2, [reg1]
+                      21  dsb
+                      22  isb
+                      23  .endm
+                      24 
+                      25 .macro OS_SETLEVEL level oldLevel
+                      26  lsl level, level, #4
+                      27  mrs oldLevel, basepri
+                      28  lsr oldLevel, oldLevel, #4
+                      29  msr basepri, level
+                      30  .endm
+                      31  .section ".os_text", "ax"
+                      32  .thumb2
+                      33  .global boardResetStart
+                      34  .global boardInvalidInterrupt
+                      35  .global boardInvalidException
+                      36  .global boardEnableICaches
+                      37  .global boardDisableInterruptsAsm
+                      38  .global boardEnableInterruptsAsm
+                      39  .import boardStart
+                      40  .import CORTEXMExceptionTable_C0
+                      41  .import OS_kernStack0
+                      42  .import OS_CORTEXM_SetupVFPCoprocessor
+                      43  .align 4
+                      44  .type boardInvalidInterrupt, $function
+                      45 boardInvalidInterrupt:
+                      46 InvalidInterruptLoop:
+00000000 e7fe*        47  b InvalidInterruptLoop
+                      48  .size boardInvalidInterrupt, . - boardInvalidInterrupt
+                      49  .type boardInvalidException, $function
+
+                                                                      Page 2
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_00009bk1.si
+                      50 boardInvalidException:
+                      51 InvalidExceptionLoop:
+00000002 e7fe*        52  b InvalidExceptionLoop
+                      53  .size boardInvalidException, . - boardInvalidException
+                      54 
+                      55 SHCSR_Value:
+00000004 00070000     56  .word 0x00070000
+                      57 SHCSR_Addr:
+00000008 e000ed24     58  .word 0xE000ED24
+                      59 VTOR_Addr:
+0000000c e000ed08     60  .word 0xE000ED08
+                      61 BOARD_ExceptionTableAddr:
+00000010 00000000*    62  .word (CORTEXMExceptionTable_C0)
+                      63 BoardSPAddr:
+00000014 00000000*    64  .word (OS_kernStack0 + 3072)
+                      65 BoardDCISWAddr:
+00000018 e000ef60     66  .word 0xE000EF60
+                      67 BoardICIALLUAddr:
+0000001c e000ef50     68  .word 0xE000EF50
+                      69 BoardCCRAddr:
+00000020 e000ed14     70  .word 0xE000ED14
+                      71  .type boardEnableICaches, $function
+                      72 boardEnableICaches:
+00000024 f04f0000     73  mov r0, #0
+00000028 f8dfcff0*    74  ldr r12, BoardICIALLUAddr
+0000002c f8cc0000     75  str r0, [r12]
+00000030 f3bf8f4f     76  dsb
+00000034 f3bf8f6f     77  isb
+00000038 f8df1fe4*    78  ldr r1, BoardCCRAddr
+0000003c 6808         79  ldr r0, [r1]
+0000003e f4403000     80  orr r0, r0, #(1 << 17)
+00000042 6008         81  str r0, [r1]
+00000044 f3bf8f4f     82  dsb
+00000048 f3bf8f6f     83  isb
+0000004c 4770         84  bx lr
+                      85  .size boardEnableICaches, . - boardEnableICaches
+                      86  boardCatchM7:
+0000004e f7ffbffe*    87   b boardCatchM7
+                      88   .type boardResetStart, $function
+                      89   boardResetStart:
+00000052 2400         90   movs r4 ,#0
+00000054 f3848810     91   msr primask ,r4
+00000058 2400         92   movs r4 ,#0
+0000005a f3848814     93   msr control ,r4
+0000005e f05f7480     94   movs r4 ,#0x1000000
+00000062 f3848803     95   msr xpsr ,r4
+00000066 f8df0f9c*    96   ldr r0, SHCSR_Value
+0000006a f8df5f9c*    97   ldr r5, SHCSR_Addr
+0000006e 6829         98   ldr r1, [r5]
+00000070 ea400101     99   orr r1, r0, r1
+00000074 6029        100   str r1, [r5]
+00000076 f04f5101    101   ldr r1, =0x20400000
+0000007a 4a01*       102         ldr r2, =0x2040FFFF
+0000007c 1a52        103         subs r2, r1
+0000007e 1e52        104         subs r2, #1
+00000080 2000        105         movs r0, 0
+00000082 2300        106         movs r3, 0
+                     107   SRAM_LOOP:
+00000084 c109        108         stm r1!, {r0,r3}
+00000086 3a08        109         subs r2, 8
+00000088 dafc*       110         bge SRAM_LOOP
+
+                                                                      Page 3
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_00009bk1.si
+0000008a f000f800*   111  bl OS_CORTEXM_SetupVFPCoprocessor
+0000008e f8dfdf84*   112  ldr sp, BoardSPAddr
+00000092 f8df0f78*   113  ldr r0, VTOR_Addr
+00000096 f8df1f78*   114  ldr r1, BOARD_ExceptionTableAddr
+0000009a 6001        115  str r1, [r0]
+0000009c f000f800*   116  bl boardStart
+000000a0 f7ffbfd5*   117  b boardCatchM7
+                     118  .size boardResetStart, . - boardResetStart
+                     119  .type boardDisableInterruptsAsm, $function
+                     120  boardDisableInterruptsAsm:
+000000a4 b672        121  cpsid i
+000000a6 4770        122  bx lr
+                     123  .size boardDisableInterruptsAsm, . - boardDisableInterruptsAsm
+                     124  .type boardEnableInterruptsAsm, $function
+                     125  boardEnableInterruptsAsm:
+000000a8 b662        126  cpsie i
+000000aa 4770        127  bx lr
+                     128  .size boardEnableInterruptsAsm, . - boardEnableInterruptsAsm
+                     129 
+                     130 .section ".boot_header","ax"
+00000000 5aa55aa5    131   .long (0x5AA55AA5)
+00000004 00000001    132   .long ((1) << (0)) | ((0) << (1))
+00000008 00000000    133   .long 0
+0000000c 00500000    134   .long (0x500000)
+00000010 00000000    135   .long 0
+00000014 00000000    136   .long (0)
+00000018 00000000    137   .long 0
+0000001c 00000000    138   .long 0
+00000020 00000000    139   .long (0)
+00000024 00000000    140   .long (0)
+00000028 00000000    141   .long 0

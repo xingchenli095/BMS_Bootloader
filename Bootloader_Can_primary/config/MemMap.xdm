@@ -152,11 +152,11 @@
                 <d:var name="MemMapValidateSafety" type="BOOLEAN" value="true">
                   <a:a name="IMPORTER_INFO" value="@DEF"/>
                 </d:var>
-                <d:var name="MemMapValidateSections" type="BOOLEAN" value="true">
+                <d:var name="MemMapValidateSections" type="BOOLEAN" 
+                       value="false">
                   <a:a name="CUSTOMDATA" type="CUSTOMDATA">
                     <cd:v id="splittag">EB.TRICORE.TC387</cd:v>
                   </a:a>
-                  <a:a name="IMPORTER_INFO" value="SplittableImp"/>
                 </d:var>
               </d:ctr>
               <d:ctr name="PublishedInformation" type="IDENTIFIABLE">

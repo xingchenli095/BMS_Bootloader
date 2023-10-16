@@ -1,0 +1,141 @@
+                                                                      Page 1
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000ggg1.si
+Command Line: C:\ghs\comp_202114\asarm.exe -annotate_call_return -elf -b0 -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/include -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/stubs -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/template -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/boards/S32K344EVB_Q172_SCOS -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/source/config -ID:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/generated/templates -IC:/EB/tresos/plugins/Atomics_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/BM_TS_TxDxM1I15R0/include -IC:/EB/tresos/plugins/Base_TS_TxDxM5I2R0/include -IC:/EB/tresos/plugins/BlPduR_TS_TxDxM0I27R0/include -IC:/EB/tresos/plugins/CanIf_TS_TxDxM6I10R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/include -IC:/EB/tresos/plugins/CanSM_TS_TxDxM3I7R0/src -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/include -IC:/EB/tresos/plugins/CanTp_TS_TxDxM6I8R0/src -IC:/ghs/comp_202114/ansi -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include -IC:/EB/tresos/plugins/Compiler_TS_TxDxM1I0R0/include/CORTEXM/multi -IC:/EB/tresos/plugins/Det_TS_TxDxM6I5R0/include -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/src -IC:/EB/tresos/plugins/EcuC_TS_TxDxM5I0R0/include -IC:/EB/tresos/plugins/Flash_TS_T40D37M30I0R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Base_TS_T40D34M20I1R0/header -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Can_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Dio_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Fls_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Mcu_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/MCAL_Delivery/eclipse/plugins/Port_TS_T40D34M20I1R0/include -IC:/EB/tresos/plugins/McalExt_TS_T40DxM1I0R0/include -IC:/EB/tresos/plugins/Os_TS_T40D37M6I1R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/include -IC:/EB/tresos/plugins/PduR_TS_TxDxM5I3R0/src -IC:/EB/tresos/plugins/Platforms_TS_T40DxM4I0R0/include -IC:/EB/tresos/plugins/Prog_TS_TxDxM2I51R0/include -IC:/EB/tresos/plugins/ProgOEMInd_TS_TxDxM1I12R0/include -IC:/EB/tresos/plugins/SA_TS_TxDxM1I20R0/include -IC:/EB/tresos/plugins/Uds_TS_TxDxM3I17R0/include -IC:\ghs\comp_202114\lib\thumb2 -cpu=cortexm7 -fpu=vfpv5_d16 -fpu=single -thumb_divide -source=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-idle.s -o D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\output\obj\gh_0000ggg1.o -list=D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-idle.lst C:\Users\dltest.230\AppData\Local\Temp\gh_0000ggg1.si 
+Original File: C:\Users\dltest.230\AppData\Local\Temp\gh_0000ggg1.si
+Source File: D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-idle.s
+Directory: D:\Desktop\Achita\S32K342_Bootloader\Bootloader\Bootloader_Can\util
+Host OS: Windows
+EASE: Copyright (C) 1983-2021 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2021.1.4
+Build Directory: [Directory] COMP-VAL-WIN1:C:/autoval2/v2021.1-2021-04-25/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2021-1-comp/src@696881 (built by auto-compiler)
+Revision Date: Mon Apr 26 12:33:25 2021
+
+Release Date: Mon Apr 26 08:01:05 2021
+
+                       0 #line 1 "D:/Desktop/Achita/S32K342_Bootloader/Bootloader/Bootloader_Can/output/obj/CORTEXM-idle.s"
+                       1 .macro neg rDest rSrc
+                       2  rsb rDest,rSrc,#0
+                       3  .endm
+                       4 
+                       5 .macro OS_GET_KERNEL_PTR litBase destReg sReg
+                       6  ldr destReg, litBase
+                       7  ldr destReg, [destReg]
+                       8  .endm
+                       9 
+                      10 .macro OS_GENLIT_ACTIVATE_SVC
+                      11 
+                      12 OS_SHCSR_Addr:
+                      13  .word 0xE000ED24
+                      14  .endm
+                      15 
+                      16 .macro OS_ACTIVATE_SVC reg1 reg2
+                      17  ldr reg1, OS_SHCSR_Addr
+                      18  ldr reg2, [reg1]
+                      19  orr reg2, reg2, #0x00000080
+                      20  str reg2, [reg1]
+                      21  dsb
+                      22  isb
+                      23  .endm
+                      24 
+                      25 .macro OS_SETLEVEL level oldLevel
+                      26  lsl level, level, #4
+                      27  mrs oldLevel, basepri
+                      28  lsr oldLevel, oldLevel, #4
+                      29  msr basepri, level
+                      30  .endm
+                      31  .section ".os_text", "ax"
+                      32  .thumb2
+                      33  .global OS_CORTEXM_Idle
+                      34  .import OS_idleStack
+                      35  .import OS_kernel_ptr
+                      36  .align 4
+                      37 
+                      38 OS_CORTEXM_EPSR_T_Value:
+00000000 01000000     39  .word 0x01000000
+                      40 OS_CORTEXM_EXC_RETURN_Value:
+00000004 fffffffd     41  .word 0xfffffffd
+                      42 OS_idleStackAddr:
+00000008 00000000*    43  .word OS_idleStack
+                      44 OS_kernelDataAddr:
+0000000c 00000000*    45  .word OS_kernel_ptr
+                      46  OS_GENLIT_ACTIVATE_SVC
+                      46 <MACRO BEGIN>
+                      46 OS_SHCSR_Addr : 
+                      46 .word 0xE000ED24 
+
+                                                                      Page 2
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000ggg1.si
+00000010 e000ed24     46 <MACRO END>
+                      47 IdleLoopHaltAddr:
+00000014 00000000*    48  .word IdleLoopHalt
+                      49 IdleLoopNoHaltAddr:
+00000018 00000000*    50  .word IdleLoopNoHalt
+                      51  .type OS_CORTEXM_Idle, $function
+                      52 OS_CORTEXM_Idle:
+0000001c b672         53  cpsid i
+                      54  OS_GET_KERNEL_PTR OS_kernelDataAddr, r5, r7
+                      54 <MACRO BEGIN>
+                      54 ldr r5 , OS_kernelDataAddr 
+                      54 ldr r5 , [ r5 ] 
+0000001e f8df5fec*    54 <MACRO END>
+00000022 682d 
+00000024 f04f0700     55  mov r7, #0x0
+00000028 742f         56  strb r7, [r5, #(((((0 + 4) + 4) + 4) + 4) + 0)]
+0000002a f8dfdfdc*    57  ldr sp, OS_idleStackAddr
+0000002e b040         58  add sp, sp, #(64 * 4)
+00000030 f8df7fcc*    59  ldr r7, OS_CORTEXM_EPSR_T_Value
+00000034 7c6e         60  ldrb r6, [r5, #((((((0 + 4) + 4) + 4) + 4) + 0) + 1)]
+00000036 2e01         61  cmp r6, #1
+00000038 d002*        62  beq OS_LoadIdleHaltAddr
+0000003a f8df6fdc*    63  ldr r6, IdleLoopNoHaltAddr
+0000003e e001*        64  b OS_PushIdleContext
+                      65 OS_LoadIdleHaltAddr:
+00000040 f8df6fd0*    66  ldr r6, IdleLoopHaltAddr
+                      67 OS_PushIdleContext:
+00000044 b4ff         68  push {r0-r7}
+00000046 4668         69  mov r0, sp
+00000048 f3808809     70  msr psp, r0
+0000004c f8d5d008     71  ldr sp, [r5, #((0 + 4) + 4)]
+00000050 f04f0010     72  mov r0, #16
+                      73  OS_SETLEVEL r0, r1
+                      73 <MACRO BEGIN>
+                      73 lsl r0 , r0 , 4 
+                      73 mrs r1 , basepri 
+                      73 lsr r1 , r1 , 4 
+                      73 msr basepri , r0 
+00000054 ea4f1000     73 <MACRO END>
+00000058 f3ef8111 
+0000005c ea4f1111 
+00000060 f3808811 
+00000064 b671         74  cpsid f
+00000066 b662         75  cpsie i
+00000068 f3ef8005     76  mrs r0, ipsr
+0000006c 280b         77  cmp r0, #11
+0000006e d109*        78  bne OS_SkipActivateSVC
+                      79  OS_ACTIVATE_SVC r0, r1
+                      79 <MACRO BEGIN>
+                      79 ldr r0 , OS_SHCSR_Addr 
+                      79 ldr r1 , [ r0 ] 
+                      79 orr r1 , r1 , 0x00000080 
+                      79 str r1 , [ r0 ] 
+                      79 dsb 
+                      79 isb 
+00000070 f8df0f9c*    79 <MACRO END>
+00000074 6801 
+00000076 f0410180 
+0000007a 6001 
+0000007c f3bf8f4f 
+00000080 f3bf8f6f 
+
+                                                                      Page 3
+                                                              C:\Users\dltest.230\AppData\Local\Temp\gh_0000ggg1.si
+                      80 OS_SkipActivateSVC:
+00000084 f8dfff7c*    81  ldr pc, OS_CORTEXM_EXC_RETURN_Value
+                      82 IdleLoopHalt:
+00000088 bf30         83  wfi
+0000008a e7fd*        84  b IdleLoopHalt
+                      85 IdleLoopNoHalt:
+0000008c e7fe*        86  b IdleLoopNoHalt
+                      87  .size OS_CORTEXM_Idle, . - OS_CORTEXM_Idle
+                      88 

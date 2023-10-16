@@ -19,9 +19,14 @@
 #include <Watchdog.h>
 #include "FlashWrapper.h"
 
+#include <Dio_Cfg.h>
+#include <Dio.h>
 /*==================[Private define]===============================*/
 /* Refresh rate of the watchdog in ms */
 #define SWT_TRIGGER     10U
+
+int LedCount = 0u;
+
 /*==================[Private variable]===============================*/
 u8 m_ubScheduleFlag;
 /*==================[OS resource declarations]===============================*/
@@ -44,6 +49,23 @@ TASK(Init_Task)
 /*Task definition, task is called every 1ms*/
 TASK(CyclicTask)
 {
+
+LedCount ++;
+if (LedCount == 100)
+{
+  if(Dio_ReadChannel(DioConf_DioChannel_MY_LED_CYCLIC) == 0U)
+  {
+    Dio_WriteChannel(DioConf_DioChannel_MY_LED_CYCLIC, 1U);
+  }
+  else if(Dio_ReadChannel(DioConf_DioChannel_MY_LED_CYCLIC) == 1U)
+  {
+    Dio_WriteChannel(DioConf_DioChannel_MY_LED_CYCLIC, 0U);
+  }
+
+  LedCount = 0;
+}
+
+
     m_ubScheduleFlag = 1;
 
   (void) TerminateTask();

@@ -1,0 +1,447 @@
+// This file is generated automatically. DO NOT EDIT!!
+//
+// EB tresos AutoCore OS 6.1.113 CORTEXM/S32K34X
+// (Build 20221021)
+//
+// (c) 1998-2023 Elektrobit Automotive GmbH
+// Am Wolfsmantel 46
+// 91058 Erlangen
+// GERMANY
+//
+// Date         : 10/16/23 2:21 PM           !!!IGNORE-LINE!!!
+
+//-------------------------------------------------------------------
+// 00 ORTI Version
+//-------------------------------------------------------------------
+
+VERSION
+{
+  KOIL = "2.2";
+  OSSEMANTICS = "ORTI", "2.2";
+};
+
+//-------------------------------------------------------------------
+// 10 Declaration
+//-------------------------------------------------------------------
+IMPLEMENTATION EB_tresos_AutoCoreOS
+{
+
+OS
+{
+
+  ENUM [
+    "NO_TASK" = 0x0,
+    "Init_Task" = "&OS_taskTable[0]",
+    "CyclicTask" = "&OS_taskTable[1]",
+    "LoopTask" = "&OS_taskTable[2]"
+  ] RUNNINGTASK, "Running task identification";
+  ENUM [
+    "NO_ISR" = 0xfff,
+    "CAN0_ORED_0_31_MB_IRQHandler" = 0,
+    "CAN0_ORED_32_63_MB_IRQHandler" = 1,
+    "CAN0_ORED_IRQHandler" = 2,
+    "Os_Counter_STM0_0" = 3
+  ] RUNNINGISR2, "Running ISR identification";
+  ENUM [
+    "Boot"           = 0,
+    "Task"           = 1,
+    "Cat1"           = 2,
+    "Cat2"           = 3,
+    "Alarm Callback" = 4,
+    "Shutdown"       = 5,
+    "Internal"       = 6,
+    "Startuphook"    = 7,
+    "Shutdownhook"   = 8,
+    "Errorhook"      = 9,
+    "PreTaskHook"    = 10,
+    "PostTaskHook"   = 11,
+    "PreIsrHook"     = 12,
+    "PostIsrHook"    = 13,
+    "ProtectionHook" = 14
+  ] vs_INFUNCTION, "Type of current runnable entity";
+  CTYPE RUNNINGTASKPRIORITY, "Running task priority";
+  ENUM [
+    "OSDEFAULTAPPMODE" = 0
+  ] CURRENTAPPMODE, "Application mode";
+  ENUM [
+    "E_OK"          = 0,
+    "E_OS_ACCESS"   = 1,
+    "E_OS_CALLEVEL" = 2,
+    "E_OS_ID"       = 3,
+    "E_OS_LIMIT"    = 4,
+    "E_OS_NOFUNC"   = 5,
+    "E_OS_RESOURCE" = 6,
+    "E_OS_STATE"    = 7,
+    "E_OS_VALUE"    = 8
+  ] LASTERROR;
+  STRING vs_SCALABILITYCLASS,      "Scalability class";
+  STRING vs_CC,                    "Conformance class";
+  STRING vs_SCHEDULE,              "Schedule";
+  STRING vs_STATUS,                "Status";
+  STRING vs_USERESSCHEDULER,       "use RES SCHEDULER";
+  STRING vs_STARTUPHOOK,           "StartUpHook";
+  STRING vs_SHUTDOWNHOOK,          "ShutdownHook";
+  STRING vs_ERRORHOOK,             "Error Hook";
+  STRING vs_PROTECTIONHOOK,        "Protection Hook";
+  STRING vs_PRETASKHOOK,           "Pre Task Hook";
+  STRING vs_POSTTASKHOOK,          "Post Task Hook";
+  STRING vs_PREISRHOOK,            "PreIsrHook";
+  STRING vs_POSTISRHOOK,           "PostIsrHook";
+  STRING vs_STACKOPTIMIZATION,     "Stackoptimization";
+  STRING vs_USEGETSERVICEID,       "Use Get ServiceId";
+  STRING vs_USEPARAMETERACCESS,    "Use ParameterAccess";
+  STRING vs_USELASTERROR,          "Use Last Error";
+  STRING vs_EXTRA_RUNTIME_CHECKS,  "Extra Runtime Checks";
+  STRING vs_TRAPPING,              "Trapping kernel";
+  STRING vs_PROTECTION,            "Protection";
+};
+ALARM
+{
+  STRING ACTION,                  "Assigned action";
+  ENUM [ "Stopped"=0, "Running"=1 ] STATE, "Alarm state";
+  STRING COUNTER,                 "Assigned counter";
+  CTYPE ALARMTIME,                "Alarm time";
+  CTYPE CYCLETIME,                "Cycle time";
+  STRING vs_TASK,                 "Assigned task";
+  STRING vs_EVENT,                "Assigned event";
+  STRING vs_AUTOSTART,            "Autostart";
+  STRING vs_AUTOSTART_ALARMTIME,  "AutoStart alarmtime";
+  STRING vs_AUTOSTART_CYCLETIME,  "AutoStart cycletime";
+};
+vs_APPLICATION
+{
+  STRING vs_NUMBER_TASKS,           "Number of tasks";
+  STRING vs_NUMBER_RESOURCES,       "Number of resources";
+  STRING vs_NUMBER_ISRS,            "Number of ISRs";
+  STRING vs_NUMBER_ALARMS,          "Number of alarms";
+  STRING vs_NUMBER_SCHEDULETABLES,  "Number of schedule tables";
+  STRING vs_NUMBER_COUNTER,         "Number of counters";
+  STRING vs_HAS_STARTUPHOOK,        "StartUpHook";
+  STRING vs_HAS_ERRORHOOK,          "ErrorHook";
+  STRING vs_HAS_SHUTDOWNHOOK,       "Shutdown Hook";
+  STRING vs_COREASSIGNMENT,         "Core assignment";
+};
+vs_COUNTER
+{
+  STRING vs_MAXALLOWEDVALUE,  "Max allowed value";
+  STRING vs_TICKSPERBASE,     "Ticks per base";
+  STRING vs_MINCYCLE,         "Min cycle";
+  CTYPE vs_VALUE,             "Current value";
+};
+vs_EVENT
+{
+  STRING vs_ID,     "Event id";
+  STRING vs_MASK ,  "Event mask";
+};
+vs_ISR
+{
+  STRING vs_CATEGORY,              "Category";
+  STRING vs_ENABLE_ON_STARTUP,     "Enable on startup";
+  STRING vs_MEASURE_MAX_RUNTIME,   "Measure max runtime";
+  STRING vs_ASSIGNEDPRIO,          "Assigned priority";
+  STRING vs_REALPRIORITY,          "Real priority";
+  STRING vs_STACKSIZE,             "Stacksize";
+  STRING vs_TIMING_PROTECTION,     "Timing protection";
+  STRING vs_EXECUTION_BUDGET,      "Execution budget";
+  STRING vs_OSINTERRUPTLOCKTIME,   "Os interrupt lock budget";
+  STRING vs_ALLINTERRUPTLOCKTIME,  "All interrupt lock budget";
+  STRING vs_RESOURCE,              "Time monitored resources";
+  STRING vs_RESOURCELOCKTIME,      "Resource lock budget";
+  STRING vs_COUNTLIMIT,            "Count limit";
+  STRING vs_TIMEFRAME,             "Time limit";
+  ENUM "unsigned char *" [
+    "OS_kernStack0" : OS_kernStack0 = "OS_kernStack0"
+  ] vs_STACK,                      "Stack";
+  ENUM ["0"=0, "RATEX"=0x10, "BLOCKED"=0x20, "RATEX+BLOCKED"=0x30]  vs_STATUS, "Status";
+};
+RESOURCE
+{
+  STRING PRIORITY, "Ceiling priority";
+  ENUM [
+    "NO_LOCKER" = 0xff,
+    "Init_Task" = 0,
+    "CyclicTask" = 1,
+    "LoopTask" = 2,
+    "CAN0_ORED_0_31_MB_IRQHandler" = 256,
+    "CAN0_ORED_32_63_MB_IRQHandler" = 257,
+    "CAN0_ORED_IRQHandler" = 258,
+    "Os_Counter_STM0_0" = 259
+  ] LOCKER, "Locker identification";
+  ENUM "unsigned char" [ "UNLOCKED"=0,"LOCKED"=1 ] STATE, "Resource state";
+};
+vs_SCHEDULETABLE
+{
+  ENUM "unsigned int" ["STOPPED"=0, "WAITTING"=1, "CHAINED"=2, "RUNNING"=3, "QUARANTINED"=4] vs_STATE, "State";
+  STRING vs_PERIOD, "Duration";
+  STRING vs_IS_PERIODIC, "Repeating";
+  CTYPE vs_NEXT_EVENT, "Next event";
+  STRING vs_COUNTER, "Counter";
+  CTYPE vs_ABS_COUNTER_VALUE, "Absolute Counter Value";
+};
+STACK
+{
+  STRING vs_USERSIZE,    "User defined stack size";
+  CTYPE SIZE,            "Actual stack size";
+  CTYPE "unsigned char *" BASEADDRESS, "Stack base address";
+  STRING STACKDIRECTION, "Stack direction";
+  CTYPE "unsigned char"  FILLPATTERN,    "Fill pattern";
+};
+TASK
+{
+  STRING vs_ID,                      "Task id";
+  CTYPE CURRENTACTIVATIONS,          "Current task activations";
+  STRING vs_MAXACTIVATIONS,          "Maximum number of activations";
+  ENUM "unsigned char *" [
+    "OS_taskStack0_slot0" : OS_taskStack0_slot0 = "OS_taskStack0_slot0",
+    "OS_taskStack0_slot1" : OS_taskStack0_slot1 = "OS_taskStack0_slot1",
+    "OS_taskStack0_slot2" : OS_taskStack0_slot2 = "OS_taskStack0_slot2"
+  ] STACK,                           "Stack";
+  STRING vs_STACKSIZE,               "Stacksize";
+  STRING vs_SHAREDSTACK,             "Stack sharing";
+  STRING vs_ASSIGNEDPRIO,            "Assigned priority";
+  STRING vs_REALPRIORITY,            "Real priority";
+  CTYPE PRIORITY,                    "Current priority";
+  STRING vs_TYPE,                    "Task type";
+  STRING vs_USE_HW_FP,               "Use floating point";
+  STRING vs_MEASURE_MAX_RUNTIME,     "Measure Max Runtime";
+  STRING vs_TIMING_PROTECTION,       "Timing Protection";
+  STRING vs_EXECUTION_BUDGET,        "Execution budget";
+  STRING vs_OSINTERRUPTLOCKTIME,     "Os interrupt lock budget";
+  STRING vs_ALLINTERRUPTLOCKTIME,    "All interrupt lock budget";
+  STRING vs_RESOURCE,                "Time monitored resources";
+  STRING vs_RESOURCELOCKTIME,        "Resource lock budget";
+  STRING vs_COUNTLIMIT ,             "Count Limit";
+  STRING vs_TIMEFRAME ,              "Time Limit";
+  ENUM ["NOT_SUPPORTED"=0] CONTEXT,  "Context";
+  ENUM ["SUSPENDED"=0, "QUARANTINED"=1, "NEW"=2, "READY_SYNC"=3, "READY_ASYNC"=4, "RUNNING"=5, "WAITING"=6, "INVALID"=255] STATE, "Task state";
+};
+
+};
+
+//-------------------------------------------------------------------
+// 20 Implementation
+//-------------------------------------------------------------------
+
+OS S32K34X
+{
+
+  RUNNINGTASK = "OS_kernel_ptr[0]->taskCurrent";
+  RUNNINGISR2 = "OS_kernel_ptr[0]->isrCurrent";
+  vs_INFUNCTION = "OS_kernel_ptr[0]->inFunction";
+  RUNNINGTASKPRIORITY = "OS_kernel_ptr[0]->taskCurrent->dynamic->prio";
+  LASTERROR = "OS_kernel_ptr[0]->errorStatus.result";
+  CURRENTAPPMODE = "OS_appMode";
+  vs_SCALABILITYCLASS     = "1";
+  vs_CC                   = "BCC1";
+  vs_SCHEDULE             = "MIXED";
+  vs_STATUS               = "EXTENDED";
+  vs_STARTUPHOOK          = "false";
+  vs_SHUTDOWNHOOK         = "true";
+  vs_ERRORHOOK            = "true";
+  vs_PROTECTIONHOOK       = "false";
+  vs_PRETASKHOOK          = "false";
+  vs_POSTTASKHOOK         = "false";
+  vs_PREISRHOOK           = "false";
+  vs_POSTISRHOOK          = "false";
+  vs_USEGETSERVICEID      = "false";
+  vs_USEPARAMETERACCESS   = "false";
+  vs_USERESSCHEDULER      = "true";
+  vs_STACKOPTIMIZATION    = "GLOBAL";
+  vs_EXTRA_RUNTIME_CHECKS = "false";
+  vs_USELASTERROR         = "false";
+  vs_PROTECTION           = "ON";
+  vs_TRAPPING             = "true";
+};
+
+ALARM AlarmCyclicTask
+{
+  vs_TASK                =  "CyclicTask";
+  ACTION                 = "ACTIVATE_TASK CyclicTask";
+  COUNTER                = "HwCounter";
+  STATE                  = "OS_alarmTableBase[0].dynamic->inUse";
+  CYCLETIME              = "OS_alarmTableBase[0].dynamic->period";
+  vs_AUTOSTART           = "true";
+  vs_AUTOSTART_ALARMTIME = "10000000";
+  vs_AUTOSTART_CYCLETIME = "1000000";
+};
+ALARM AlarmLoopTask
+{
+  vs_TASK                =  "LoopTask";
+  ACTION                 = "ACTIVATE_TASK LoopTask";
+  COUNTER                = "HwCounter";
+  STATE                  = "OS_alarmTableBase[1].dynamic->inUse";
+  CYCLETIME              = "OS_alarmTableBase[1].dynamic->period";
+  vs_AUTOSTART           = "true";
+  vs_AUTOSTART_ALARMTIME = "10000000";
+  vs_AUTOSTART_CYCLETIME = "10000000";
+};
+ALARM OS_InternalNoOpAlarm
+{
+  ACTION                 = "NO_OP";
+  COUNTER                = "HwCounter";
+  STATE                  = "OS_alarmTableBase[2].dynamic->inUse";
+  CYCLETIME              = "OS_alarmTableBase[2].dynamic->period";
+  vs_AUTOSTART           = "false";
+};
+
+vs_APPLICATION OS_SYSTEM_0
+{
+  vs_NUMBER_TASKS          = "3";
+  vs_NUMBER_RESOURCES      = "1";
+  vs_NUMBER_ISRS           = "4";
+  vs_NUMBER_ALARMS         = "2";
+  vs_NUMBER_SCHEDULETABLES = "0";
+  vs_NUMBER_COUNTER        = "1";
+  vs_HAS_STARTUPHOOK       = "false";
+  vs_HAS_SHUTDOWNHOOK      = "false";
+  vs_HAS_ERRORHOOK         = "false";
+  vs_COREASSIGNMENT        = "0";
+};
+
+vs_COUNTER HwCounter
+{
+  vs_TICKSPERBASE    = "1000";
+  vs_MINCYCLE        = "1";
+  vs_VALUE           = "OS_counterTableBase[0].dynamic->current";
+  vs_MAXALLOWEDVALUE = "4294967295";
+};
+
+
+vs_ISR CAN0_ORED_0_31_MB_IRQHandler
+{
+  vs_CATEGORY            = "2";
+  vs_ENABLE_ON_STARTUP   = "true";
+  vs_MEASURE_MAX_RUNTIME = "false";
+  vs_STACKSIZE           = "1024";
+  vs_STATUS              = "(OS_isrTableBase[0].dynamic->statusflags & 0x30)";
+  vs_STACK               = "OS_kernStack0";
+  vs_ASSIGNEDPRIO        = "7";
+  vs_REALPRIORITY        = "7";
+  vs_TIMING_PROTECTION   = "false";
+};
+vs_ISR CAN0_ORED_32_63_MB_IRQHandler
+{
+  vs_CATEGORY            = "2";
+  vs_ENABLE_ON_STARTUP   = "true";
+  vs_MEASURE_MAX_RUNTIME = "false";
+  vs_STACKSIZE           = "1024";
+  vs_STATUS              = "(OS_isrTableBase[1].dynamic->statusflags & 0x30)";
+  vs_STACK               = "OS_kernStack0";
+  vs_ASSIGNEDPRIO        = "7";
+  vs_REALPRIORITY        = "7";
+  vs_TIMING_PROTECTION   = "false";
+};
+vs_ISR CAN0_ORED_IRQHandler
+{
+  vs_CATEGORY            = "2";
+  vs_ENABLE_ON_STARTUP   = "true";
+  vs_MEASURE_MAX_RUNTIME = "false";
+  vs_STACKSIZE           = "1024";
+  vs_STATUS              = "(OS_isrTableBase[2].dynamic->statusflags & 0x30)";
+  vs_STACK               = "OS_kernStack0";
+  vs_ASSIGNEDPRIO        = "7";
+  vs_REALPRIORITY        = "7";
+  vs_TIMING_PROTECTION   = "false";
+};
+vs_ISR Os_Counter_STM0_0
+{
+  vs_CATEGORY            = "2";
+  vs_ENABLE_ON_STARTUP   = "true";
+  vs_MEASURE_MAX_RUNTIME = "false";
+  vs_STACKSIZE           = "512";
+  vs_STATUS              = "(OS_isrTableBase[3].dynamic->statusflags & 0x30)";
+  vs_STACK               = "OS_kernStack0";
+  vs_ASSIGNEDPRIO        = "2";
+  vs_REALPRIORITY        = "2";
+  vs_TIMING_PROTECTION   = "false";
+};
+
+RESOURCE RES_SCHEDULER_0
+{
+  STATE = "OS_resourceTableBase[0].dynamic->takenBy != 0xff";
+  LOCKER = "OS_resourceTableBase[0].dynamic->takenBy < 0x100 ? OS_resourceTableBase[0].dynamic->takenBy : OS_resourceTableBase[0].dynamic->takenBy - 0x100";
+  PRIORITY = "TASK: 127";
+};
+
+
+STACK OS_taskStack0_slot0
+{
+  vs_USERSIZE    = "4096";
+  SIZE           = "4240";
+  BASEADDRESS    = "OS_taskStack0_slot0";
+  STACKDIRECTION = "DOWN";
+};
+STACK OS_taskStack0_slot1
+{
+  vs_USERSIZE    = "4096";
+  SIZE           = "4240";
+  BASEADDRESS    = "OS_taskStack0_slot1";
+  STACKDIRECTION = "DOWN";
+};
+STACK OS_taskStack0_slot2
+{
+  vs_USERSIZE    = "1024";
+  SIZE           = "1168";
+  BASEADDRESS    = "OS_taskStack0_slot2";
+  STACKDIRECTION = "DOWN";
+};
+STACK OS_kernStack0
+{
+  vs_USERSIZE    = "1024";
+  SIZE           = "3072";
+  BASEADDRESS    = "OS_kernStack0";
+  STACKDIRECTION = "DOWN";
+};
+
+TASK Init_Task
+{
+  vs_ID                    = "0";
+  STATE                    = "OS_taskTableBase[0].dynamic->state";
+  CURRENTACTIVATIONS       = "OS_taskTableBase[0].dynamic->nAct";
+  vs_MAXACTIVATIONS        = "1";
+  STACK                    = "OS_taskStack0_slot2";
+  vs_SHAREDSTACK           = "false";
+  vs_STACKSIZE             = "1168";
+  vs_ASSIGNEDPRIO          = "127";
+  vs_REALPRIORITY          = "2";
+  PRIORITY                 = "OS_taskTableBase[0].dynamic->prio";
+  vs_TYPE                  = "BASIC";
+  vs_USE_HW_FP             = "true";
+  vs_MEASURE_MAX_RUNTIME   = "false";
+  vs_TIMING_PROTECTION     = "false";
+};
+TASK CyclicTask
+{
+  vs_ID                    = "1";
+  STATE                    = "OS_taskTableBase[1].dynamic->state";
+  CURRENTACTIVATIONS       = "OS_taskTableBase[1].dynamic->nAct";
+  vs_MAXACTIVATIONS        = "1";
+  STACK                    = "OS_taskStack0_slot0";
+  vs_SHAREDSTACK           = "false";
+  vs_STACKSIZE             = "4240";
+  vs_ASSIGNEDPRIO          = "5";
+  vs_REALPRIORITY          = "1";
+  PRIORITY                 = "OS_taskTableBase[1].dynamic->prio";
+  vs_TYPE                  = "BASIC";
+  vs_USE_HW_FP             = "true";
+  vs_MEASURE_MAX_RUNTIME   = "false";
+  vs_TIMING_PROTECTION     = "false";
+};
+TASK LoopTask
+{
+  vs_ID                    = "2";
+  STATE                    = "OS_taskTableBase[2].dynamic->state";
+  CURRENTACTIVATIONS       = "OS_taskTableBase[2].dynamic->nAct";
+  vs_MAXACTIVATIONS        = "1";
+  STACK                    = "OS_taskStack0_slot1";
+  vs_SHAREDSTACK           = "false";
+  vs_STACKSIZE             = "4240";
+  vs_ASSIGNEDPRIO          = "2";
+  vs_REALPRIORITY          = "0";
+  PRIORITY                 = "OS_taskTableBase[2].dynamic->prio";
+  vs_TYPE                  = "BASIC";
+  vs_USE_HW_FP             = "true";
+  vs_MEASURE_MAX_RUNTIME   = "false";
+  vs_TIMING_PROTECTION     = "false";
+};
+

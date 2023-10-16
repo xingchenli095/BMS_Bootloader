@@ -1642,12 +1642,18 @@
                         <d:ctr name="McuPeripheral_4" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EMIOS_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LCU_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ36">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN0_COFB1_REQ38">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1665,12 +1671,18 @@
                         <d:ctr name="McuPeripheral_5" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LCU_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LCU_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ38">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN0_COFB1_REQ39">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1688,12 +1700,18 @@
                         <d:ctr name="McuPeripheral_6" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LCU_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="ADC_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ39">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN0_COFB1_REQ40">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1711,12 +1729,18 @@
                         <d:ctr name="McuPeripheral_7" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="ADC_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="ADC_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ40">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN0_COFB1_REQ41">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1734,12 +1758,18 @@
                         <d:ctr name="McuPeripheral_8" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="ADC_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PIT_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ41">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN0_COFB1_REQ44">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1757,12 +1787,18 @@
                         <d:ctr name="McuPeripheral_9" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="ADC_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PIT_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ42">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN0_COFB1_REQ45">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1780,12 +1816,18 @@
                         <d:ctr name="McuPeripheral_10" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="PIT_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="I3C_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ44">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN0_COFB1_REQ48">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1803,12 +1845,18 @@
                         <d:ctr name="McuPeripheral_11" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="PIT_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN0_COFB1_REQ45">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ3">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1826,12 +1874,18 @@
                         <d:ctr name="McuPeripheral_12" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ3">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ4">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1849,12 +1903,18 @@
                         <d:ctr name="McuPeripheral_13" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ4">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ5">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1872,12 +1932,18 @@
                         <d:ctr name="McuPeripheral_14" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_2">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ5">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ6">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1895,12 +1961,18 @@
                         <d:ctr name="McuPeripheral_15" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_3">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ6">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ7">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1918,12 +1990,18 @@
                         <d:ctr name="McuPeripheral_16" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_3">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_4">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ7">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ8">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1941,12 +2019,18 @@
                         <d:ctr name="McuPeripheral_17" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_4">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_5">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ8">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ9">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1964,12 +2048,18 @@
                         <d:ctr name="McuPeripheral_18" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_5">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_6">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ9">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ10">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -1987,12 +2077,18 @@
                         <d:ctr name="McuPeripheral_19" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_6">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_7">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ10">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ11">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2010,12 +2106,18 @@
                         <d:ctr name="McuPeripheral_20" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_7">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_8">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ11">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ12">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2033,12 +2135,18 @@
                         <d:ctr name="McuPeripheral_21" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_8">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_9">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ12">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ13">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2056,12 +2164,18 @@
                         <d:ctr name="McuPeripheral_22" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_9">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_10">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ13">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ14">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2079,12 +2193,18 @@
                         <d:ctr name="McuPeripheral_23" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_10">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_11">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ14">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ15">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2102,12 +2222,18 @@
                         <d:ctr name="McuPeripheral_24" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_11">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="SDA_AP">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ15">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ21">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2125,12 +2251,18 @@
                         <d:ctr name="McuPeripheral_25" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="SDA_AP">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EIM">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ21">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ22">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2148,12 +2280,18 @@
                         <d:ctr name="McuPeripheral_26" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EIM">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="ERM">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ22">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ23">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2171,12 +2309,18 @@
                         <d:ctr name="McuPeripheral_27" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="ERM">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="MSCM">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ23">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ24">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2194,12 +2338,18 @@
                         <d:ctr name="McuPeripheral_28" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="MSCM">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="SWT_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ24">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ28">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2217,12 +2367,18 @@
                         <d:ctr name="McuPeripheral_29" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="SWT_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="STM_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ28">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ29">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2240,12 +2396,18 @@
                         <d:ctr name="McuPeripheral_30" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="STM_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="INTM">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ29">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB0_REQ31">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2263,12 +2425,18 @@
                         <d:ctr name="McuPeripheral_31" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="INTM">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="DMAMUX_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB0_REQ31">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ32">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2286,12 +2454,18 @@
                         <d:ctr name="McuPeripheral_32" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="DMAMUX_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="DMAMUX_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ32">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ33">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2309,12 +2483,18 @@
                         <d:ctr name="McuPeripheral_33" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="DMAMUX_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="RTC">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ33">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ34">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2332,12 +2512,18 @@
                         <d:ctr name="McuPeripheral_34" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="RTC">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="SIUL2_VIRTWRAPPER_PDAC3">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ34">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ42">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2355,12 +2541,18 @@
                         <d:ctr name="McuPeripheral_35" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="SIUL2_VIRTWRAPPER_PDAC3">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="WKPU">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ42">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ45">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2378,12 +2570,18 @@
                         <d:ctr name="McuPeripheral_36" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="WKPU">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="CMU_0_5">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ45">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ47">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2401,12 +2599,18 @@
                         <d:ctr name="McuPeripheral_37" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="CMU_0_5">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="TSPC">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ47">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ49">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2424,12 +2628,18 @@
                         <d:ctr name="McuPeripheral_38" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="TSPC">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="SXOSC">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ49">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ51">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2447,12 +2657,18 @@
                         <d:ctr name="McuPeripheral_39" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="SXOSC">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="FXOSC">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ51">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ53">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2470,12 +2686,18 @@
                         <d:ctr name="McuPeripheral_40" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FXOSC">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PLL">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ53">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ56">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2493,12 +2715,18 @@
                         <d:ctr name="McuPeripheral_41" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="PLL">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PIT_2">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ56">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB1_REQ63">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2516,12 +2744,18 @@
                         <d:ctr name="McuPeripheral_42" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="PIT_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="FlexCAN_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB1_REQ63">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ65">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2539,12 +2773,18 @@
                         <d:ctr name="McuPeripheral_43" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FlexCAN_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="FlexCAN_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ65">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ66">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2562,12 +2802,18 @@
                         <d:ctr name="McuPeripheral_44" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FlexCAN_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="FlexCAN_2">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ66">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ67">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2585,12 +2831,18 @@
                         <d:ctr name="McuPeripheral_45" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FlexCAN_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="FlexCAN_3">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ67">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ68">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2608,12 +2860,18 @@
                         <d:ctr name="McuPeripheral_46" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FlexCAN_3">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="FlexIO">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ68">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ73">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2631,12 +2889,18 @@
                         <d:ctr name="McuPeripheral_47" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FlexCAN_4">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPUART_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ69">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ74">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2654,12 +2918,18 @@
                         <d:ctr name="McuPeripheral_48" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FlexCAN_5">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPUART_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ70">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ75">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2677,12 +2947,18 @@
                         <d:ctr name="McuPeripheral_49" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="FlexIO">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPUART_2">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ73">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ76">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2700,12 +2976,18 @@
                         <d:ctr name="McuPeripheral_50" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPUART_3">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ74">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ77">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2723,12 +3005,18 @@
                         <d:ctr name="McuPeripheral_51" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPI2C_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ75">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ84">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2746,12 +3034,18 @@
                         <d:ctr name="McuPeripheral_52" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPI2C_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ76">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ85">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2769,12 +3063,18 @@
                         <d:ctr name="McuPeripheral_53" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_3">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPSPI_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ77">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ86">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2792,12 +3092,18 @@
                         <d:ctr name="McuPeripheral_54" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_4">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPSPI_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ78">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ87">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2815,12 +3121,18 @@
                         <d:ctr name="McuPeripheral_55" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_5">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPSPI_2">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ79">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ88">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2838,12 +3150,18 @@
                         <d:ctr name="McuPeripheral_56" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_6">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPSPI_3">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ80">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ89">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2861,12 +3179,18 @@
                         <d:ctr name="McuPeripheral_57" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_7">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="SAI_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ81">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ91">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2884,12 +3208,18 @@
                         <d:ctr name="McuPeripheral_58" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPI2C_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPCMP_0">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ84">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ92">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2907,12 +3237,18 @@
                         <d:ctr name="McuPeripheral_59" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPI2C_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="LPCMP_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ85">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ93">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2930,12 +3266,18 @@
                         <d:ctr name="McuPeripheral_60" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPSPI_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="TEMPSENSE">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ86">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB2_REQ95">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2953,12 +3295,18 @@
                         <d:ctr name="McuPeripheral_61" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPSPI_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="CRC">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ87">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB3_REQ96">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2976,12 +3324,18 @@
                         <d:ctr name="McuPeripheral_62" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPSPI_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="STCU_2">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ88">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN1_COFB3_REQ104">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -2999,12 +3353,18 @@
                         <d:ctr name="McuPeripheral_63" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPSPI_3">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_12">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ89">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ4">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3022,12 +3382,18 @@
                         <d:ctr name="McuPeripheral_64" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="SAI_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_13">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ91">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ5">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3045,12 +3411,18 @@
                         <d:ctr name="McuPeripheral_65" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPCMP_0">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_14">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ92">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ6">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3068,12 +3440,18 @@
                         <d:ctr name="McuPeripheral_66" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPCMP_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_15">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ93">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ7">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3091,12 +3469,18 @@
                         <d:ctr name="McuPeripheral_67" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="TEMPSENSE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_16">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB2_REQ95">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ8">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3114,12 +3498,18 @@
                         <d:ctr name="McuPeripheral_68" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="CRC">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_17">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB3_REQ96">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ9">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3137,12 +3527,18 @@
                         <d:ctr name="McuPeripheral_69" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="STCU_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_18">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN1_COFB3_REQ104">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ10">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3160,12 +3556,18 @@
                         <d:ctr name="McuPeripheral_70" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_12">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_19">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ4">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ11">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3183,12 +3585,18 @@
                         <d:ctr name="McuPeripheral_71" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_13">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_20">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ5">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ12">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3206,12 +3614,18 @@
                         <d:ctr name="McuPeripheral_72" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_14">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_21">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ6">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ13">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3229,12 +3643,18 @@
                         <d:ctr name="McuPeripheral_73" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_15">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_22">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ7">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ14">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3252,12 +3672,18 @@
                         <d:ctr name="McuPeripheral_74" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_16">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_23">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ8">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ15">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3275,12 +3701,18 @@
                         <d:ctr name="McuPeripheral_75" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_17">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_24">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ9">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ16">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3298,12 +3730,18 @@
                         <d:ctr name="McuPeripheral_76" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_18">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_25">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ10">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ17">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3321,12 +3759,18 @@
                         <d:ctr name="McuPeripheral_77" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_19">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_26">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ11">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ18">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3344,12 +3788,18 @@
                         <d:ctr name="McuPeripheral_78" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_20">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_27">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ12">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ19">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3367,12 +3817,18 @@
                         <d:ctr name="McuPeripheral_79" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_21">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_28">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ13">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ20">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3390,12 +3846,18 @@
                         <d:ctr name="McuPeripheral_80" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_22">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_29">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ14">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ21">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3413,12 +3875,18 @@
                         <d:ctr name="McuPeripheral_81" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_23">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_30">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ15">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ22">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3436,12 +3904,18 @@
                         <d:ctr name="McuPeripheral_82" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_24">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EDMA_TCD_31">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ16">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ23">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3459,12 +3933,18 @@
                         <d:ctr name="McuPeripheral_83" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_25">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="SEMA_42">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ17">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ24">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3482,12 +3962,18 @@
                         <d:ctr name="McuPeripheral_84" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_26">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="STM_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ18">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB0_REQ29">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3505,12 +3991,18 @@
                         <d:ctr name="McuPeripheral_85" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_27">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="EMAC">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ19">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB1_REQ32">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3528,12 +4020,18 @@
                         <d:ctr name="McuPeripheral_86" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_28">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="QuadSPI">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ20">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB1_REQ51">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3551,12 +4049,18 @@
                         <d:ctr name="McuPeripheral_87" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_29">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="SAI_1">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ21">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                                 value="PRTN2_COFB1_REQ55">
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
@@ -3574,433 +4078,25 @@
                         <d:ctr name="McuPeripheral_88" type="IDENTIFIABLE">
                           <a:a name="IMPORTER_INFO" value="@REC"/>
                           <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_30">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ22">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_89" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EDMA_TCD_31">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ23">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_90" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="SEMA_42">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ24">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_91" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="STM_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB0_REQ29">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_92" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="EMAC">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ32">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_93" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_8">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ35">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_94" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_9">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ36">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_95" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_10">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ37">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_96" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_11">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ38">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_97" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_12">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ39">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_98" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_13">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ40">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_99" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_14">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ41">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_100" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPUART_15">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ42">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_101" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPSPI_4">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ47">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_102" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPSPI_5">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ48">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_103" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="QuadSPI">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ51">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_104" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="SAI_1">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ55">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_105" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
-                                 value="LPCMP_2">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuModeEntrySlot" type="ENUMERATION" 
-                                 value="PRTN2_COFB1_REQ58">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuResetGenerationSlot" 
-                                 type="ENUMERATION" value="NONE">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="true">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                          <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
-                          </d:var>
-                        </d:ctr>
-                        <d:ctr name="McuPeripheral_106" type="IDENTIFIABLE">
-                          <a:a name="IMPORTER_INFO" value="@REC"/>
-                          <d:var name="McuPeripheralName" type="ENUMERATION" 
                                  value="CM7_0_TCM">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuModeEntrySlot" type="ENUMERATION" 
                                  value="PRTN2_COFB1_REQ62">
-                            <a:a name="IMPORTER_INFO" value="@REC"/>
+                            <a:a name="IMPORTER_INFO">
+                              <a:v>@CALC</a:v>
+                              <a:v>@DEF</a:v>
+                            </a:a>
                           </d:var>
                           <d:var name="McuResetGenerationSlot" 
                                  type="ENUMERATION" value="NONE">
                             <a:a name="IMPORTER_INFO" value="@REC"/>
                           </d:var>
                           <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="true">
+                                 value="false">
                             <a:a name="IMPORTER_INFO" value="@REC"/>
                           </d:var>
                           <d:var name="McuPeripheralResetEnable" type="BOOLEAN" 

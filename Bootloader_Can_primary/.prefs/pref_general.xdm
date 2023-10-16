@@ -208,7 +208,7 @@
         <d:var name="Enabled" value="TRUE"/>
         <d:var name="Generate" value="TRUE"/>
         <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
-        <d:var name="SoftwareVersion" value="4.0.3 B593203"/>
+        <d:var name="SoftwareVersion" value="4.0.3 B594013"/>
         <d:var name="ConfigurationFileURL" value="config/ComM.xdm"/>
         <d:var name="ConfigurationFormat" value="xdm"/>
         <d:var name="GenerationPath" >
@@ -237,7 +237,7 @@
         <d:var name="Enabled" value="TRUE"/>
         <d:var name="Generate" value="TRUE"/>
         <d:var name="LoadExistingConfigurationFile" value="TRUE"/>
-        <d:var name="SoftwareVersion" value="1.0.11 B593203"/>
+        <d:var name="SoftwareVersion" value="1.0.11 B594013"/>
       </d:ctr>
       <d:ctr name="Det">
         <d:var name="ModuleId" value="Det_TS_TxDxM6I5R0"/>
@@ -246,6 +246,24 @@
         <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
         <d:var name="SoftwareVersion" value="6.5.9 B533786"/>
         <d:var name="ConfigurationFileURL" value="config\Det.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+      </d:ctr>
+      <d:ctr name="Dio">
+        <d:var name="ModuleId" value="Dio_TS_T40D34M20I1R0"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="2.0.1 D2207"/>
+        <d:var name="ConfigurationFileURL" value="config\Dio.xdm"/>
         <d:var name="ConfigurationFormat" value="xdm"/>
         <d:var name="GenerationPath" >
           <a:a name="IMPORTER_INFO" value="@DEF"/>
@@ -347,7 +365,7 @@
         <d:var name="Enabled" value="TRUE"/>
         <d:var name="Generate" value="TRUE"/>
         <d:var name="LoadExistingConfigurationFile" value="TRUE"/>
-        <d:var name="SoftwareVersion" value="1.0.0 B593203"/>
+        <d:var name="SoftwareVersion" value="1.0.0 B594013"/>
       </d:ctr>
       <d:ctr name="Mcu">
         <d:var name="ConfigurationFileURL" value="config\Mcu.xdm"/>
@@ -553,6 +571,9 @@
         <d:var name="Autoconfigure" value="TRUE"/>
       </d:ctr>
       <d:ctr name="SvcAs_Trigger">
+        <d:var name="Autoconfigure" value="TRUE"/>
+      </d:ctr>
+      <d:ctr name="AutoHandleId">
         <d:var name="Autoconfigure" value="TRUE"/>
       </d:ctr>
     </d:lst>

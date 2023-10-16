@@ -27,8 +27,9 @@ CC_OPT += -fsingle
 CC_OPT += -G 
 CC_OPT += -Wtrigraphs 
 CC_OPT += --no_commons 
-CC_OPT += --no_slash_comment 
+#CC_OPT += --no_slash_comment 
 CC_OPT += --ghstd=last 
+CC_OPT += -O0
 CC_OPT += --unsigned_fields 
 CC_OPT += -DD_CACHE_ENABLE 
 CC_OPT += --no_exceptions 
